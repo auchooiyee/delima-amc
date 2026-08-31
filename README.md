@@ -17,7 +17,7 @@ Portal Pengurusan, Pembudayaan, dan Pensijilan DELIMa 2026 bagi **SMJK Ave Maria
 ```text
 ├── index.html                                 # Laman Utama Portal DELIMa @ SMJK AMC
 ├── assets/
-│   ├── css/style.css                          # Tema responsif Google Sites Crimson / Red (#b71c1c)
+│   ├── css/style.css                          # Tema responsif Google Sites Crimson / Red (#1a237e)
 │   ├── js/config.js                           # Konfigurasi data sekolah, kepimpinan & pautan rasmi
 │   ├── js/main.js                             # Skrip carian direktori guru & borang aduan Google Apps Script
 │   ├── images/logo.png                        # Logo rasmi SMJK Ave Maria Convent (tanpa latar belakang)

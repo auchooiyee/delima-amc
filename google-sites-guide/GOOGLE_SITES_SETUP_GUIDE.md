@@ -14,12 +14,12 @@ Panduan ini disediakan khas untuk **Cik Au Chooi Yee** (Penolong Penyelaras DELI
 ---
 
 ## 🎨 LANGKAH 2: TETAPAN TEMA & IDENTITI VISUAL (THEME)
-Untuk memastikan laman anda mempunyai visual profesional yang selaras dengan tema DELIMa Merah/Crimson:
+Untuk memastikan laman anda mempunyai visual profesional yang selaras dengan tema DELIMa Royal Navy Blue (#1a237e):
 
 1. Di panel sebelah kanan, klik tab **Themes (Tema)** > Klik **+ Create Theme (Cipta Tema)**:
-   - **Theme Name:** `DELIMa AMC Red`
+   - **Theme Name:** `DELIMa AMC Royal Blue`
    - **Logo:** Muat naik fail logo sekolah `AMC logo no BG (2).png` *(terdapat di folder `assets/images/logo.png`)*.
-   - **Primary Color:** `#b71c1c` (Deep Crimson Red) atau `#d32f2f`.
+   - **Primary Color:** `#1a237e` (Royal Navy Blue (#1a237e)) atau `#1565c0`.
    - **Secondary Color:** `#f8f9fa` (Light Neutral Gray).
    - **Fonts:**
      - **Titles / Headings:** `Oswald` (Bold / Semi-bold).

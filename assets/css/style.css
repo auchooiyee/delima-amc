@@ -1,25 +1,27 @@
 /* ==========================================================================
    DELIMa Portal Theme - SMJK Ave Maria Convent, Ipoh (AEB2052)
-   Google Sites Red/Crimson Palette + Material 3 Design
+   AMC Convent Royal Blue & Gold Palette + Material 3 Design
    ========================================================================== */
 
 :root {
-    --primary: #b71c1c;
-    --primary-dark: #7f0000;
-    --primary-light: #f05545;
-    --accent: #d32f2f;
-    --accent-light: #ffebee;
+    --primary: #1a237e;         /* Deep AMC Royal Navy Blue (Matches school logo #2e3192) */
+    --primary-dark: #0d1442;    /* Midnight Convent Navy */
+    --primary-light: #283593;   /* Royal Blue Accent */
+    --accent: #1565c0;          /* Vibrant Ocean Blue */
+    --accent-light: #e8eaf6;    /* Soft Convent Ice Blue */
+    --gold: #fbc02d;            /* Convent Gold Accent */
+    --gold-hover: #f57f17;
     --google-blue: #1a73e8;
     --google-green: #1e8e3e;
     --google-yellow: #f9ab00;
-    --bg-light: #f8f9fa;
+    --bg-light: #f4f6fb;
     --bg-card: #ffffff;
-    --text-dark: #202124;
+    --text-dark: #1a1c24;
     --text-muted: #5f6368;
-    --border-color: #dadce0;
-    --shadow-sm: 0 1px 3px rgba(60,64,67,0.15), 0 1px 2px rgba(60,64,67,0.3);
-    --shadow-md: 0 4px 8px rgba(60,64,67,0.15), 0 1px 3px rgba(60,64,67,0.3);
-    --shadow-lg: 0 8px 16px rgba(60,64,67,0.15), 0 2px 6px rgba(60,64,67,0.2);
+    --border-color: #d2d6e4;
+    --shadow-sm: 0 1px 3px rgba(26,35,126,0.08), 0 1px 2px rgba(0,0,0,0.05);
+    --shadow-md: 0 4px 12px rgba(26,35,126,0.12), 0 1px 4px rgba(0,0,0,0.08);
+    --shadow-lg: 0 10px 24px rgba(26,35,126,0.15), 0 2px 8px rgba(0,0,0,0.1);
     --font-heading: 'Oswald', -apple-system, BlinkMacSystemFont, sans-serif;
     --font-body: 'Open Sans', 'Google Sans', -apple-system, BlinkMacSystemFont, sans-serif;
     --transition: all 0.25s ease-in-out;
@@ -57,13 +59,14 @@ a:hover {
    HEADER & NAVIGATION BAR
    ========================================================================== */
 .top-notice-bar {
-    background: linear-gradient(90deg, #b71c1c, #d32f2f);
+    background: linear-gradient(90deg, #0d1442, #1a237e, #283593);
     color: #ffffff;
     font-size: 13px;
-    padding: 6px 16px;
+    padding: 7px 16px;
     text-align: center;
     font-weight: 500;
     letter-spacing: 0.3px;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.15);
 }
 
 .top-notice-bar a {
@@ -75,11 +78,11 @@ a:hover {
 
 .site-header {
     background-color: #ffffff;
-    border-bottom: 1px solid var(--border-color);
+    border-bottom: 2px solid var(--accent-light);
     position: sticky;
     top: 0;
     z-index: 1000;
-    box-shadow: 0 2px 4px rgba(0,0,0,0.06);
+    box-shadow: 0 2px 8px rgba(26,35,126,0.08);
 }
 
 .nav-container {
@@ -102,6 +105,7 @@ a:hover {
     height: 48px;
     width: auto;
     object-fit: contain;
+    filter: drop-shadow(0 2px 4px rgba(26,35,126,0.2));
 }
 
 .brand-text h1 {
@@ -218,9 +222,9 @@ a:hover {
 }
 
 .btn-header-aduan {
-    background-color: var(--primary);
+    background: linear-gradient(135deg, var(--primary), var(--accent));
     color: #ffffff !important;
-    padding: 8px 16px;
+    padding: 8px 18px;
     border-radius: 20px;
     font-size: 12px;
     font-weight: 700;
@@ -228,13 +232,13 @@ a:hover {
     display: inline-flex;
     align-items: center;
     gap: 6px;
-    box-shadow: 0 2px 4px rgba(183, 28, 28, 0.3);
+    box-shadow: 0 2px 6px rgba(26, 35, 126, 0.3);
     text-decoration: none;
 }
 
 .btn-header-aduan:hover {
-    background-color: var(--primary-dark);
-    box-shadow: 0 4px 8px rgba(183, 28, 28, 0.4);
+    background: linear-gradient(135deg, var(--primary-dark), var(--primary));
+    box-shadow: 0 4px 10px rgba(26, 35, 126, 0.45);
     text-decoration: none;
 }
 
@@ -252,12 +256,24 @@ a:hover {
    HERO BANNER
    ========================================================================== */
 .hero-banner {
-    background: linear-gradient(135deg, #7f0000 0%, #b71c1c 50%, #c62828 100%);
+    background: linear-gradient(135deg, #0d1442 0%, #1a237e 45%, #1565c0 100%);
     color: #ffffff;
-    padding: 50px 20px 40px;
+    padding: 55px 20px 45px;
     text-align: center;
     position: relative;
     overflow: hidden;
+    box-shadow: inset 0 -4px 12px rgba(0,0,0,0.15);
+}
+
+.hero-banner::before {
+    content: "";
+    position: absolute;
+    top: -50%;
+    left: -20%;
+    width: 140%;
+    height: 200%;
+    background: radial-gradient(circle, rgba(255,255,255,0.08) 10%, transparent 60%);
+    pointer-events: none;
 }
 
 .hero-container {
@@ -271,9 +287,9 @@ a:hover {
     display: inline-flex;
     align-items: center;
     gap: 8px;
-    background: rgba(255,255,255,0.2);
+    background: rgba(255,255,255,0.15);
     backdrop-filter: blur(8px);
-    border: 1px solid rgba(255,255,255,0.4);
+    border: 1px solid rgba(255,255,255,0.3);
     padding: 6px 18px;
     border-radius: 30px;
     font-size: 13px;
@@ -292,6 +308,7 @@ a:hover {
     margin-bottom: 8px;
     text-transform: uppercase;
     font-weight: 700;
+    text-shadow: 0 2px 6px rgba(0,0,0,0.3);
 }
 
 .hero-subtitle {
@@ -299,12 +316,13 @@ a:hover {
     font-weight: 400;
     opacity: 0.95;
     margin-bottom: 10px;
+    letter-spacing: 0.5px;
 }
 
 .hero-slogan {
     font-size: 14px;
     font-style: italic;
-    opacity: 0.85;
+    opacity: 0.9;
     max-width: 800px;
     margin: 0 auto 26px;
 }
@@ -355,12 +373,13 @@ a:hover {
 }
 
 .btn-hero-yellow {
-    background-color: #f9ab00;
-    color: #202124;
+    background-color: #fbc02d;
+    color: #0d1442;
 }
 
 .btn-hero-yellow:hover {
-    background-color: #f29900;
+    background-color: #f57f17;
+    color: #ffffff;
     transform: translateY(-2px);
     text-decoration: none;
 }
@@ -397,7 +416,7 @@ a:hover {
 
 .launchpad-card:hover {
     background-color: var(--accent-light);
-    border-color: var(--accent);
+    border-color: var(--primary-light);
     color: var(--primary);
     transform: translateY(-2px);
     box-shadow: var(--shadow-sm);
@@ -588,7 +607,7 @@ a:hover {
 }
 
 .module-card-header {
-    background: linear-gradient(135deg, #b71c1c, #d32f2f);
+    background: linear-gradient(135deg, var(--primary), var(--primary-light));
     color: #ffffff;
     padding: 14px 18px;
     display: flex;
@@ -640,7 +659,7 @@ a:hover {
 }
 
 .module-subitems li i {
-    color: var(--primary);
+    color: var(--accent);
     font-size: 9px;
 }
 
@@ -728,7 +747,7 @@ a:hover {
 
 .delima-table th {
     background-color: #f1f3f4;
-    color: var(--text-dark);
+    color: var(--primary-dark);
     font-weight: 700;
     text-align: left;
     padding: 10px 12px;
@@ -771,7 +790,7 @@ a:hover {
 .badge-primary {
     background-color: var(--accent-light);
     color: var(--primary);
-    border: 1px solid #ffcdd2;
+    border: 1px solid #c5cae9;
 }
 
 .badge-warning {
@@ -859,7 +878,7 @@ textarea.form-control {
 }
 
 .btn-submit {
-    background-color: var(--primary);
+    background: linear-gradient(135deg, var(--primary), var(--accent));
     color: #ffffff;
     border: none;
     padding: 10px 20px;
@@ -872,14 +891,16 @@ textarea.form-control {
     align-items: center;
     gap: 6px;
     transition: var(--transition);
+    box-shadow: 0 2px 6px rgba(26,35,126,0.3);
 }
 
 .btn-submit:hover {
-    background-color: var(--primary-dark);
+    background: linear-gradient(135deg, var(--primary-dark), var(--primary));
+    box-shadow: 0 4px 10px rgba(26,35,126,0.4);
 }
 
 .site-footer {
-    background-color: #202124;
+    background-color: #0d1442;
     color: #ffffff;
     margin-top: auto;
     border-top: 4px solid var(--primary);
@@ -900,14 +921,14 @@ textarea.form-control {
     color: #ffffff;
     margin-bottom: 14px;
     text-transform: uppercase;
-    border-bottom: 2px solid var(--primary);
+    border-bottom: 2px solid var(--accent);
     padding-bottom: 4px;
     display: inline-block;
 }
 
 .footer-col p {
     font-size: 12px;
-    color: #bdc1c6;
+    color: #d2d6e4;
     line-height: 1.5;
     margin-bottom: 10px;
 }
@@ -921,7 +942,7 @@ textarea.form-control {
 }
 
 .footer-links a {
-    color: #bdc1c6;
+    color: #d2d6e4;
     font-size: 12px;
     text-decoration: none;
     transition: var(--transition);
@@ -937,7 +958,7 @@ textarea.form-control {
 }
 
 .footer-bottom {
-    background-color: #17181b;
+    background-color: #080c2b;
     padding: 14px 20px;
     text-align: center;
     font-size: 11px;
@@ -948,7 +969,7 @@ textarea.form-control {
 .modal-overlay {
     position: fixed;
     top: 0; left: 0; right: 0; bottom: 0;
-    background-color: rgba(0,0,0,0.6);
+    background-color: rgba(13,20,66,0.6);
     display: none;
     align-items: center;
     justify-content: center;
@@ -966,7 +987,7 @@ textarea.form-control {
 }
 
 .modal-header {
-    background: linear-gradient(135deg, #b71c1c, #d32f2f);
+    background: linear-gradient(135deg, var(--primary), var(--accent));
     color: #ffffff;
     padding: 14px 18px;
     display: flex;

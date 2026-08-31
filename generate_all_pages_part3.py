@@ -42,8 +42,8 @@ pembudayaan_body = f"""
 
     <!-- Power BI Stats Highlight Grid -->
     <div class="stats-grid">
-        <div class="stat-card" style="border-top: 4px solid #b71c1c;">
-            <div class="stat-icon" style="color: #b71c1c;"><i class="fas fa-trophy"></i></div>
+        <div class="stat-card" style="border-top: 4px solid #1a237e;">
+            <div class="stat-icon" style="color: #1a237e;"><i class="fas fa-trophy"></i></div>
             <div class="stat-number">5 BINTANG</div>
             <div class="stat-label">Penarafan Kendiri Sekolah</div>
             <div class="stat-sub">100.0% Skor Keseluruhan</div>
@@ -298,8 +298,8 @@ pensijilan_body = f"""
             <div class="stat-label">Google Certified Educator L1</div>
             <div class="stat-sub">97.2% Guru Bertauliah</div>
         </div>
-        <div class="stat-card" style="border-top: 4px solid #b71c1c;">
-            <div class="stat-icon" style="color: #b71c1c;"><i class="fas fa-star"></i></div>
+        <div class="stat-card" style="border-top: 4px solid #1a237e;">
+            <div class="stat-icon" style="color: #1a237e;"><i class="fas fa-star"></i></div>
             <div class="stat-number">{stats['gce_lv2']}</div>
             <div class="stat-label">GCE Level 2 (Advanced)</div>
             <div class="stat-sub">19.8% Guru Pakar</div>
@@ -389,11 +389,11 @@ gce_body = f"""
                 <span class="badge badge-success" style="margin-top: 6px;"><i class="fas fa-check"></i> 97.2% Guru AMC</span>
             </div>
 
-            <div style="border: 2px solid #b71c1c; border-radius: 8px; padding: 20px; text-align: center; background: #fff8f8;">
-                <i class="fas fa-star" style="font-size: 40px; color: #b71c1c; margin-bottom: 10px;"></i>
-                <h4 style="color: #b71c1c; margin-top: 0;">GCE LEVEL 2 (ADVANCED)</h4>
+            <div style="border: 2px solid #1a237e; border-radius: 8px; padding: 20px; text-align: center; background: #fff8f8;">
+                <i class="fas fa-star" style="font-size: 40px; color: #1a237e; margin-bottom: 10px;"></i>
+                <h4 style="color: #1a237e; margin-top: 0;">GCE LEVEL 2 (ADVANCED)</h4>
                 <p style="font-size: 13px; color: var(--text-dark); margin-bottom: 12px;">Membuktikan penguasaan pedagogi aras tinggi dan strategi kolaboratif digital lanjutan.</p>
-                <div style="font-family: var(--font-heading); font-size: 24px; font-weight: 700; color: #b71c1c;">{stats['gce_lv2']} ORANG GURU</div>
+                <div style="font-family: var(--font-heading); font-size: 24px; font-weight: 700; color: #1a237e;">{stats['gce_lv2']} ORANG GURU</div>
                 <span class="badge badge-primary" style="margin-top: 6px;"><i class="fas fa-award"></i> 19.8% Guru Pakar</span>
             </div>
 

@@ -30,7 +30,7 @@ function doPost(e) {
         "Keterangan & Maklumat Kontak",
         "Status Tindakan"
       ]);
-      sheet.getRange(1, 1, 1, 8).setFontWeight("bold").setBackground("#b71c1c").setFontColor("#ffffff");
+      sheet.getRange(1, 1, 1, 8).setFontWeight("bold").setBackground("#1a237e").setFontColor("#ffffff");
       sheet.setFrozenRows(1);
     }
 

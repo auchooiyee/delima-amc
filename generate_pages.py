@@ -238,7 +238,7 @@ home_content = f"""
                 </div>
             </a>
             <a href="{SMART_BOOKING_URL}" target="_blank" class="launchpad-card">
-                <div class="launchpad-icon" style="background-color: #d32f2f;"><i class="fas fa-laptop-code"></i></div>
+                <div class="launchpad-icon" style="background-color: #1565c0;"><i class="fas fa-laptop-code"></i></div>
                 <div class="launchpad-info">
                     <h4>Smart Booking</h4>
                     <span>Tempahan Makmal</span>

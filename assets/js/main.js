@@ -91,7 +91,7 @@ document.addEventListener('DOMContentLoaded', () => {
                     'Aduan Berjaya Direkodkan & Dihantar!',
                     `<div style="text-align: center; padding: 10px 0;">
                         <i class="fas fa-check-circle" style="font-size: 48px; color: #1e8e3e; margin-bottom: 14px;"></i>
-                        <h4 style="color: #b71c1c; margin-bottom: 8px;">No. Rujukan Tiket: <strong>${ticketId}</strong></h4>
+                        <h4 style="color: #1a237e; margin-bottom: 8px;">No. Rujukan Tiket: <strong>${ticketId}</strong></h4>
                         <p style="font-size: 14px; margin-bottom: 12px;">Terima kasih <strong>${nama}</strong> (${peranan}). Aduan anda telah direkodkan ke dalam <strong>Google Sheets Rasmi</strong> dan dihantar ke e-mel Admin DELIMa SMJK AMC.</p>
                         
                         <div style="background: #e6f4ea; border: 1px solid #ceead6; border-radius: 8px; padding: 12px; font-size: 13px; text-align: left; margin-bottom: 14px;">
@@ -115,7 +115,7 @@ document.addEventListener('DOMContentLoaded', () => {
                     'Aduan Berjaya Dihantar',
                     `<div style="text-align: center; padding: 10px 0;">
                         <i class="fas fa-check-circle" style="font-size: 48px; color: #1e8e3e; margin-bottom: 14px;"></i>
-                        <h4 style="color: #b71c1c; margin-bottom: 8px;">No. Rujukan Tiket: <strong>${ticketId}</strong></h4>
+                        <h4 style="color: #1a237e; margin-bottom: 8px;">No. Rujukan Tiket: <strong>${ticketId}</strong></h4>
                         <p style="font-size: 14px; margin-bottom: 12px;">Aduan <strong>${nama}</strong> telah dihantar ke Sistem Google Apps Script DELIMa SMJK AMC.</p>
                     </div>`
                 );
@@ -208,7 +208,7 @@ function previewDoc(title, docPath) {
     showModal(
         'Prapapar Dokumen E-Fail DELIMa',
         `<div style="padding: 10px 0;">
-            <h4 style="color: #b71c1c; margin-bottom: 8px;"><i class="fas fa-file-word" style="color: #2b579a;"></i> ${title}</h4>
+            <h4 style="color: #1a237e; margin-bottom: 8px;"><i class="fas fa-file-word" style="color: #2b579a;"></i> ${title}</h4>
             <p style="font-size: 13px; color: #5f6368; margin-bottom: 16px;">Dokumen ini merupakan evidens rasmi dalam Sistem E-Fail DELIMa 2026 SMJK Ave Maria Convent, Ipoh.</p>
             <div style="background: #f8f9fa; border: 1px solid #dadce0; border-radius: 8px; padding: 16px; margin-bottom: 16px;">
                 <p><strong>Lokasi Folder E-Fail:</strong> <code>${docPath}</code></p>
