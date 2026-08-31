@@ -172,7 +172,7 @@ def wrap_html(title, body_content, depth=0, active='utama'):
     <!-- Font Awesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <!-- Custom CSS -->
-    <link rel="stylesheet" href="{p}assets/css/style.css">
+    <link rel="stylesheet" href="{p}assets/css/style.css?v=2.0">
 </head>
 <body>
     {build_nav(depth, active)}
