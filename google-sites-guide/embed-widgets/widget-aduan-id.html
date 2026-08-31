@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="ms">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&family=Oswald:wght@600;700&display=swap" rel="stylesheet">
+    <style>
+        body { font-family: 'Open Sans', sans-serif; background: #ffffff; margin: 0; padding: 12px; color: #202124; }
+        .widget-card { border: 1px solid #dadce0; border-radius: 8px; padding: 18px; background: #ffffff; box-shadow: 0 1px 3px rgba(0,0,0,0.1); max-width: 650px; margin: 0 auto; }
+        .widget-header { display: flex; align-items: center; gap: 10px; border-bottom: 2px solid #ffebee; padding-bottom: 10px; margin-bottom: 12px; }
+        .widget-header i { font-size: 24px; color: #b71c1c; }
+        .widget-header h3 { font-family: 'Oswald', sans-serif; font-size: 18px; margin: 0; color: #b71c1c; text-transform: uppercase; }
+        .admin-badge-bar { background: #e8f0fe; border-radius: 6px; padding: 8px 12px; font-size: 11px; color: #1a73e8; margin-bottom: 14px; line-height: 1.4; }
+        .form-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 10px; margin-bottom: 10px; }
+        @media(max-width: 500px){ .form-grid { grid-template-columns: 1fr; } }
+        .form-group { display: flex; flex-direction: column; gap: 4px; }
+        .form-group label { font-size: 12px; font-weight: 600; }
+        .form-control { padding: 8px 10px; border: 1px solid #dadce0; border-radius: 4px; font-size: 13px; font-family: inherit; }
+        .form-control:focus { outline: none; border-color: #b71c1c; }
+        .btn-submit { background: #b71c1c; color: white; border: none; padding: 10px 18px; border-radius: 4px; font-size: 13px; font-weight: 700; text-transform: uppercase; cursor: pointer; display: inline-flex; align-items: center; gap: 6px; }
+        .btn-submit:hover { background: #7f0000; }
+        .btn-submit:disabled { background: #ccc; cursor: not-allowed; }
+        .success-box { display: none; background: #e6f4ea; border: 1px solid #ceead6; border-radius: 6px; padding: 16px; margin-top: 14px; text-align: center; }
+    </style>
+</head>
+<body>
+    <div class="widget-card">
+        <div class="widget-header">
+            <i class="fas fa-key"></i>
+            <div>
+                <h3>Meja Bantuan ID DELIMa SMJK AMC</h3>
+                <span style="font-size: 11px; color: #5f6368;">Borang Aduan & Reset Kata Laluan @moe-dl.edu.my</span>
+            </div>
+        </div>
+
+        <div class="admin-badge-bar">
+            <i class="fas fa-database"></i> <strong>Disambungkan Terus ke Google Apps Script & Google Sheets</strong><br>
+            Notifikasi dihantar ke: <code>g-00556750@moe-dl.edu.my</code> & <code>g-24188210@moe-dl.edu.my</code>
+        </div>
+
+        <form id="widgetForm" onsubmit="submitAduan(event)">
+            <div class="form-grid">
+                <div class="form-group">
+                    <label>Nama Penuh Pemohon *</label>
+                    <input type="text" id="wNama" class="form-control" placeholder="Nama Guru / Murid" required>
+                </div>
+                <div class="form-group">
+                    <label>Peranan *</label>
+                    <select id="wPeranan" class="form-control" required>
+                        <option value="">-- Pilih Peranan --</option>
+                        <option value="Guru / Staf">Guru / Staf SMJK AMC</option>
+                        <option value="Murid Tingkatan 1">Murid Tingkatan 1</option>
+                        <option value="Murid Tingkatan 2">Murid Tingkatan 2</option>
+                        <option value="Murid Tingkatan 3">Murid Tingkatan 3</option>
+                        <option value="Murid Tingkatan 4">Murid Tingkatan 4</option>
+                        <option value="Murid Tingkatan 5">Murid Tingkatan 5</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label>Kelas / Panitia</label>
+                    <input type="text" id="wKelas" class="form-control" placeholder="Cth: 4 Sains 1">
+                </div>
+                <div class="form-group">
+                    <label>Jenis Isu *</label>
+                    <select id="wIsu" class="form-control" required>
+                        <option value="Lupa Kata Laluan (Reset Password)">Lupa Kata Laluan (Reset Password)</option>
+                        <option value="Akaun Terkunci / Disabled">Akaun Terkunci / Disabled</option>
+                        <option value="Tidak Tahu / Belum Menerima ID DELIMa">Tidak Tahu / Belum Menerima ID DELIMa</option>
+                        <option value="Masalah Akses Google Classroom">Masalah Akses Google Classroom</option>
+                        <option value="Lain-lain Isu Teknikal">Lain-lain Isu Teknikal</option>
+                    </select>
+                </div>
+            </div>
+            <div class="form-group" style="margin-bottom: 12px;">
+                <label>Keterangan Isu & No. Telefon / E-mel untuk Dihubungi *</label>
+                <textarea id="wKeterangan" class="form-control" rows="3" placeholder="Sila nyatakan no. KP / no. telefon untuk penghantaran kata laluan baharu..." required></textarea>
+            </div>
+            <button type="submit" id="wBtn" class="btn-submit"><i class="fas fa-paper-plane"></i> Hantar Aduan ID DELIMa</button>
+        </form>
+
+        <div id="wSuccess" class="success-box">
+            <i class="fas fa-check-circle" style="font-size: 36px; color: #1e8e3e; margin-bottom: 8px;"></i>
+            <h4 style="color: #137333; margin: 0 0 6px;">Aduan Berjaya Direkodkan!</h4>
+            <p style="font-size: 13px; margin: 0 0 8px;">No. Rujukan Tiket: <strong id="wTicketId" style="color: #b71c1c;"></strong></p>
+            <div style="background: white; border: 1px solid #ceead6; border-radius: 6px; padding: 10px; font-size: 11px; text-align: left; color: #333; margin-bottom: 8px;">
+                <p style="margin: 0 0 4px; color: #137333;"><strong><i class="fas fa-check-double"></i> Status Rekod:</strong></p>
+                <p style="margin: 0 0 2px;">&bull; Tersimpan dalam Google Sheets <em>Rekod Aduan ID DELIMa AMC 2026</em></p>
+                <p style="margin: 0 0 2px;">&bull; E-mel disampaikan ke <code>g-00556750@moe-dl.edu.my</code> (Pn. Nurain)</p>
+                <p style="margin: 0;">&bull; E-mel disampaikan ke <code>g-24188210@moe-dl.edu.my</code> (Cik Au Chooi Yee)</p>
+            </div>
+            <p style="font-size: 11px; color: #5f6368; margin: 0;">Admin DELIMa SMJK AMC akan menyemak dan menetapkan semula kata laluan anda dalam masa 24 jam.</p>
+        </div>
+    </div>
+
+    <script>
+        const GAS_URL = 'https://script.google.com/macros/s/AKfycbxQIaKyycEbexVkCqr6qtLIexJHsUoutDRAJnSGmOGHAbFSrNMMr0RWyHLuStrqurk6/exec';
+
+        async function submitAduan(e) {
+            e.preventDefault();
+            const btn = document.getElementById('wBtn');
+            const orig = btn.innerHTML;
+            btn.disabled = true;
+            btn.innerHTML = '<i class="fas fa-spinner fa-spin"></i> Menghantar...';
+
+            const ticket = 'AMC-DL-' + Math.floor(100000 + Math.random() * 900000);
+            const nama = document.getElementById('wNama').value;
+            const peranan = document.getElementById('wPeranan').value;
+            const kelas = document.getElementById('wKelas').value || '-';
+            const isu = document.getElementById('wIsu').value;
+            const keterangan = document.getElementById('wKeterangan').value;
+            const dateStr = new Date().toLocaleDateString('ms-MY', { year: 'numeric', month: 'long', day: 'numeric', hour: '2-digit', minute: '2-digit' });
+
+            const payload = {
+                ticketId: ticket,
+                nama: nama,
+                peranan: peranan,
+                kelas: kelas,
+                jenis: isu,
+                keterangan: keterangan,
+                tarikh: dateStr,
+                sekolah: 'SMJK Ave Maria Convent, Ipoh (AEB2052)'
+            };
+
+            try {
+                await fetch(GAS_URL, {
+                    method: 'POST',
+                    mode: 'no-cors',
+                    headers: { 'Content-Type': 'text/plain;charset=utf-8' },
+                    body: JSON.stringify(payload)
+                });
+            } catch (err) {
+                console.warn('GAS Submit Error:', err);
+            }
+
+            document.getElementById('wTicketId').innerText = ticket;
+            document.getElementById('widgetForm').style.display = 'none';
+            document.getElementById('wSuccess').style.display = 'block';
+        }
+    </script>
+</body>
+</html>

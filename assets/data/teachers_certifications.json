@@ -1,0 +1,859 @@
+{
+  "total_teachers": 106,
+  "stats": {
+    "gce_lv1": 103,
+    "gce_lv2": 21,
+    "gemini": 24,
+    "apple_teacher": 8
+  },
+  "teachers": [
+    {
+      "bil": 1,
+      "name": "TAN PEI NEE",
+      "gce_lv1": true,
+      "gce_lv2": false,
+      "gemini": true,
+      "apple_teacher": false
+    },
+    {
+      "bil": 2,
+      "name": "CHEAH LAY SHYUAN",
+      "gce_lv1": true,
+      "gce_lv2": false,
+      "gemini": false,
+      "apple_teacher": false
+    },
+    {
+      "bil": 3,
+      "name": "YAP YIT YIN",
+      "gce_lv1": true,
+      "gce_lv2": false,
+      "gemini": false,
+      "apple_teacher": false
+    },
+    {
+      "bil": 4,
+      "name": "LAI MEI YENG",
+      "gce_lv1": true,
+      "gce_lv2": false,
+      "gemini": false,
+      "apple_teacher": false
+    },
+    {
+      "bil": 5,
+      "name": "THEAN FUI KEAN",
+      "gce_lv1": true,
+      "gce_lv2": false,
+      "gemini": false,
+      "apple_teacher": false
+    },
+    {
+      "bil": 6,
+      "name": "HEONG WAI SHIAN",
+      "gce_lv1": true,
+      "gce_lv2": false,
+      "gemini": false,
+      "apple_teacher": false
+    },
+    {
+      "bil": 7,
+      "name": "MAH SHEA ING",
+      "gce_lv1": true,
+      "gce_lv2": false,
+      "gemini": false,
+      "apple_teacher": false
+    },
+    {
+      "bil": 8,
+      "name": "JONG SZE WEE",
+      "gce_lv1": true,
+      "gce_lv2": false,
+      "gemini": false,
+      "apple_teacher": false
+    },
+    {
+      "bil": 9,
+      "name": "LYANA A/P BAH MENINYAN",
+      "gce_lv1": true,
+      "gce_lv2": false,
+      "gemini": false,
+      "apple_teacher": false
+    },
+    {
+      "bil": 10,
+      "name": "ANG GUIK HOON",
+      "gce_lv1": true,
+      "gce_lv2": false,
+      "gemini": false,
+      "apple_teacher": false
+    },
+    {
+      "bil": 11,
+      "name": "ARIZA BINTI AHMAD",
+      "gce_lv1": true,
+      "gce_lv2": false,
+      "gemini": false,
+      "apple_teacher": false
+    },
+    {
+      "bil": 12,
+      "name": "ATIKAH BINTI ISMAIL",
+      "gce_lv1": true,
+      "gce_lv2": false,
+      "gemini": false,
+      "apple_teacher": false
+    },
+    {
+      "bil": 13,
+      "name": "AU CHOOI YEE",
+      "gce_lv1": true,
+      "gce_lv2": true,
+      "gemini": true,
+      "apple_teacher": true
+    },
+    {
+      "bil": 14,
+      "name": "CHAN PIK HAR @ TEH PIK HAR",
+      "gce_lv1": true,
+      "gce_lv2": false,
+      "gemini": false,
+      "apple_teacher": false
+    },
+    {
+      "bil": 15,
+      "name": "CHONG MENG HONG",
+      "gce_lv1": true,
+      "gce_lv2": true,
+      "gemini": true,
+      "apple_teacher": false
+    },
+    {
+      "bil": 16,
+      "name": "FAIRUZ NADZIRAH BINTI MOHAMAD IBRAHIM",
+      "gce_lv1": true,
+      "gce_lv2": false,
+      "gemini": false,
+      "apple_teacher": false
+    },
+    {
+      "bil": 17,
+      "name": "FAISYA BINTI MOHD SAAD",
+      "gce_lv1": true,
+      "gce_lv2": false,
+      "gemini": false,
+      "apple_teacher": false
+    },
+    {
+      "bil": 18,
+      "name": "FARAH NOOR AINA SALWA TAJUDDIN",
+      "gce_lv1": true,
+      "gce_lv2": true,
+      "gemini": true,
+      "apple_teacher": true
+    },
+    {
+      "bil": 19,
+      "name": "FARIDAH BINTI MOHAMAD NASIR",
+      "gce_lv1": true,
+      "gce_lv2": false,
+      "gemini": false,
+      "apple_teacher": false
+    },
+    {
+      "bil": 20,
+      "name": "FATIN NADIAH BINTI KHAIRUDDIN",
+      "gce_lv1": true,
+      "gce_lv2": false,
+      "gemini": false,
+      "apple_teacher": false
+    },
+    {
+      "bil": 21,
+      "name": "FONG JEN LIN",
+      "gce_lv1": true,
+      "gce_lv2": true,
+      "gemini": true,
+      "apple_teacher": false
+    },
+    {
+      "bil": 22,
+      "name": "FOON SHWN MEY",
+      "gce_lv1": true,
+      "gce_lv2": false,
+      "gemini": false,
+      "apple_teacher": false
+    },
+    {
+      "bil": 23,
+      "name": "GOH SAW LIN",
+      "gce_lv1": true,
+      "gce_lv2": true,
+      "gemini": true,
+      "apple_teacher": false
+    },
+    {
+      "bil": 24,
+      "name": "GOH WEI WEI",
+      "gce_lv1": true,
+      "gce_lv2": false,
+      "gemini": false,
+      "apple_teacher": false
+    },
+    {
+      "bil": 25,
+      "name": "HALIMATUN SAADIAH BINTI ADNAN",
+      "gce_lv1": true,
+      "gce_lv2": false,
+      "gemini": false,
+      "apple_teacher": false
+    },
+    {
+      "bil": 26,
+      "name": "HEW TIET MIN",
+      "gce_lv1": true,
+      "gce_lv2": false,
+      "gemini": true,
+      "apple_teacher": false
+    },
+    {
+      "bil": 27,
+      "name": "INDRA DEVI A/P SARONGKAPANY",
+      "gce_lv1": true,
+      "gce_lv2": false,
+      "gemini": false,
+      "apple_teacher": false
+    },
+    {
+      "bil": 28,
+      "name": "IRWANIZA BINTI CHE PA",
+      "gce_lv1": true,
+      "gce_lv2": false,
+      "gemini": false,
+      "apple_teacher": false
+    },
+    {
+      "bil": 29,
+      "name": "ISHATUN SHAFIAN BIN ITHNIN @ ABDUL",
+      "gce_lv1": true,
+      "gce_lv2": false,
+      "gemini": false,
+      "apple_teacher": false
+    },
+    {
+      "bil": 30,
+      "name": "JASPREET SINGH VIRK A/L HARJINDER SINGH",
+      "gce_lv1": true,
+      "gce_lv2": false,
+      "gemini": false,
+      "apple_teacher": false
+    },
+    {
+      "bil": 31,
+      "name": "KOO SOK FONG",
+      "gce_lv1": true,
+      "gce_lv2": true,
+      "gemini": true,
+      "apple_teacher": false
+    },
+    {
+      "bil": 32,
+      "name": "KUMUTHAMALAR AP SHANMUGAM",
+      "gce_lv1": true,
+      "gce_lv2": false,
+      "gemini": false,
+      "apple_teacher": false
+    },
+    {
+      "bil": 33,
+      "name": "LEE WAI MUN",
+      "gce_lv1": true,
+      "gce_lv2": false,
+      "gemini": false,
+      "apple_teacher": false
+    },
+    {
+      "bil": 34,
+      "name": "LEONG LOK PING",
+      "gce_lv1": true,
+      "gce_lv2": false,
+      "gemini": false,
+      "apple_teacher": false
+    },
+    {
+      "bil": 35,
+      "name": "LEONG WENG HOE",
+      "gce_lv1": true,
+      "gce_lv2": false,
+      "gemini": false,
+      "apple_teacher": false
+    },
+    {
+      "bil": 36,
+      "name": "LEW SIEW MEI",
+      "gce_lv1": true,
+      "gce_lv2": false,
+      "gemini": false,
+      "apple_teacher": false
+    },
+    {
+      "bil": 37,
+      "name": "LIAN JIA LE",
+      "gce_lv1": true,
+      "gce_lv2": false,
+      "gemini": false,
+      "apple_teacher": false
+    },
+    {
+      "bil": 38,
+      "name": "LILY A/P S. RAJAGOBAL",
+      "gce_lv1": true,
+      "gce_lv2": false,
+      "gemini": false,
+      "apple_teacher": false
+    },
+    {
+      "bil": 39,
+      "name": "LIM CHEE WEI",
+      "gce_lv1": true,
+      "gce_lv2": false,
+      "gemini": false,
+      "apple_teacher": false
+    },
+    {
+      "bil": 40,
+      "name": "LIM SIN PHEY",
+      "gce_lv1": true,
+      "gce_lv2": false,
+      "gemini": false,
+      "apple_teacher": false
+    },
+    {
+      "bil": 41,
+      "name": "LOW CHIU YEN",
+      "gce_lv1": true,
+      "gce_lv2": true,
+      "gemini": false,
+      "apple_teacher": false
+    },
+    {
+      "bil": 42,
+      "name": "MANIMALA A/P SHANMUGAM",
+      "gce_lv1": true,
+      "gce_lv2": false,
+      "gemini": false,
+      "apple_teacher": false
+    },
+    {
+      "bil": 43,
+      "name": "MASNIZA BINTI MOHD YUSOFF",
+      "gce_lv1": true,
+      "gce_lv2": false,
+      "gemini": false,
+      "apple_teacher": false
+    },
+    {
+      "bil": 44,
+      "name": "MICHELE TING MEI LING",
+      "gce_lv1": true,
+      "gce_lv2": false,
+      "gemini": true,
+      "apple_teacher": false
+    },
+    {
+      "bil": 45,
+      "name": "MUHAMMAD IZDHAM BIN ROSZLAN",
+      "gce_lv1": true,
+      "gce_lv2": false,
+      "gemini": false,
+      "apple_teacher": false
+    },
+    {
+      "bil": 46,
+      "name": "MUHAMMAD SAIFUL ZAYANNI BIN ABD RAHMAN",
+      "gce_lv1": true,
+      "gce_lv2": true,
+      "gemini": true,
+      "apple_teacher": false
+    },
+    {
+      "bil": 47,
+      "name": "NAGEINTHINI A/P TEWARAJAN",
+      "gce_lv1": true,
+      "gce_lv2": false,
+      "gemini": true,
+      "apple_teacher": false
+    },
+    {
+      "bil": 48,
+      "name": "NARMATHA A/P SOMASUNDARAM",
+      "gce_lv1": true,
+      "gce_lv2": false,
+      "gemini": false,
+      "apple_teacher": false
+    },
+    {
+      "bil": 49,
+      "name": "NG CHIAH PING",
+      "gce_lv1": true,
+      "gce_lv2": true,
+      "gemini": false,
+      "apple_teacher": false
+    },
+    {
+      "bil": 50,
+      "name": "NIK FAIZATHUL BINTI NIK MAT",
+      "gce_lv1": true,
+      "gce_lv2": false,
+      "gemini": false,
+      "apple_teacher": false
+    },
+    {
+      "bil": 51,
+      "name": "NIK NADHIRAH BINTI NIK KAMARUZAMAN",
+      "gce_lv1": true,
+      "gce_lv2": false,
+      "gemini": true,
+      "apple_teacher": false
+    },
+    {
+      "bil": 52,
+      "name": "NIK ROKISMAH BINTI ABDUL SAMAD",
+      "gce_lv1": true,
+      "gce_lv2": false,
+      "gemini": false,
+      "apple_teacher": false
+    },
+    {
+      "bil": 53,
+      "name": "NISSA NABILA BINTI KAMARUZAMAN",
+      "gce_lv1": true,
+      "gce_lv2": true,
+      "gemini": false,
+      "apple_teacher": false
+    },
+    {
+      "bil": 54,
+      "name": "NOOR IZZATI BINTI MAJID",
+      "gce_lv1": true,
+      "gce_lv2": false,
+      "gemini": true,
+      "apple_teacher": false
+    },
+    {
+      "bil": 55,
+      "name": "NOOR SYAZWANI BINTI MAZELAN",
+      "gce_lv1": true,
+      "gce_lv2": false,
+      "gemini": false,
+      "apple_teacher": false
+    },
+    {
+      "bil": 56,
+      "name": "NOORLIANA BINTI AHMAD",
+      "gce_lv1": true,
+      "gce_lv2": false,
+      "gemini": false,
+      "apple_teacher": false
+    },
+    {
+      "bil": 57,
+      "name": "NOR AREEN BINTI ALIL",
+      "gce_lv1": true,
+      "gce_lv2": false,
+      "gemini": false,
+      "apple_teacher": false
+    },
+    {
+      "bil": 58,
+      "name": "NOR AZIMA BINTI SHAARI",
+      "gce_lv1": true,
+      "gce_lv2": false,
+      "gemini": true,
+      "apple_teacher": false
+    },
+    {
+      "bil": 59,
+      "name": "NOR SABRINA BINTI ABDULLAH",
+      "gce_lv1": true,
+      "gce_lv2": false,
+      "gemini": false,
+      "apple_teacher": false
+    },
+    {
+      "bil": 60,
+      "name": "NOR SYAFIRA BINTI ABDUL RAHMAN",
+      "gce_lv1": true,
+      "gce_lv2": false,
+      "gemini": false,
+      "apple_teacher": false
+    },
+    {
+      "bil": 61,
+      "name": "NORAFIDAH BINTI ZULKIFLI",
+      "gce_lv1": true,
+      "gce_lv2": false,
+      "gemini": false,
+      "apple_teacher": false
+    },
+    {
+      "bil": 62,
+      "name": "NORASIMAH BINTI MOHD ISA",
+      "gce_lv1": true,
+      "gce_lv2": false,
+      "gemini": false,
+      "apple_teacher": false
+    },
+    {
+      "bil": 63,
+      "name": "NUR ADRIANA BINTI HAJI SHAIDAN",
+      "gce_lv1": true,
+      "gce_lv2": true,
+      "gemini": false,
+      "apple_teacher": false
+    },
+    {
+      "bil": 64,
+      "name": "NUR AYU ANISA BINTI MOHAMED FAKHRURAZI",
+      "gce_lv1": true,
+      "gce_lv2": true,
+      "gemini": true,
+      "apple_teacher": false
+    },
+    {
+      "bil": 65,
+      "name": "NUR AZLIN BINTI IBRAHIM",
+      "gce_lv1": true,
+      "gce_lv2": false,
+      "gemini": true,
+      "apple_teacher": false
+    },
+    {
+      "bil": 66,
+      "name": "NUR FARAH AINA BINTI RAZEMI",
+      "gce_lv1": false,
+      "gce_lv2": false,
+      "gemini": false,
+      "apple_teacher": false
+    },
+    {
+      "bil": 67,
+      "name": "NUR FARIHA BINTI MOHAMAD PAUZI",
+      "gce_lv1": true,
+      "gce_lv2": false,
+      "gemini": false,
+      "apple_teacher": false
+    },
+    {
+      "bil": 68,
+      "name": "NUR HAMIMAH BINTI HASSAN",
+      "gce_lv1": true,
+      "gce_lv2": false,
+      "gemini": false,
+      "apple_teacher": false
+    },
+    {
+      "bil": 69,
+      "name": "NUR HIDAYAH BINTI TALIB",
+      "gce_lv1": true,
+      "gce_lv2": false,
+      "gemini": false,
+      "apple_teacher": false
+    },
+    {
+      "bil": 70,
+      "name": "NUR KAMALIA BINTI AHMAD KAMIL",
+      "gce_lv1": true,
+      "gce_lv2": false,
+      "gemini": false,
+      "apple_teacher": false
+    },
+    {
+      "bil": 71,
+      "name": "NURAIN BINTI MD NOR",
+      "gce_lv1": true,
+      "gce_lv2": true,
+      "gemini": true,
+      "apple_teacher": true
+    },
+    {
+      "bil": 72,
+      "name": "NURHANA AFIFA BINTI JAMAL",
+      "gce_lv1": true,
+      "gce_lv2": false,
+      "gemini": false,
+      "apple_teacher": true
+    },
+    {
+      "bil": 73,
+      "name": "NURUL AIN FITRI BINTI MOHD NADZRI",
+      "gce_lv1": false,
+      "gce_lv2": false,
+      "gemini": false,
+      "apple_teacher": false
+    },
+    {
+      "bil": 74,
+      "name": "NURUL'IZZATI BINTI MUSTAPA",
+      "gce_lv1": true,
+      "gce_lv2": false,
+      "gemini": false,
+      "apple_teacher": false
+    },
+    {
+      "bil": 75,
+      "name": "PRIYA A/P PERANCHIS JOSIP",
+      "gce_lv1": true,
+      "gce_lv2": true,
+      "gemini": true,
+      "apple_teacher": true
+    },
+    {
+      "bil": 76,
+      "name": "PUTERI SHAZILA BINTI MIOR BASHAH",
+      "gce_lv1": true,
+      "gce_lv2": true,
+      "gemini": false,
+      "apple_teacher": false
+    },
+    {
+      "bil": 77,
+      "name": "RAFEA'AH BINTI MALEK",
+      "gce_lv1": true,
+      "gce_lv2": false,
+      "gemini": false,
+      "apple_teacher": false
+    },
+    {
+      "bil": 78,
+      "name": "RAMILA BINTI RAMLI",
+      "gce_lv1": true,
+      "gce_lv2": false,
+      "gemini": false,
+      "apple_teacher": false
+    },
+    {
+      "bil": 79,
+      "name": "RANJIDA A/P SHATIASILAN",
+      "gce_lv1": true,
+      "gce_lv2": true,
+      "gemini": true,
+      "apple_teacher": false
+    },
+    {
+      "bil": 80,
+      "name": "ROSFARADILA BINTI AB.RAHIM",
+      "gce_lv1": true,
+      "gce_lv2": false,
+      "gemini": true,
+      "apple_teacher": false
+    },
+    {
+      "bil": 81,
+      "name": "RUBIATULADAWIYAH BINTI ABU BAKAR",
+      "gce_lv1": true,
+      "gce_lv2": false,
+      "gemini": false,
+      "apple_teacher": false
+    },
+    {
+      "bil": 82,
+      "name": "SARASVATHY A/P KRISHNAN",
+      "gce_lv1": true,
+      "gce_lv2": false,
+      "gemini": false,
+      "apple_teacher": false
+    },
+    {
+      "bil": 83,
+      "name": "SARMILA BINTI SARIDIN",
+      "gce_lv1": true,
+      "gce_lv2": false,
+      "gemini": false,
+      "apple_teacher": false
+    },
+    {
+      "bil": 84,
+      "name": "SELAMBU CHELVI A/P CHELAPPAN",
+      "gce_lv1": true,
+      "gce_lv2": false,
+      "gemini": false,
+      "apple_teacher": false
+    },
+    {
+      "bil": 85,
+      "name": "SHAMLAH A/P VISFALINGAM",
+      "gce_lv1": true,
+      "gce_lv2": false,
+      "gemini": false,
+      "apple_teacher": false
+    },
+    {
+      "bil": 86,
+      "name": "SHEENA SIVAKANESAN",
+      "gce_lv1": true,
+      "gce_lv2": false,
+      "gemini": false,
+      "apple_teacher": false
+    },
+    {
+      "bil": 87,
+      "name": "SIEW POOI SEE",
+      "gce_lv1": true,
+      "gce_lv2": false,
+      "gemini": false,
+      "apple_teacher": false
+    },
+    {
+      "bil": 88,
+      "name": "SITI FAIRUZ BINTI AHMAD ZUKHI",
+      "gce_lv1": true,
+      "gce_lv2": false,
+      "gemini": false,
+      "apple_teacher": false
+    },
+    {
+      "bil": 89,
+      "name": "SITI HAJAR BINTI ABDUL RAHIM",
+      "gce_lv1": true,
+      "gce_lv2": false,
+      "gemini": false,
+      "apple_teacher": false
+    },
+    {
+      "bil": 90,
+      "name": "SITI NOORSOLEHAH BINTI ZAKARIA",
+      "gce_lv1": true,
+      "gce_lv2": false,
+      "gemini": false,
+      "apple_teacher": false
+    },
+    {
+      "bil": 91,
+      "name": "SIVAGAAMI A/P THILLAIVANAM",
+      "gce_lv1": true,
+      "gce_lv2": true,
+      "gemini": false,
+      "apple_teacher": false
+    },
+    {
+      "bil": 92,
+      "name": "SOBANA A/P ITHARAJI",
+      "gce_lv1": true,
+      "gce_lv2": false,
+      "gemini": false,
+      "apple_teacher": false
+    },
+    {
+      "bil": 93,
+      "name": "SURIANA BINTI ABDUL RAHMAN",
+      "gce_lv1": true,
+      "gce_lv2": false,
+      "gemini": false,
+      "apple_teacher": false
+    },
+    {
+      "bil": 94,
+      "name": "SYAFIQAH BINTI MOHD RAHIM",
+      "gce_lv1": true,
+      "gce_lv2": true,
+      "gemini": true,
+      "apple_teacher": false
+    },
+    {
+      "bil": 95,
+      "name": "TAN POH HAR",
+      "gce_lv1": true,
+      "gce_lv2": false,
+      "gemini": false,
+      "apple_teacher": false
+    },
+    {
+      "bil": 96,
+      "name": "THAVANESWARRY A/P GANESAN",
+      "gce_lv1": false,
+      "gce_lv2": false,
+      "gemini": false,
+      "apple_teacher": false
+    },
+    {
+      "bil": 97,
+      "name": "UMA DEVI A/P RAMACHANDRAN",
+      "gce_lv1": true,
+      "gce_lv2": false,
+      "gemini": false,
+      "apple_teacher": false
+    },
+    {
+      "bil": 98,
+      "name": "WAN ZURAIDA BINTI MIOR SALLEH",
+      "gce_lv1": true,
+      "gce_lv2": false,
+      "gemini": true,
+      "apple_teacher": false
+    },
+    {
+      "bil": 99,
+      "name": "WONG FONG YEAN",
+      "gce_lv1": true,
+      "gce_lv2": false,
+      "gemini": false,
+      "apple_teacher": false
+    },
+    {
+      "bil": 100,
+      "name": "WONG JI JUN",
+      "gce_lv1": true,
+      "gce_lv2": true,
+      "gemini": false,
+      "apple_teacher": true
+    },
+    {
+      "bil": 101,
+      "name": "WONG JIA HUEY",
+      "gce_lv1": true,
+      "gce_lv2": true,
+      "gemini": true,
+      "apple_teacher": true
+    },
+    {
+      "bil": 102,
+      "name": "WONG WENG HONG",
+      "gce_lv1": true,
+      "gce_lv2": false,
+      "gemini": false,
+      "apple_teacher": false
+    },
+    {
+      "bil": 103,
+      "name": "WOO JIN JIE",
+      "gce_lv1": true,
+      "gce_lv2": false,
+      "gemini": false,
+      "apple_teacher": true
+    },
+    {
+      "bil": 104,
+      "name": "ZALIFAH BINTI ABDUL KHALID",
+      "gce_lv1": true,
+      "gce_lv2": false,
+      "gemini": false,
+      "apple_teacher": false
+    },
+    {
+      "bil": 105,
+      "name": "LEONG VEE BIN",
+      "gce_lv1": true,
+      "gce_lv2": true,
+      "gemini": true,
+      "apple_teacher": false
+    },
+    {
+      "bil": 106,
+      "name": "CHAI YAN NI",
+      "gce_lv1": true,
+      "gce_lv2": false,
+      "gemini": false,
+      "apple_teacher": false
+    }
+  ]
+}

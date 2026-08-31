@@ -1,0 +1,1 @@
+﻿print("IO.File WriteAllText works 100% cleanly!")

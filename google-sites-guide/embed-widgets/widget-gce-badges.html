@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="ms">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@600;700&family=Oswald:wght@700&display=swap" rel="stylesheet">
+    <style>
+        body { font-family: 'Open Sans', sans-serif; background: transparent; margin: 0; padding: 10px; }
+        .badges-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 14px; max-width: 1100px; margin: 0 auto; }
+        .badge-box { background: #ffffff; border-radius: 8px; padding: 18px 14px; text-align: center; border: 1px solid #dadce0; box-shadow: 0 1px 3px rgba(0,0,0,0.1); }
+        .badge-box i { font-size: 32px; margin-bottom: 8px; }
+        .badge-box h4 { font-family: 'Oswald', sans-serif; font-size: 15px; margin: 0 0 6px; text-transform: uppercase; }
+        .badge-count { font-family: 'Oswald', sans-serif; font-size: 24px; font-weight: 700; }
+        .badge-tag { display: inline-block; padding: 2px 8px; border-radius: 4px; font-size: 10px; font-weight: 700; text-transform: uppercase; margin-top: 6px; }
+    </style>
+</head>
+<body>
+    <div class="badges-grid">
+        <div class="badge-box" style="border-top: 4px solid #1a73e8;">
+            <i class="fab fa-google" style="color: #1a73e8;"></i>
+            <h4 style="color: #1a73e8;">Google Educator Level 1</h4>
+            <div class="badge-count" style="color: #1a73e8;">103 ORANG GURU</div>
+            <span class="badge-tag" style="background: #e6f4ea; color: #137333;">97.2% Guru AMC</span>
+        </div>
+        <div class="badge-box" style="border-top: 4px solid #b71c1c;">
+            <i class="fas fa-star" style="color: #b71c1c;"></i>
+            <h4 style="color: #b71c1c;">Google Educator Level 2</h4>
+            <div class="badge-count" style="color: #b71c1c;">21 ORANG GURU</div>
+            <span class="badge-tag" style="background: #ffebee; color: #b71c1c;">19.8% Guru Pakar</span>
+        </div>
+        <div class="badge-box" style="border-top: 4px solid #7b1fa2;">
+            <i class="fas fa-robot" style="color: #7b1fa2;"></i>
+            <h4 style="color: #7b1fa2;">Gemini AI Generatif</h4>
+            <div class="badge-count" style="color: #7b1fa2;">24 ORANG GURU</div>
+            <span class="badge-tag" style="background: #f3e5f5; color: #7b1fa2;">22.6% Guru Inovatif</span>
+        </div>
+        <div class="badge-box" style="border-top: 4px solid #555555;">
+            <i class="fab fa-apple" style="color: #555555;"></i>
+            <h4 style="color: #555555;">Apple Teacher</h4>
+            <div class="badge-count" style="color: #555555;">8 ORANG GURU</div>
+            <span class="badge-tag" style="background: #f1f3f4; color: #3c4043;">7.5% Guru Diperakui</span>
+        </div>
+    </div>
+</body>
+</html>
