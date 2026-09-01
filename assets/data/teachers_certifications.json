@@ -13,851 +13,1275 @@
   "teachers": [
     {
       "bil": 1,
+      "name": "TAN PEI NEE",
       "nama": "TAN PEI NEE",
       "gce_l1": true,
+      "gce_lv1": true,
       "gce_l2": false,
+      "gce_lv2": false,
       "gemini": true,
-      "apple": false
+      "apple": false,
+      "apple_teacher": false
     },
     {
       "bil": 2,
+      "name": "CHEAH LAY SHYUAN",
       "nama": "CHEAH LAY SHYUAN",
       "gce_l1": true,
+      "gce_lv1": true,
       "gce_l2": false,
+      "gce_lv2": false,
       "gemini": false,
-      "apple": false
+      "apple": false,
+      "apple_teacher": false
     },
     {
       "bil": 3,
+      "name": "YAP YIT YIN",
       "nama": "YAP YIT YIN",
       "gce_l1": true,
+      "gce_lv1": true,
       "gce_l2": false,
+      "gce_lv2": false,
       "gemini": false,
-      "apple": false
+      "apple": false,
+      "apple_teacher": false
     },
     {
       "bil": 4,
+      "name": "LAI MEI YENG",
       "nama": "LAI MEI YENG",
       "gce_l1": true,
+      "gce_lv1": true,
       "gce_l2": false,
+      "gce_lv2": false,
       "gemini": false,
-      "apple": false
+      "apple": false,
+      "apple_teacher": false
     },
     {
       "bil": 5,
+      "name": "THEAN FUI KEAN",
       "nama": "THEAN FUI KEAN",
       "gce_l1": true,
+      "gce_lv1": true,
       "gce_l2": false,
+      "gce_lv2": false,
       "gemini": false,
-      "apple": false
+      "apple": false,
+      "apple_teacher": false
     },
     {
       "bil": 6,
+      "name": "HEONG WAI SHIAN",
       "nama": "HEONG WAI SHIAN",
       "gce_l1": true,
+      "gce_lv1": true,
       "gce_l2": false,
+      "gce_lv2": false,
       "gemini": false,
-      "apple": false
+      "apple": false,
+      "apple_teacher": false
     },
     {
       "bil": 7,
+      "name": "MAH SHEA ING",
       "nama": "MAH SHEA ING",
       "gce_l1": true,
+      "gce_lv1": true,
       "gce_l2": false,
+      "gce_lv2": false,
       "gemini": false,
-      "apple": false
+      "apple": false,
+      "apple_teacher": false
     },
     {
       "bil": 8,
+      "name": "JONG SZE WEE",
       "nama": "JONG SZE WEE",
       "gce_l1": true,
+      "gce_lv1": true,
       "gce_l2": false,
+      "gce_lv2": false,
       "gemini": false,
-      "apple": false
+      "apple": false,
+      "apple_teacher": false
     },
     {
       "bil": 9,
+      "name": "LYANA A/P BAH MENINYAN",
       "nama": "LYANA A/P BAH MENINYAN",
       "gce_l1": true,
+      "gce_lv1": true,
       "gce_l2": false,
+      "gce_lv2": false,
       "gemini": false,
-      "apple": false
+      "apple": false,
+      "apple_teacher": false
     },
     {
       "bil": 10,
+      "name": "ANG GUIK HOON",
       "nama": "ANG GUIK HOON",
       "gce_l1": true,
+      "gce_lv1": true,
       "gce_l2": false,
+      "gce_lv2": false,
       "gemini": false,
-      "apple": false
+      "apple": false,
+      "apple_teacher": false
     },
     {
       "bil": 11,
+      "name": "ARIZA BINTI AHMAD",
       "nama": "ARIZA BINTI AHMAD",
       "gce_l1": true,
+      "gce_lv1": true,
       "gce_l2": false,
+      "gce_lv2": false,
       "gemini": false,
-      "apple": false
+      "apple": false,
+      "apple_teacher": false
     },
     {
       "bil": 12,
+      "name": "ATIKAH BINTI ISMAIL",
       "nama": "ATIKAH BINTI ISMAIL",
       "gce_l1": true,
+      "gce_lv1": true,
       "gce_l2": false,
+      "gce_lv2": false,
       "gemini": false,
-      "apple": false
+      "apple": false,
+      "apple_teacher": false
     },
     {
       "bil": 13,
+      "name": "AU CHOOI YEE",
       "nama": "AU CHOOI YEE",
       "gce_l1": true,
+      "gce_lv1": true,
       "gce_l2": true,
+      "gce_lv2": true,
       "gemini": true,
-      "apple": true
+      "apple": true,
+      "apple_teacher": true
     },
     {
       "bil": 14,
+      "name": "CHAN PIK HAR @ TEH PIK HAR",
       "nama": "CHAN PIK HAR @ TEH PIK HAR",
       "gce_l1": true,
+      "gce_lv1": true,
       "gce_l2": false,
+      "gce_lv2": false,
       "gemini": false,
-      "apple": false
+      "apple": false,
+      "apple_teacher": false
     },
     {
       "bil": 15,
+      "name": "CHONG MENG HONG",
       "nama": "CHONG MENG HONG",
       "gce_l1": true,
+      "gce_lv1": true,
       "gce_l2": true,
+      "gce_lv2": true,
       "gemini": true,
-      "apple": false
+      "apple": false,
+      "apple_teacher": false
     },
     {
       "bil": 16,
+      "name": "FAIRUZ NADZIRAH BINTI MOHAMAD IBRAHIM",
       "nama": "FAIRUZ NADZIRAH BINTI MOHAMAD IBRAHIM",
       "gce_l1": true,
+      "gce_lv1": true,
       "gce_l2": false,
+      "gce_lv2": false,
       "gemini": false,
-      "apple": false
+      "apple": false,
+      "apple_teacher": false
     },
     {
       "bil": 17,
+      "name": "FAISYA BINTI MOHD SAAD",
       "nama": "FAISYA BINTI MOHD SAAD",
       "gce_l1": true,
+      "gce_lv1": true,
       "gce_l2": false,
+      "gce_lv2": false,
       "gemini": false,
-      "apple": false
+      "apple": false,
+      "apple_teacher": false
     },
     {
       "bil": 18,
+      "name": "FARAH NOOR AINA SALWA TAJUDDIN",
       "nama": "FARAH NOOR AINA SALWA TAJUDDIN",
       "gce_l1": true,
+      "gce_lv1": true,
       "gce_l2": true,
+      "gce_lv2": true,
       "gemini": true,
-      "apple": true
+      "apple": true,
+      "apple_teacher": true
     },
     {
       "bil": 19,
+      "name": "FARIDAH BINTI MOHAMAD NASIR",
       "nama": "FARIDAH BINTI MOHAMAD NASIR",
       "gce_l1": true,
+      "gce_lv1": true,
       "gce_l2": false,
+      "gce_lv2": false,
       "gemini": false,
-      "apple": false
+      "apple": false,
+      "apple_teacher": false
     },
     {
       "bil": 20,
+      "name": "FATIN NADIAH BINTI KHAIRUDDIN",
       "nama": "FATIN NADIAH BINTI KHAIRUDDIN",
       "gce_l1": true,
+      "gce_lv1": true,
       "gce_l2": false,
+      "gce_lv2": false,
       "gemini": false,
-      "apple": false
+      "apple": false,
+      "apple_teacher": false
     },
     {
       "bil": 21,
+      "name": "FONG JEN LIN",
       "nama": "FONG JEN LIN",
       "gce_l1": true,
+      "gce_lv1": true,
       "gce_l2": true,
+      "gce_lv2": true,
       "gemini": true,
-      "apple": false
+      "apple": false,
+      "apple_teacher": false
     },
     {
       "bil": 22,
+      "name": "FOON SHWN MEY",
       "nama": "FOON SHWN MEY",
       "gce_l1": true,
+      "gce_lv1": true,
       "gce_l2": false,
+      "gce_lv2": false,
       "gemini": false,
-      "apple": false
+      "apple": false,
+      "apple_teacher": false
     },
     {
       "bil": 23,
+      "name": "GOH SAW LIN",
       "nama": "GOH SAW LIN",
       "gce_l1": true,
+      "gce_lv1": true,
       "gce_l2": true,
+      "gce_lv2": true,
       "gemini": true,
-      "apple": false
+      "apple": false,
+      "apple_teacher": false
     },
     {
       "bil": 24,
+      "name": "GOH WEI WEI",
       "nama": "GOH WEI WEI",
       "gce_l1": true,
+      "gce_lv1": true,
       "gce_l2": false,
+      "gce_lv2": false,
       "gemini": false,
-      "apple": false
+      "apple": false,
+      "apple_teacher": false
     },
     {
       "bil": 25,
+      "name": "HALIMATUN SAADIAH BINTI ADNAN",
       "nama": "HALIMATUN SAADIAH BINTI ADNAN",
       "gce_l1": true,
+      "gce_lv1": true,
       "gce_l2": false,
+      "gce_lv2": false,
       "gemini": false,
-      "apple": false
+      "apple": false,
+      "apple_teacher": false
     },
     {
       "bil": 26,
+      "name": "HEW TIET MIN",
       "nama": "HEW TIET MIN",
       "gce_l1": true,
+      "gce_lv1": true,
       "gce_l2": false,
+      "gce_lv2": false,
       "gemini": true,
-      "apple": false
+      "apple": false,
+      "apple_teacher": false
     },
     {
       "bil": 27,
+      "name": "INDRA DEVI A/P SARONGKAPANY",
       "nama": "INDRA DEVI A/P SARONGKAPANY",
       "gce_l1": true,
+      "gce_lv1": true,
       "gce_l2": false,
+      "gce_lv2": false,
       "gemini": false,
-      "apple": false
+      "apple": false,
+      "apple_teacher": false
     },
     {
       "bil": 28,
+      "name": "IRWANIZA BINTI CHE PA",
       "nama": "IRWANIZA BINTI CHE PA",
       "gce_l1": true,
+      "gce_lv1": true,
       "gce_l2": false,
+      "gce_lv2": false,
       "gemini": false,
-      "apple": false
+      "apple": false,
+      "apple_teacher": false
     },
     {
       "bil": 29,
+      "name": "ISHATUN SHAFIAN BIN ITHNIN @ ABDUL",
       "nama": "ISHATUN SHAFIAN BIN ITHNIN @ ABDUL",
       "gce_l1": true,
+      "gce_lv1": true,
       "gce_l2": false,
+      "gce_lv2": false,
       "gemini": false,
-      "apple": false
+      "apple": false,
+      "apple_teacher": false
     },
     {
       "bil": 30,
+      "name": "JASPREET SINGH VIRK A/L HARJINDER SINGH",
       "nama": "JASPREET SINGH VIRK A/L HARJINDER SINGH",
       "gce_l1": true,
+      "gce_lv1": true,
       "gce_l2": false,
+      "gce_lv2": false,
       "gemini": false,
-      "apple": false
+      "apple": false,
+      "apple_teacher": false
     },
     {
       "bil": 31,
+      "name": "KOO SOK FONG",
       "nama": "KOO SOK FONG",
       "gce_l1": true,
+      "gce_lv1": true,
       "gce_l2": true,
+      "gce_lv2": true,
       "gemini": true,
-      "apple": false
+      "apple": false,
+      "apple_teacher": false
     },
     {
       "bil": 32,
+      "name": "KUMUTHAMALAR AP SHANMUGAM",
       "nama": "KUMUTHAMALAR AP SHANMUGAM",
       "gce_l1": true,
+      "gce_lv1": true,
       "gce_l2": false,
+      "gce_lv2": false,
       "gemini": false,
-      "apple": false
+      "apple": false,
+      "apple_teacher": false
     },
     {
       "bil": 33,
+      "name": "LEE WAI MUN",
       "nama": "LEE WAI MUN",
       "gce_l1": true,
+      "gce_lv1": true,
       "gce_l2": false,
+      "gce_lv2": false,
       "gemini": false,
-      "apple": false
+      "apple": false,
+      "apple_teacher": false
     },
     {
       "bil": 34,
+      "name": "LEONG LOK PING",
       "nama": "LEONG LOK PING",
       "gce_l1": true,
+      "gce_lv1": true,
       "gce_l2": false,
+      "gce_lv2": false,
       "gemini": false,
-      "apple": false
+      "apple": false,
+      "apple_teacher": false
     },
     {
       "bil": 35,
+      "name": "LEONG WENG HOE",
       "nama": "LEONG WENG HOE",
       "gce_l1": true,
+      "gce_lv1": true,
       "gce_l2": false,
+      "gce_lv2": false,
       "gemini": false,
-      "apple": false
+      "apple": false,
+      "apple_teacher": false
     },
     {
       "bil": 36,
+      "name": "LEW SIEW MEI",
       "nama": "LEW SIEW MEI",
       "gce_l1": true,
+      "gce_lv1": true,
       "gce_l2": false,
+      "gce_lv2": false,
       "gemini": false,
-      "apple": false
+      "apple": false,
+      "apple_teacher": false
     },
     {
       "bil": 37,
+      "name": "LIAN JIA LE",
       "nama": "LIAN JIA LE",
       "gce_l1": true,
+      "gce_lv1": true,
       "gce_l2": false,
+      "gce_lv2": false,
       "gemini": false,
-      "apple": false
+      "apple": false,
+      "apple_teacher": false
     },
     {
       "bil": 38,
+      "name": "LILY A/P S. RAJAGOBAL",
       "nama": "LILY A/P S. RAJAGOBAL",
       "gce_l1": true,
+      "gce_lv1": true,
       "gce_l2": false,
+      "gce_lv2": false,
       "gemini": false,
-      "apple": false
+      "apple": false,
+      "apple_teacher": false
     },
     {
       "bil": 39,
+      "name": "LIM CHEE WEI",
       "nama": "LIM CHEE WEI",
       "gce_l1": true,
+      "gce_lv1": true,
       "gce_l2": false,
+      "gce_lv2": false,
       "gemini": false,
-      "apple": false
+      "apple": false,
+      "apple_teacher": false
     },
     {
       "bil": 40,
+      "name": "LIM SIN PHEY",
       "nama": "LIM SIN PHEY",
       "gce_l1": true,
+      "gce_lv1": true,
       "gce_l2": false,
+      "gce_lv2": false,
       "gemini": false,
-      "apple": false
+      "apple": false,
+      "apple_teacher": false
     },
     {
       "bil": 41,
+      "name": "LOW CHIU YEN",
       "nama": "LOW CHIU YEN",
       "gce_l1": true,
+      "gce_lv1": true,
       "gce_l2": true,
+      "gce_lv2": true,
       "gemini": false,
-      "apple": false
+      "apple": false,
+      "apple_teacher": false
     },
     {
       "bil": 42,
+      "name": "MANIMALA A/P SHANMUGAM",
       "nama": "MANIMALA A/P SHANMUGAM",
       "gce_l1": true,
+      "gce_lv1": true,
       "gce_l2": false,
+      "gce_lv2": false,
       "gemini": false,
-      "apple": false
+      "apple": false,
+      "apple_teacher": false
     },
     {
       "bil": 43,
+      "name": "MASNIZA BINTI MOHD YUSOFF",
       "nama": "MASNIZA BINTI MOHD YUSOFF",
       "gce_l1": true,
+      "gce_lv1": true,
       "gce_l2": false,
+      "gce_lv2": false,
       "gemini": false,
-      "apple": false
+      "apple": false,
+      "apple_teacher": false
     },
     {
       "bil": 44,
+      "name": "MICHELE TING MEI LING",
       "nama": "MICHELE TING MEI LING",
       "gce_l1": true,
+      "gce_lv1": true,
       "gce_l2": false,
+      "gce_lv2": false,
       "gemini": true,
-      "apple": false
+      "apple": false,
+      "apple_teacher": false
     },
     {
       "bil": 45,
+      "name": "MUHAMMAD IZDHAM BIN ROSZLAN",
       "nama": "MUHAMMAD IZDHAM BIN ROSZLAN",
       "gce_l1": true,
+      "gce_lv1": true,
       "gce_l2": false,
+      "gce_lv2": false,
       "gemini": false,
-      "apple": false
+      "apple": false,
+      "apple_teacher": false
     },
     {
       "bil": 46,
+      "name": "MUHAMMAD SAIFUL ZAYANNI BIN ABD RAHMAN",
       "nama": "MUHAMMAD SAIFUL ZAYANNI BIN ABD RAHMAN",
       "gce_l1": true,
+      "gce_lv1": true,
       "gce_l2": true,
+      "gce_lv2": true,
       "gemini": true,
-      "apple": false
+      "apple": false,
+      "apple_teacher": false
     },
     {
       "bil": 47,
+      "name": "NAGEINTHINI A/P TEWARAJAN",
       "nama": "NAGEINTHINI A/P TEWARAJAN",
       "gce_l1": true,
+      "gce_lv1": true,
       "gce_l2": false,
+      "gce_lv2": false,
       "gemini": true,
-      "apple": false
+      "apple": false,
+      "apple_teacher": false
     },
     {
       "bil": 48,
+      "name": "NARMATHA A/P SOMASUNDARAM",
       "nama": "NARMATHA A/P SOMASUNDARAM",
       "gce_l1": true,
+      "gce_lv1": true,
       "gce_l2": false,
+      "gce_lv2": false,
       "gemini": false,
-      "apple": false
+      "apple": false,
+      "apple_teacher": false
     },
     {
       "bil": 49,
+      "name": "NG CHIAH PING",
       "nama": "NG CHIAH PING",
       "gce_l1": true,
+      "gce_lv1": true,
       "gce_l2": true,
+      "gce_lv2": true,
       "gemini": false,
-      "apple": false
+      "apple": false,
+      "apple_teacher": false
     },
     {
       "bil": 50,
+      "name": "NIK FAIZATHUL BINTI NIK MAT",
       "nama": "NIK FAIZATHUL BINTI NIK MAT",
       "gce_l1": true,
+      "gce_lv1": true,
       "gce_l2": false,
+      "gce_lv2": false,
       "gemini": false,
-      "apple": false
+      "apple": false,
+      "apple_teacher": false
     },
     {
       "bil": 51,
+      "name": "NIK NADHIRAH BINTI NIK KAMARUZAMAN",
       "nama": "NIK NADHIRAH BINTI NIK KAMARUZAMAN",
       "gce_l1": true,
+      "gce_lv1": true,
       "gce_l2": false,
+      "gce_lv2": false,
       "gemini": true,
-      "apple": false
+      "apple": false,
+      "apple_teacher": false
     },
     {
       "bil": 52,
+      "name": "NIK ROKISMAH BINTI ABDUL SAMAD",
       "nama": "NIK ROKISMAH BINTI ABDUL SAMAD",
       "gce_l1": true,
+      "gce_lv1": true,
       "gce_l2": false,
+      "gce_lv2": false,
       "gemini": false,
-      "apple": false
+      "apple": false,
+      "apple_teacher": false
     },
     {
       "bil": 53,
+      "name": "NISSA NABILA BINTI KAMARUZAMAN",
       "nama": "NISSA NABILA BINTI KAMARUZAMAN",
       "gce_l1": true,
+      "gce_lv1": true,
       "gce_l2": true,
+      "gce_lv2": true,
       "gemini": false,
-      "apple": false
+      "apple": false,
+      "apple_teacher": false
     },
     {
       "bil": 54,
+      "name": "NOOR IZZATI BINTI MAJID",
       "nama": "NOOR IZZATI BINTI MAJID",
       "gce_l1": true,
+      "gce_lv1": true,
       "gce_l2": false,
+      "gce_lv2": false,
       "gemini": true,
-      "apple": false
+      "apple": false,
+      "apple_teacher": false
     },
     {
       "bil": 55,
+      "name": "NOOR SYAZWANI BINTI MAZELAN",
       "nama": "NOOR SYAZWANI BINTI MAZELAN",
       "gce_l1": true,
+      "gce_lv1": true,
       "gce_l2": false,
+      "gce_lv2": false,
       "gemini": false,
-      "apple": false
+      "apple": false,
+      "apple_teacher": false
     },
     {
       "bil": 56,
+      "name": "NOORLIANA BINTI AHMAD",
       "nama": "NOORLIANA BINTI AHMAD",
       "gce_l1": true,
+      "gce_lv1": true,
       "gce_l2": false,
+      "gce_lv2": false,
       "gemini": false,
-      "apple": false
+      "apple": false,
+      "apple_teacher": false
     },
     {
       "bil": 57,
+      "name": "NOR AREEN BINTI ALIL",
       "nama": "NOR AREEN BINTI ALIL",
       "gce_l1": true,
+      "gce_lv1": true,
       "gce_l2": false,
+      "gce_lv2": false,
       "gemini": false,
-      "apple": false
+      "apple": false,
+      "apple_teacher": false
     },
     {
       "bil": 58,
+      "name": "NOR AZIMA BINTI SHAARI",
       "nama": "NOR AZIMA BINTI SHAARI",
       "gce_l1": true,
+      "gce_lv1": true,
       "gce_l2": false,
+      "gce_lv2": false,
       "gemini": true,
-      "apple": false
+      "apple": false,
+      "apple_teacher": false
     },
     {
       "bil": 59,
+      "name": "NOR SABRINA BINTI ABDULLAH",
       "nama": "NOR SABRINA BINTI ABDULLAH",
       "gce_l1": true,
+      "gce_lv1": true,
       "gce_l2": false,
+      "gce_lv2": false,
       "gemini": false,
-      "apple": false
+      "apple": false,
+      "apple_teacher": false
     },
     {
       "bil": 60,
+      "name": "NOR SYAFIRA BINTI ABDUL RAHMAN",
       "nama": "NOR SYAFIRA BINTI ABDUL RAHMAN",
       "gce_l1": true,
+      "gce_lv1": true,
       "gce_l2": false,
+      "gce_lv2": false,
       "gemini": false,
-      "apple": false
+      "apple": false,
+      "apple_teacher": false
     },
     {
       "bil": 61,
+      "name": "NORAFIDAH BINTI ZULKIFLI",
       "nama": "NORAFIDAH BINTI ZULKIFLI",
       "gce_l1": true,
+      "gce_lv1": true,
       "gce_l2": false,
+      "gce_lv2": false,
       "gemini": false,
-      "apple": false
+      "apple": false,
+      "apple_teacher": false
     },
     {
       "bil": 62,
+      "name": "NORASIMAH BINTI MOHD ISA",
       "nama": "NORASIMAH BINTI MOHD ISA",
       "gce_l1": true,
+      "gce_lv1": true,
       "gce_l2": false,
+      "gce_lv2": false,
       "gemini": false,
-      "apple": false
+      "apple": false,
+      "apple_teacher": false
     },
     {
       "bil": 63,
+      "name": "NUR ADRIANA BINTI HAJI SHAIDAN",
       "nama": "NUR ADRIANA BINTI HAJI SHAIDAN",
       "gce_l1": true,
+      "gce_lv1": true,
       "gce_l2": true,
+      "gce_lv2": true,
       "gemini": false,
-      "apple": false
+      "apple": false,
+      "apple_teacher": false
     },
     {
       "bil": 64,
+      "name": "NUR AYU ANISA BINTI MOHAMED FAKHRURAZI",
       "nama": "NUR AYU ANISA BINTI MOHAMED FAKHRURAZI",
       "gce_l1": true,
+      "gce_lv1": true,
       "gce_l2": true,
+      "gce_lv2": true,
       "gemini": true,
-      "apple": false
+      "apple": false,
+      "apple_teacher": false
     },
     {
       "bil": 65,
+      "name": "NUR AZLIN BINTI IBRAHIM",
       "nama": "NUR AZLIN BINTI IBRAHIM",
       "gce_l1": true,
+      "gce_lv1": true,
       "gce_l2": false,
+      "gce_lv2": false,
       "gemini": true,
-      "apple": false
+      "apple": false,
+      "apple_teacher": false
     },
     {
       "bil": 66,
+      "name": "NUR FARAH AINA BINTI RAZEMI",
       "nama": "NUR FARAH AINA BINTI RAZEMI",
       "gce_l1": false,
+      "gce_lv1": false,
       "gce_l2": false,
+      "gce_lv2": false,
       "gemini": false,
-      "apple": false
+      "apple": false,
+      "apple_teacher": false
     },
     {
       "bil": 67,
+      "name": "NUR FARIHA BINTI MOHAMAD PAUZI",
       "nama": "NUR FARIHA BINTI MOHAMAD PAUZI",
       "gce_l1": true,
+      "gce_lv1": true,
       "gce_l2": false,
+      "gce_lv2": false,
       "gemini": false,
-      "apple": false
+      "apple": false,
+      "apple_teacher": false
     },
     {
       "bil": 68,
+      "name": "NUR HAMIMAH BINTI HASSAN",
       "nama": "NUR HAMIMAH BINTI HASSAN",
       "gce_l1": true,
+      "gce_lv1": true,
       "gce_l2": false,
+      "gce_lv2": false,
       "gemini": false,
-      "apple": false
+      "apple": false,
+      "apple_teacher": false
     },
     {
       "bil": 69,
+      "name": "NUR HIDAYAH BINTI TALIB",
       "nama": "NUR HIDAYAH BINTI TALIB",
       "gce_l1": true,
+      "gce_lv1": true,
       "gce_l2": false,
+      "gce_lv2": false,
       "gemini": false,
-      "apple": false
+      "apple": false,
+      "apple_teacher": false
     },
     {
       "bil": 70,
+      "name": "NUR KAMALIA BINTI AHMAD KAMIL",
       "nama": "NUR KAMALIA BINTI AHMAD KAMIL",
       "gce_l1": true,
+      "gce_lv1": true,
       "gce_l2": false,
+      "gce_lv2": false,
       "gemini": false,
-      "apple": false
+      "apple": false,
+      "apple_teacher": false
     },
     {
       "bil": 71,
+      "name": "NURAIN BINTI MD NOR",
       "nama": "NURAIN BINTI MD NOR",
       "gce_l1": true,
+      "gce_lv1": true,
       "gce_l2": true,
+      "gce_lv2": true,
       "gemini": true,
-      "apple": true
+      "apple": true,
+      "apple_teacher": true
     },
     {
       "bil": 72,
+      "name": "NURHANA AFIFA BINTI JAMAL",
       "nama": "NURHANA AFIFA BINTI JAMAL",
       "gce_l1": true,
+      "gce_lv1": true,
       "gce_l2": false,
+      "gce_lv2": false,
       "gemini": false,
-      "apple": true
+      "apple": true,
+      "apple_teacher": true
     },
     {
       "bil": 73,
+      "name": "NURUL AIN FITRI BINTI MOHD NADZRI",
       "nama": "NURUL AIN FITRI BINTI MOHD NADZRI",
       "gce_l1": false,
+      "gce_lv1": false,
       "gce_l2": false,
+      "gce_lv2": false,
       "gemini": false,
-      "apple": false
+      "apple": false,
+      "apple_teacher": false
     },
     {
       "bil": 74,
+      "name": "NURUL'IZZATI BINTI MUSTAPA",
       "nama": "NURUL'IZZATI BINTI MUSTAPA",
       "gce_l1": true,
+      "gce_lv1": true,
       "gce_l2": false,
+      "gce_lv2": false,
       "gemini": false,
-      "apple": false
+      "apple": false,
+      "apple_teacher": false
     },
     {
       "bil": 75,
+      "name": "PRIYA A/P PERANCHIS JOSIP",
       "nama": "PRIYA A/P PERANCHIS JOSIP",
       "gce_l1": true,
+      "gce_lv1": true,
       "gce_l2": true,
+      "gce_lv2": true,
       "gemini": true,
-      "apple": true
+      "apple": true,
+      "apple_teacher": true
     },
     {
       "bil": 76,
+      "name": "PUTERI SHAZILA BINTI MIOR BASHAH",
       "nama": "PUTERI SHAZILA BINTI MIOR BASHAH",
       "gce_l1": true,
+      "gce_lv1": true,
       "gce_l2": true,
+      "gce_lv2": true,
       "gemini": false,
-      "apple": false
+      "apple": false,
+      "apple_teacher": false
     },
     {
       "bil": 77,
+      "name": "RAFEA'AH BINTI MALEK",
       "nama": "RAFEA'AH BINTI MALEK",
       "gce_l1": true,
+      "gce_lv1": true,
       "gce_l2": false,
+      "gce_lv2": false,
       "gemini": false,
-      "apple": false
+      "apple": false,
+      "apple_teacher": false
     },
     {
       "bil": 78,
+      "name": "RAMILA BINTI RAMLI",
       "nama": "RAMILA BINTI RAMLI",
       "gce_l1": true,
+      "gce_lv1": true,
       "gce_l2": false,
+      "gce_lv2": false,
       "gemini": false,
-      "apple": false
+      "apple": false,
+      "apple_teacher": false
     },
     {
       "bil": 79,
+      "name": "RANJIDA A/P SHATIASILAN",
       "nama": "RANJIDA A/P SHATIASILAN",
       "gce_l1": true,
+      "gce_lv1": true,
       "gce_l2": true,
+      "gce_lv2": true,
       "gemini": true,
-      "apple": false
+      "apple": false,
+      "apple_teacher": false
     },
     {
       "bil": 80,
+      "name": "ROSFARADILA BINTI AB.RAHIM",
       "nama": "ROSFARADILA BINTI AB.RAHIM",
       "gce_l1": true,
+      "gce_lv1": true,
       "gce_l2": false,
+      "gce_lv2": false,
       "gemini": true,
-      "apple": false
+      "apple": false,
+      "apple_teacher": false
     },
     {
       "bil": 81,
+      "name": "RUBIATULADAWIYAH BINTI ABU BAKAR",
       "nama": "RUBIATULADAWIYAH BINTI ABU BAKAR",
       "gce_l1": true,
+      "gce_lv1": true,
       "gce_l2": false,
+      "gce_lv2": false,
       "gemini": false,
-      "apple": false
+      "apple": false,
+      "apple_teacher": false
     },
     {
       "bil": 82,
+      "name": "SARASVATHY A/P KRISHNAN",
       "nama": "SARASVATHY A/P KRISHNAN",
       "gce_l1": true,
+      "gce_lv1": true,
       "gce_l2": false,
+      "gce_lv2": false,
       "gemini": false,
-      "apple": false
+      "apple": false,
+      "apple_teacher": false
     },
     {
       "bil": 83,
+      "name": "SARMILA BINTI SARIDIN",
       "nama": "SARMILA BINTI SARIDIN",
       "gce_l1": true,
+      "gce_lv1": true,
       "gce_l2": false,
+      "gce_lv2": false,
       "gemini": false,
-      "apple": false
+      "apple": false,
+      "apple_teacher": false
     },
     {
       "bil": 84,
+      "name": "SELAMBU CHELVI A/P CHELAPPAN",
       "nama": "SELAMBU CHELVI A/P CHELAPPAN",
       "gce_l1": true,
+      "gce_lv1": true,
       "gce_l2": false,
+      "gce_lv2": false,
       "gemini": false,
-      "apple": false
+      "apple": false,
+      "apple_teacher": false
     },
     {
       "bil": 85,
+      "name": "SHAMLAH A/P VISFALINGAM",
       "nama": "SHAMLAH A/P VISFALINGAM",
       "gce_l1": true,
+      "gce_lv1": true,
       "gce_l2": false,
+      "gce_lv2": false,
       "gemini": false,
-      "apple": false
+      "apple": false,
+      "apple_teacher": false
     },
     {
       "bil": 86,
+      "name": "SHEENA SIVAKANESAN",
       "nama": "SHEENA SIVAKANESAN",
       "gce_l1": true,
+      "gce_lv1": true,
       "gce_l2": false,
+      "gce_lv2": false,
       "gemini": false,
-      "apple": false
+      "apple": false,
+      "apple_teacher": false
     },
     {
       "bil": 87,
+      "name": "SIEW POOI SEE",
       "nama": "SIEW POOI SEE",
       "gce_l1": true,
+      "gce_lv1": true,
       "gce_l2": false,
+      "gce_lv2": false,
       "gemini": false,
-      "apple": false
+      "apple": false,
+      "apple_teacher": false
     },
     {
       "bil": 88,
+      "name": "SITI FAIRUZ BINTI AHMAD ZUKHI",
       "nama": "SITI FAIRUZ BINTI AHMAD ZUKHI",
       "gce_l1": true,
+      "gce_lv1": true,
       "gce_l2": false,
+      "gce_lv2": false,
       "gemini": false,
-      "apple": false
+      "apple": false,
+      "apple_teacher": false
     },
     {
       "bil": 89,
+      "name": "SITI HAJAR BINTI ABDUL RAHIM",
       "nama": "SITI HAJAR BINTI ABDUL RAHIM",
       "gce_l1": true,
+      "gce_lv1": true,
       "gce_l2": false,
+      "gce_lv2": false,
       "gemini": false,
-      "apple": false
+      "apple": false,
+      "apple_teacher": false
     },
     {
       "bil": 90,
+      "name": "SITI NOORSOLEHAH BINTI ZAKARIA",
       "nama": "SITI NOORSOLEHAH BINTI ZAKARIA",
       "gce_l1": true,
+      "gce_lv1": true,
       "gce_l2": false,
+      "gce_lv2": false,
       "gemini": false,
-      "apple": false
+      "apple": false,
+      "apple_teacher": false
     },
     {
       "bil": 91,
+      "name": "SIVAGAAMI A/P THILLAIVANAM",
       "nama": "SIVAGAAMI A/P THILLAIVANAM",
       "gce_l1": true,
+      "gce_lv1": true,
       "gce_l2": true,
+      "gce_lv2": true,
       "gemini": false,
-      "apple": false
+      "apple": false,
+      "apple_teacher": false
     },
     {
       "bil": 92,
+      "name": "SOBANA A/P ITHARAJI",
       "nama": "SOBANA A/P ITHARAJI",
       "gce_l1": true,
+      "gce_lv1": true,
       "gce_l2": false,
+      "gce_lv2": false,
       "gemini": false,
-      "apple": false
+      "apple": false,
+      "apple_teacher": false
     },
     {
       "bil": 93,
+      "name": "SURIANA BINTI ABDUL RAHMAN",
       "nama": "SURIANA BINTI ABDUL RAHMAN",
       "gce_l1": true,
+      "gce_lv1": true,
       "gce_l2": false,
+      "gce_lv2": false,
       "gemini": false,
-      "apple": false
+      "apple": false,
+      "apple_teacher": false
     },
     {
       "bil": 94,
+      "name": "SYAFIQAH BINTI MOHD RAHIM",
       "nama": "SYAFIQAH BINTI MOHD RAHIM",
       "gce_l1": true,
+      "gce_lv1": true,
       "gce_l2": true,
+      "gce_lv2": true,
       "gemini": true,
-      "apple": false
+      "apple": false,
+      "apple_teacher": false
     },
     {
       "bil": 95,
+      "name": "TAN POH HAR",
       "nama": "TAN POH HAR",
       "gce_l1": true,
+      "gce_lv1": true,
       "gce_l2": false,
+      "gce_lv2": false,
       "gemini": false,
-      "apple": false
+      "apple": false,
+      "apple_teacher": false
     },
     {
       "bil": 96,
+      "name": "THAVANESWARRY A/P GANESAN",
       "nama": "THAVANESWARRY A/P GANESAN",
       "gce_l1": false,
+      "gce_lv1": false,
       "gce_l2": false,
+      "gce_lv2": false,
       "gemini": false,
-      "apple": false
+      "apple": false,
+      "apple_teacher": false
     },
     {
       "bil": 97,
+      "name": "UMA DEVI A/P RAMACHANDRAN",
       "nama": "UMA DEVI A/P RAMACHANDRAN",
       "gce_l1": true,
+      "gce_lv1": true,
       "gce_l2": false,
+      "gce_lv2": false,
       "gemini": false,
-      "apple": false
+      "apple": false,
+      "apple_teacher": false
     },
     {
       "bil": 98,
+      "name": "WAN ZURAIDA BINTI MIOR SALLEH",
       "nama": "WAN ZURAIDA BINTI MIOR SALLEH",
       "gce_l1": true,
+      "gce_lv1": true,
       "gce_l2": false,
+      "gce_lv2": false,
       "gemini": true,
-      "apple": false
+      "apple": false,
+      "apple_teacher": false
     },
     {
       "bil": 99,
+      "name": "WONG FONG YEAN",
       "nama": "WONG FONG YEAN",
       "gce_l1": true,
+      "gce_lv1": true,
       "gce_l2": false,
+      "gce_lv2": false,
       "gemini": false,
-      "apple": false
+      "apple": false,
+      "apple_teacher": false
     },
     {
       "bil": 100,
+      "name": "WONG JI JUN",
       "nama": "WONG JI JUN",
       "gce_l1": true,
+      "gce_lv1": true,
       "gce_l2": true,
+      "gce_lv2": true,
       "gemini": false,
-      "apple": true
+      "apple": true,
+      "apple_teacher": true
     },
     {
       "bil": 101,
+      "name": "WONG JIA HUEY",
       "nama": "WONG JIA HUEY",
       "gce_l1": true,
+      "gce_lv1": true,
       "gce_l2": true,
+      "gce_lv2": true,
       "gemini": true,
-      "apple": true
+      "apple": true,
+      "apple_teacher": true
     },
     {
       "bil": 102,
+      "name": "WONG WENG HONG",
       "nama": "WONG WENG HONG",
       "gce_l1": true,
+      "gce_lv1": true,
       "gce_l2": false,
+      "gce_lv2": false,
       "gemini": false,
-      "apple": false
+      "apple": false,
+      "apple_teacher": false
     },
     {
       "bil": 103,
+      "name": "WOO JIN JIE",
       "nama": "WOO JIN JIE",
       "gce_l1": true,
+      "gce_lv1": true,
       "gce_l2": false,
+      "gce_lv2": false,
       "gemini": false,
-      "apple": true
+      "apple": true,
+      "apple_teacher": true
     },
     {
       "bil": 104,
+      "name": "ZALIFAH BINTI ABDUL KHALID",
       "nama": "ZALIFAH BINTI ABDUL KHALID",
       "gce_l1": true,
+      "gce_lv1": true,
       "gce_l2": false,
+      "gce_lv2": false,
       "gemini": false,
-      "apple": false
+      "apple": false,
+      "apple_teacher": false
     },
     {
       "bil": 105,
+      "name": "LEONG VEE BIN",
       "nama": "LEONG VEE BIN",
       "gce_l1": true,
+      "gce_lv1": true,
       "gce_l2": true,
+      "gce_lv2": true,
       "gemini": true,
-      "apple": false
+      "apple": false,
+      "apple_teacher": false
     },
     {
       "bil": 106,
+      "name": "CHAI YAN NI",
       "nama": "CHAI YAN NI",
       "gce_l1": true,
+      "gce_lv1": true,
       "gce_l2": false,
+      "gce_lv2": false,
       "gemini": false,
-      "apple": false
+      "apple": false,
+      "apple_teacher": false
     }
   ]
 }
