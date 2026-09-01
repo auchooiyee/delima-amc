@@ -127,32 +127,32 @@ promosi_body = f"""
             </thead>
             <tbody>
                 <tr>
-                    <td>Mac 2026</td>
+                    <td><strong>Feb 2026</strong></td>
+                    <td><strong>Pensijilan Google Certified Educator (Level 1)</strong></td>
+                    <td>Semua Guru SMJK AMC (106 Guru)</td>
+                    <td>Cik Au Chooi Yee</td>
+                    <td><button class="btn-card btn-card-drive" onclick="previewDoc('Pensijilan Google Certified Educator (Level 1)', '3.0 PROMOSI/3.2 Latihan/Laporan LADAP Aplikasi DELIMa 2026.docx')">Lihat OPR</button></td>
+                </tr>
+                <tr>
+                    <td><strong>Mac 2026</strong></td>
                     <td><strong>Pelancaran Bulan Pembudayaan DELIMa & Galakan ID Digital</strong></td>
                     <td>Semua Warga Sekolah (1,560 orang)</td>
                     <td>Unit ICT & Penyelaras DELIMa</td>
                     <td><button class="btn-card btn-card-drive" onclick="previewDoc('Laporan Pelancaran Bulan DELIMa', '3.0 PROMOSI/3.1 Promosi/Laporan Bergambar Promosi DELIMa 2026.docx')">Lihat OPR</button></td>
                 </tr>
                 <tr>
-                    <td>Mei 2026</td>
-                    <td><strong>LADAP 1: Bengkel Integrasi Gemini AI & Google Workspace dalam PdP</strong></td>
-                    <td>Semua Guru SMJK AMC (106 Guru)</td>
-                    <td>Cik Au Chooi Yee & Pn. Nurain</td>
-                    <td><button class="btn-card btn-card-drive" onclick="previewDoc('Laporan LADAP Gemini AI', '3.0 PROMOSI/3.2 Latihan/Laporan LADAP Aplikasi DELIMa 2026.docx')">Lihat OPR</button></td>
-                </tr>
-                <tr>
-                    <td>Jun 2026</td>
+                    <td><strong>Jun 2026</strong></td>
                     <td><strong>Bengkel Celik Digital & Keselamatan Siber Murid Tingkatan 1-5</strong></td>
                     <td>Semua Murid AMC</td>
-                    <td>Guru ICT & Sukarelawan MIV</td>
+                    <td>Guru ICT</td>
                     <td><button class="btn-card btn-card-drive" onclick="previewDoc('Laporan Bengkel Literasi Digital Murid', '3.0 PROMOSI/3.2 Latihan/Laporan Bengkel Literasi Digital Murid 2026.docx')">Lihat OPR</button></td>
                 </tr>
                 <tr>
-                    <td>Julai 2026</td>
-                    <td><strong>Klinik Bantuan Pensijilan Google Certified Educator (Level 1 & 2)</strong></td>
-                    <td>Guru Calon GCE</td>
-                    <td>Jurulatih Utama ICT AMC</td>
-                    <td><button class="btn-card btn-card-drive" onclick="previewDoc('Laporan Klinik GCE', '3.0 PROMOSI/3.2 Latihan/Laporan LADAP Aplikasi DELIMa 2026.docx')">Lihat OPR</button></td>
+                    <td><strong>Ogos 2026</strong></td>
+                    <td><strong>Program Latihan Peningkatan Kaedah Pengajaran dan Pembelajaran Berasaskan Kecergasan Buatan (AI)</strong></td>
+                    <td>Semua Guru SMJK AMC (106 Guru)</td>
+                    <td>Cik Au Chooi Yee</td>
+                    <td><button class="btn-card btn-card-drive" onclick="previewDoc('Program Latihan Peningkatan Kaedah Pengajaran dan Pembelajaran Berasaskan Kecergasan Buatan (AI)', '3.0 PROMOSI/3.2 Latihan/Laporan LADAP Aplikasi DELIMa 2026.docx')">Lihat OPR</button></td>
                 </tr>
             </tbody>
         </table>
