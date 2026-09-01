@@ -299,28 +299,28 @@ jadual_body = f"""
             </thead>
             <tbody>
                 <tr>
-                    <td><strong>Makmal Komputer 1</strong></td>
-                    <td>42 buah Komputer PC</td>
-                    <td>Windows 11, Google Chrome, Python IDLE, Canva</td>
+                    <td><strong>Bilik Komputer</strong></td>
+                    <td>48 buah Komputer PC & Projector &Visualiser</td>
+                    <td>Windows 11, Edge, Microsoft Office</td>
                     <td>Cik Au Chooi Yee</td>
                 </tr>
                 <tr>
-                    <td><strong>Makmal Komputer 2</strong></td>
-                    <td>40 buah Komputer PC</td>
+                    <td><strong>Bilik Akses</strong></td>
+                    <td>21 buah Laptop, 20 buah Komputer PC, Projektor & Visualiser</td>
                     <td>Google Workspace for Education, Pelayar DELIMa</td>
-                    <td>Pn. Nurain Binti Md Nor</td>
+                    <td>Pn. Nor Areen Binti Alil</td>
                 </tr>
                 <tr>
-                    <td><strong>Troli Chromebook Bergerak (Cart)</strong></td>
-                    <td>35 buah Google Chromebook</td>
-                    <td>ChromeOS, Akses Pantas Google Classroom</td>
-                    <td>Penyelaras DELIMa</td>
+                    <td><strong>Setiap Kelas</strong></td>
+                    <td>Touchscreen Komputer & Projektor</td>
+                    <td>Windows 11, Edge, Microsoft Office</td>
+                    <td>Penyelaras ICT</td>
                 </tr>
                 <tr>
-                    <td><strong>Bilik Media & Studio Digital</strong></td>
+                    <td><strong>Bilik Tayangan</strong></td>
                     <td>Peranti Rakaman & Skrin Interaktif</td>
                     <td>Webcam HD, Mikrofon Lavalier, Green Screen</td>
-                    <td>AJK ICT & Media</td>
+                    <td>AJK Media</td>
                 </tr>
             </tbody>
         </table>

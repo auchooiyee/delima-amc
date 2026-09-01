@@ -154,24 +154,17 @@ kolaboratif_body = f"""
             </thead>
             <tbody>
                 <tr>
-                    <td><strong>MDEC & BSKK KPM</strong></td>
-                    <td>Program Kesedaran Bakat Digital & STEM</td>
-                    <td>Pendedahan murid kepada bidang Kecerdasan Buatan (AI) & Pengaturcaraan Python.</td>
-                </tr>
-                <tr>
-                    <td><strong>Suruhanjaya Komunikasi & Multimedia (MCMC)</strong></td>
-                    <td>Bengkel Sukarelawan ICT (MIV) & Klik Dengan Bijak</td>
-                    <td>Pemerkasaan literasi keselamatan digital dan pencegahan buli siber di kalangan remaja.</td>
-                </tr>
-                <tr>
-                    <td><strong>Digi Telecommunications</strong></td>
-                    <td>Modul Digi CyberSAFE in Schools</td>
-                    <td>Panduan keselamatan privasi data peribadi dan etika pelayaran internet.</td>
-                </tr>
-                <tr>
                     <td><strong>Google for Education Malaysia</strong></td>
                     <td>Program Pensijilan Google Certified Educator (GCE)</td>
                     <td>Pentauliahan 103 orang guru SMJK AMC dengan sijil profesional Google.</td>
+                </tr>
+                <tr>
+                    <td><strong>Quest International University (QIU)</strong></td>
+                    <td>
+                        • Bengkel Basic Visual Programming using Visual Studio 2022 (9 Mei 2026)<br>
+                        • Bengkel App Development for Beginners (13 Jun 2026)
+                    </td>
+                    <td>Pendedahan murid kepada asas pengaturcaraan visual dan pembangunan aplikasi serta pengukuhan kemahiran digital melalui perkongsian dan bimbingan daripada pakar bidang teknologi dan pengkomputeran.</td>
                 </tr>
             </tbody>
         </table>
@@ -218,33 +211,9 @@ pencapaian_body = f"""
             <tbody>
                 <tr>
                     <td><strong>2026</strong></td>
-                    <td><strong>Penarafan Kendiri DELIMa 5 Bintang KPM</strong></td>
-                    <td>Kebangsaan</td>
-                    <td><span class="badge badge-success"><i class="fas fa-star"></i> 5 BINTANG (100% KPI)</span></td>
-                </tr>
-                <tr>
-                    <td><strong>2026</strong></td>
                     <td><strong>Pentauliahan 100% Guru Digital (GCE / Gemini / Apple)</strong></td>
                     <td>Antarabangsa</td>
                     <td><span class="badge badge-primary"><i class="fas fa-medal"></i> 106 Guru Bertauliah</span></td>
-                </tr>
-                <tr>
-                    <td><strong>2025/2026</strong></td>
-                    <td><strong>Anugerah Pembudayaan Pendigitalan Sekolah Terbaik</strong></td>
-                    <td>Negeri / Kebangsaan</td>
-                    <td><span class="badge badge-success"><i class="fas fa-trophy"></i> Johan</span></td>
-                </tr>
-                <tr>
-                    <td><strong>2024/2025</strong></td>
-                    <td><strong>Penarafan 5 Bintang Smart School Qualification Standards (SSQS)</strong></td>
-                    <td>Kementerian Pendidikan Malaysia</td>
-                    <td><span class="badge badge-success"><i class="fas fa-star"></i> 5 Bintang Cemerlang</span></td>
-                </tr>
-                <tr>
-                    <td><strong>2024</strong></td>
-                    <td><strong>Anugerah Ikon Guru Digital Cemerlang</strong></td>
-                    <td>Negeri</td>
-                    <td><span class="badge badge-primary"><i class="fas fa-user-check"></i> Ikon Guru</span></td>
                 </tr>
             </tbody>
         </table>
