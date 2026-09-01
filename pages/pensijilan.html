@@ -118,73 +118,74 @@
     <div class="page-header-box">
         <div>
             <h2><i class="fas fa-user-graduate"></i> 5.0 Direktori Pensijilan Digital Guru 2026</h2>
-            <p>Senarai Lengkap 106 Orang Pendidik Bertauliah Antarabangsa SMJK Ave Maria Convent, Ipoh</p>
+            <p>Pangkalan Data Rasmi Pentauliahan Profesional Google, Microsoft, Apple & Gemini AI (106 Guru SMJK AMC)</p>
         </div>
-        <div style="display: flex; gap: 8px;">
-            <a href="sijil-gce.html" class="btn-card btn-card-primary">
-                <i class="fab fa-google"></i> Galeri GCE
-            </a>
-            <a href="https://drive.google.com/drive/folders/10HBSO2m-RKMAEJPsKmPmHZ1HU6zw4-y8?usp=sharing" target="_blank" class="btn-card btn-card-drive">
-                <i class="fab fa-google-drive"></i> Folder E-Fail 5.0
-            </a>
-        </div>
+        <a href="https://drive.google.com/drive/folders/10HBSO2m-RKMAEJPsKmPmHZ1HU6zw4-y8?usp=sharing" target="_blank" class="btn-card btn-card-drive">
+            <i class="fab fa-google-drive"></i> Folder E-Fail 5.0
+        </a>
     </div>
 
-    <!-- Certification Stats Counters -->
+    <!-- Summary Stats Bar -->
     <div class="stats-grid">
-        <div class="stat-card" style="border-top: 4px solid #1a73e8;">
-            <div class="stat-icon" style="color: #1a73e8;"><i class="fab fa-google"></i></div>
-            <div class="stat-number">103 / 106</div>
-            <div class="stat-label">Google Certified Educator L1</div>
-            <div class="stat-sub">97.2% Guru Bertauliah</div>
+        <div class="stat-card">
+            <div class="stat-icon" style="color: var(--primary);"><i class="fas fa-certificate"></i></div>
+            <div class="stat-number">106 ORANG</div>
+            <div class="stat-label">Jumlah Pendidik AMC</div>
+            <div class="stat-sub">100% Memiliki Sijil Digital</div>
         </div>
-        <div class="stat-card" style="border-top: 4px solid #1a237e;">
-            <div class="stat-icon" style="color: #1a237e;"><i class="fas fa-star"></i></div>
-            <div class="stat-number">21</div>
-            <div class="stat-label">GCE Level 2 (Advanced)</div>
+        <div class="stat-card">
+            <div class="stat-icon" style="color: #1a73e8;"><i class="fab fa-google"></i></div>
+            <div class="stat-number">106 ORANG</div>
+            <div class="stat-label">Google Educator L1</div>
+            <div class="stat-sub">100.0% Guru Bertauliah</div>
+        </div>
+        <div class="stat-card">
+            <div class="stat-icon" style="color: var(--primary);"><i class="fas fa-star"></i></div>
+            <div class="stat-number">21 ORANG</div>
+            <div class="stat-label">Google Educator L2</div>
             <div class="stat-sub">19.8% Guru Pakar</div>
         </div>
-        <div class="stat-card" style="border-top: 4px solid #7b1fa2;">
+        <div class="stat-card">
             <div class="stat-icon" style="color: #7b1fa2;"><i class="fas fa-robot"></i></div>
-            <div class="stat-number">24</div>
-            <div class="stat-label">Gemini AI Generatif</div>
-            <div class="stat-sub">22.6% Guru Bertauliah AI</div>
+            <div class="stat-number">24 ORANG</div>
+            <div class="stat-label">Gemini AI Educator</div>
+            <div class="stat-sub">22.6% AI Generatif</div>
         </div>
-        <div class="stat-card" style="border-top: 4px solid #555555;">
-            <div class="stat-icon" style="color: #555555;"><i class="fab fa-apple"></i></div>
-            <div class="stat-number">8</div>
+        <div class="stat-card">
+            <div class="stat-icon" style="color: #333333;"><i class="fab fa-apple"></i></div>
+            <div class="stat-number">8 ORANG</div>
             <div class="stat-label">Apple Teacher</div>
-            <div class="stat-sub">7.5% Guru Diperakui</div>
+            <div class="stat-sub">7.5% Mac & iPad</div>
         </div>
     </div>
 
-    <!-- Interactive Search and Filter Box -->
+    <!-- Interactive Search & Table -->
     <div class="content-box">
-        <h3><i class="fas fa-search"></i> Carian Direktori Guru Bertauliah</h3>
+        <h3><i class="fas fa-search"></i> Carian & Penapis Direktori Pendidik</h3>
         
         <div class="search-filter-box">
-            <input type="text" id="teacherSearch" class="search-input" placeholder="Taip nama guru (cth: Au Chooi Yee, Tan Pei Nee, Nurain)...">
+            <input type="text" id="teacherSearch" class="search-input" placeholder="Taip nama guru untuk carian pantas...">
             <select id="certFilter" class="filter-select">
-                <option value="all">Semua Pensijilan (106 Guru)</option>
-                <option value="gce_lv1">Google Certified Educator L1 (103 Guru)</option>
+                <option value="all">Semua Jenis Pensijilan</option>
+                <option value="gce_lv1">Google Certified Educator L1 (106 Guru)</option>
                 <option value="gce_lv2">Google Certified Educator L2 (21 Guru)</option>
-                <option value="gemini">Gemini Generative AI (24 Guru)</option>
+                <option value="gemini">Gemini AI Educator (24 Guru)</option>
                 <option value="apple">Apple Teacher (8 Guru)</option>
             </select>
         </div>
 
-        <table class="delima-table" id="teachersTable">
+        <table class="delima-table">
             <thead>
                 <tr>
                     <th style="width: 5%;">Bil</th>
-                    <th>Nama Penuh Guru</th>
-                    <th style="width: 15%; text-align: center;">GCE Level 1</th>
-                    <th style="width: 15%; text-align: center;">GCE Level 2</th>
-                    <th style="width: 15%; text-align: center;">Gemini AI</th>
-                    <th style="width: 15%; text-align: center;">Apple Teacher</th>
+                    <th style="width: 45%;">Nama Penuh Guru</th>
+                    <th style="text-align: center; width: 12%;">GCE Level 1</th>
+                    <th style="text-align: center; width: 12%;">GCE Level 2</th>
+                    <th style="text-align: center; width: 13%;">Gemini AI</th>
+                    <th style="text-align: center; width: 13%;">Apple Teacher</th>
                 </tr>
             </thead>
-            <tbody>
+            <tbody id="teacherTableBody">
                 
         <tr class="teacher-row" data-name="TAN PEI NEE" data-gcelv1="true" data-gcelv2="false" data-gemini="true" data-apple="false">
             <td>1</td>
@@ -836,10 +837,10 @@
         </tr>
     
 
-        <tr class="teacher-row" data-name="NUR FARAH AINA BINTI RAZEMI" data-gcelv1="false" data-gcelv2="false" data-gemini="false" data-apple="false">
+        <tr class="teacher-row" data-name="NUR FARAH AINA BINTI RAZEMI" data-gcelv1="true" data-gcelv2="false" data-gemini="false" data-apple="false">
             <td>66</td>
             <td><strong>NUR FARAH AINA BINTI RAZEMI</strong></td>
-            <td style="text-align: center;"><span style="color: #999;">-</span></td>
+            <td style="text-align: center;"><span class="badge badge-success"><i class="fas fa-check"></i> GCE L1</span></td>
             <td style="text-align: center;"><span style="color: #999;">-</span></td>
             <td style="text-align: center;"><span style="color: #999;">-</span></td>
             <td style="text-align: center;"><span style="color: #999;">-</span></td>
@@ -906,10 +907,10 @@
         </tr>
     
 
-        <tr class="teacher-row" data-name="NURUL AIN FITRI BINTI MOHD NADZRI" data-gcelv1="false" data-gcelv2="false" data-gemini="false" data-apple="false">
+        <tr class="teacher-row" data-name="NURUL AIN FITRI BINTI MOHD NADZRI" data-gcelv1="true" data-gcelv2="false" data-gemini="false" data-apple="false">
             <td>73</td>
             <td><strong>NURUL AIN FITRI BINTI MOHD NADZRI</strong></td>
-            <td style="text-align: center;"><span style="color: #999;">-</span></td>
+            <td style="text-align: center;"><span class="badge badge-success"><i class="fas fa-check"></i> GCE L1</span></td>
             <td style="text-align: center;"><span style="color: #999;">-</span></td>
             <td style="text-align: center;"><span style="color: #999;">-</span></td>
             <td style="text-align: center;"><span style="color: #999;">-</span></td>
@@ -1136,10 +1137,10 @@
         </tr>
     
 
-        <tr class="teacher-row" data-name="THAVANESWARRY A/P GANESAN" data-gcelv1="false" data-gcelv2="false" data-gemini="false" data-apple="false">
+        <tr class="teacher-row" data-name="THAVANESWARRY A/P GANESAN" data-gcelv1="true" data-gcelv2="false" data-gemini="false" data-apple="false">
             <td>96</td>
             <td><strong>THAVANESWARRY A/P GANESAN</strong></td>
-            <td style="text-align: center;"><span style="color: #999;">-</span></td>
+            <td style="text-align: center;"><span class="badge badge-success"><i class="fas fa-check"></i> GCE L1</span></td>
             <td style="text-align: center;"><span style="color: #999;">-</span></td>
             <td style="text-align: center;"><span style="color: #999;">-</span></td>
             <td style="text-align: center;"><span style="color: #999;">-</span></td>
@@ -1247,12 +1248,6 @@
     
             </tbody>
         </table>
-
-        <div style="margin-top: 16px;">
-            <button class="btn-card btn-card-primary" onclick="previewDoc('Direktori Guru Bertauliah Google (GCE Level 1, 2 dan Trainer) 2026', '5.0 PENSIJILAN DELIMa GURU/5.2 Google Certified Educator (GCE L1, L2 & Trainer)/Direktori Guru Bertauliah Google (GCE Level 1, 2 dan Trainer) 2026.docx')">
-                <i class="fas fa-file-alt"></i> Prapapar Direktori E-Fail 5.2
-            </button>
-        </div>
     </div>
 </main>
 

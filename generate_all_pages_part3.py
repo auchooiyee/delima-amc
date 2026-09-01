@@ -7,150 +7,106 @@ SMJK Ave Maria Convent, Ipoh (AEB2052)
 import os
 import json
 
-# Load teacher data
-teachers_info = {}
-if os.path.exists('assets/data/teachers_certifications.json'):
-    with open('assets/data/teachers_certifications.json', 'r', encoding='utf-8') as f:
-        teachers_info = json.load(f)
-
-teachers = teachers_info.get('teachers', [])
-stats = teachers_info.get('stats', {'gce_lv1': 103, 'gce_lv2': 21, 'gemini': 24, 'apple_teacher': 8})
-total_teachers = teachers_info.get('total_teachers', 106)
-
 DRIVE_URL = "https://drive.google.com/drive/folders/10HBSO2m-RKMAEJPsKmPmHZ1HU6zw4-y8?usp=sharing"
-SMART_BOOKING_URL = "https://sites.google.com/moe-dl.edu.my/amc-smart-booking-ver1/laman-utama"
 
 from generate_pages import wrap_html
 from generate_all_pages import get_breadcrumbs
 
+# Load teacher data
+with open('assets/data/teachers_certifications.json', 'r', encoding='utf-8') as f:
+    teachers_info = json.load(f)
+
+teachers = teachers_info.get('teachers', [])
+
 # ------------------------------------------------------------------------------
-# 9. PEMBUDAYAAN (pages/pembudayaan.html)
+# 9. PEMBUDAYAAN DELIMA (pages/pembudayaan.html)
 # ------------------------------------------------------------------------------
 pembudayaan_body = f"""
 <main class="main-wrapper">
-    {get_breadcrumbs("Analisis Pembudayaan DELIMa", "2.0 Pembudayaan", "pembudayaan.html")}
+    {get_breadcrumbs("Pembudayaan DELIMa", "2.0 Pembudayaan", "pembudayaan.html")}
     
     <div class="page-header-box">
         <div>
-            <h2><i class="fas fa-chart-line"></i> 2.0 Pembudayaan DELIMa & Audit KPI KPM</h2>
-            <p>Laporan Analisis Data Keaktifan Penggunaan Berdasarkan Dashboard Microsoft Power BI Rasmi KPM</p>
+            <h2><i class="fas fa-chart-line"></i> 2.0 Pembudayaan DELIMa Sekolah</h2>
+            <p>Analisis Data Penggunaan, KPI Penarafan Kendiri 5 Bintang KPM & Pelan Pembudayaan Digital 2026</p>
         </div>
         <a href="{DRIVE_URL}" target="_blank" class="btn-card btn-card-drive">
             <i class="fab fa-google-drive"></i> Folder E-Fail 2.0
         </a>
     </div>
 
-    <!-- Power BI Stats Highlight Grid -->
-    <div class="stats-grid">
-        <div class="stat-card" style="border-top: 4px solid #1a237e;">
-            <div class="stat-icon" style="color: #1a237e;"><i class="fas fa-trophy"></i></div>
-            <div class="stat-number">5 BINTANG</div>
-            <div class="stat-label">Penarafan Kendiri Sekolah</div>
-            <div class="stat-sub">100.0% Skor Keseluruhan</div>
-        </div>
-        <div class="stat-card" style="border-top: 4px solid #1a73e8;">
-            <div class="stat-icon" style="color: #1a73e8;"><i class="fas fa-chalkboard-teacher"></i></div>
-            <div class="stat-number">93.0%</div>
-            <div class="stat-label">Keaktifan Guru (Bulanan)</div>
-            <div class="stat-sub">100 / 107 Guru Aktif</div>
-        </div>
-        <div class="stat-card" style="border-top: 4px solid #1e8e3e;">
-            <div class="stat-icon" style="color: #1e8e3e;"><i class="fas fa-user-graduate"></i></div>
-            <div class="stat-number">100.0%</div>
-            <div class="stat-label">Keaktifan Murid (Bulanan)</div>
-            <div class="stat-sub">1,453 / 1,453 Murid Aktif</div>
-        </div>
-        <div class="stat-card" style="border-top: 4px solid #f9ab00;">
-            <div class="stat-icon" style="color: #f9ab00;"><i class="fas fa-users"></i></div>
-            <div class="stat-number">1,560</div>
-            <div class="stat-label">Jumlah Pengguna Aktif</div>
-            <div class="stat-sub">Google Workspace for EDU</div>
-        </div>
-    </div>
-
+    <!-- KPI Summary Card -->
     <div class="content-box">
-        <h3><i class="fas fa-tachometer-alt"></i> Rumusan Indikator Penggunaan (Data Audit KPM 04/08/2026)</h3>
+        <h3><i class="fas fa-trophy"></i> Skor Penarafan Kendiri DELIMa KPM 2026</h3>
+        <p style="font-size: 13px; color: var(--text-muted); margin-bottom: 16px;">
+            Berdasarkan data analitik rasmi Kementerian Pendidikan Malaysia (KPM) sesi Ogos 2026, SMJK Ave Maria Convent telah mencapai penarafan <strong>5 BINTANG</strong> dengan purata penggunaan murid 100% dan guru 93.0%.
+        </p>
+
         <table class="delima-table">
             <thead>
                 <tr>
-                    <th>Parameter Penilaian</th>
-                    <th>Sasaran KPI KPM</th>
+                    <th>Indikator Prestasi Utama (KPI)</th>
+                    <th>Sasaran KPM</th>
                     <th>Pencapaian SMJK AMC</th>
-                    <th>Status Gred</th>
+                    <th>Status Penarafan</th>
                 </tr>
             </thead>
             <tbody>
                 <tr>
+                    <td><strong>Peratus Keaktifan Murid (Log Masuk)</strong></td>
+                    <td>80.0%</td>
+                    <td><strong>100.0%</strong> (1,453 / 1,453 murid)</td>
+                    <td><span class="badge badge-success"><i class="fas fa-check"></i> Cemerlang</span></td>
+                </tr>
+                <tr>
                     <td><strong>Peratus Keaktifan Guru</strong></td>
-                    <td>Minimum 80.0%</td>
-                    <td><strong>93.0%</strong> (100 daripada 107 guru aktif log masuk)</td>
-                    <td><span class="badge badge-success"><i class="fas fa-check"></i> Cemerlang (5 Bintang)</span></td>
+                    <td>85.0%</td>
+                    <td><strong>93.0%</strong> (100 / 107 guru aktif)</td>
+                    <td><span class="badge badge-success"><i class="fas fa-check"></i> Cemerlang</span></td>
                 </tr>
                 <tr>
-                    <td><strong>Peratus Keaktifan Murid</strong></td>
-                    <td>Minimum 70.0%</td>
-                    <td><strong>100.0%</strong> (1,453 daripada 1,453 murid aktif log masuk)</td>
-                    <td><span class="badge badge-success"><i class="fas fa-check"></i> Cemerlang (5 Bintang)</span></td>
+                    <td><strong>Penggunaan Aplikasi Google Workspace</strong></td>
+                    <td>60.0%</td>
+                    <td><strong>100.0%</strong> (1,560 pengguna aktif)</td>
+                    <td><span class="badge badge-success"><i class="fas fa-check"></i> Cemerlang</span></td>
                 </tr>
                 <tr>
-                    <td><strong>Peratus Penggunaan Keseluruhan</strong></td>
-                    <td>Minimum 75.0%</td>
-                    <td><strong>100.0%</strong> (1,560 pengguna aktif warga sekolah)</td>
-                    <td><span class="badge badge-success"><i class="fas fa-trophy"></i> Penarafan Tertinggi</span></td>
+                    <td><strong>Penggunaan Google Classroom (PdP Maya)</strong></td>
+                    <td>50.0%</td>
+                    <td><strong>90.5%</strong> (96 kelas aktif mingguan)</td>
+                    <td><span class="badge badge-success"><i class="fas fa-check"></i> Cemerlang</span></td>
                 </tr>
-                <tr>
-                    <td><strong>Pengguna Google Apps & Drive</strong></td>
-                    <td>Penggunaan Aktif</td>
-                    <td><strong>1,560 orang</strong> menggunakan dokumen awan</td>
-                    <td><span class="badge badge-info"><i class="fas fa-cloud"></i> Menyeluruh</span></td>
-                </tr>
-                <tr>
-                    <td><strong>Pengguna Google Classroom</strong></td>
-                    <td>PdP Guru</td>
-                    <td><strong>96 orang guru</strong> aktif mengendalikan bilik darjah digital</td>
-                    <td><span class="badge badge-success"><i class="fas fa-laptop"></i> 89.7% Guru</span></td>
+                <tr style="background: #e8eaf6; font-weight: 700;">
+                    <td>PENARAFAN KESELURUHAN SEKOLAH</td>
+                    <td>4 Bintang</td>
+                    <td><strong>5 BINTANG (100% KPI MAKSIMUM)</strong></td>
+                    <td><span class="badge badge-success" style="font-size: 12px; padding: 4px 10px;"><i class="fas fa-star"></i> 5 BINTANG</span></td>
                 </tr>
             </tbody>
         </table>
-    </div>
 
-    <div class="content-box">
-        <h3><i class="fas fa-file-alt"></i> Dokumen Bukti & Laporan Analisis E-Fail 2.0</h3>
-        <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 14px; margin-top: 12px;">
-            <div style="background: #f8f9fa; border: 1px solid var(--border-color); padding: 14px; border-radius: 6px;">
-                <h4 style="margin: 0 0 6px; font-size: 14px;"><i class="fas fa-file-word" style="color: #2b579a;"></i> 2.1 Analisis Penggunaan Guru</h4>
-                <p style="font-size: 12px; color: var(--text-muted); margin-bottom: 10px;">Laporan terperinci log masuk guru mengikut panitia mata pelajaran.</p>
-                <button class="btn-card btn-card-primary" onclick="previewDoc('Laporan Analisis Penggunaan DELIMa Guru 2026', '2.0 PEMBUDAYAAN DELIMa/2.1 Peratus Penggunaan Guru/Laporan Analisis Penggunaan DELIMa Guru 2026.docx')">Prapapar Laporan</button>
-            </div>
-            <div style="background: #f8f9fa; border: 1px solid var(--border-color); padding: 14px; border-radius: 6px;">
-                <h4 style="margin: 0 0 6px; font-size: 14px;"><i class="fas fa-file-word" style="color: #2b579a;"></i> 2.2 Analisis Penggunaan Murid</h4>
-                <p style="font-size: 12px; color: var(--text-muted); margin-bottom: 10px;">Laporan log masuk 1,453 murid Tingkatan 1 hingga Tingkatan 5.</p>
-                <button class="btn-card btn-card-primary" onclick="previewDoc('Laporan Analisis Penggunaan DELIMa Murid 2026', '2.0 PEMBUDAYAAN DELIMa/2.2 Peratus Penggunaan Murid/Laporan Analisis Penggunaan DELIMa Murid 2026.docx')">Prapapar Laporan</button>
-            </div>
-            <div style="background: #f8f9fa; border: 1px solid var(--border-color); padding: 14px; border-radius: 6px;">
-                <h4 style="margin: 0 0 6px; font-size: 14px;"><i class="fas fa-file-word" style="color: #2b579a;"></i> 2.3 Rumusan KPI Keseluruhan</h4>
-                <p style="font-size: 12px; color: var(--text-muted); margin-bottom: 10px;">Laporan Penarafan 5 Bintang Kendiri Sekolah Sesi 2026.</p>
-                <button class="btn-card btn-card-primary" onclick="previewDoc('Laporan Pencapaian KPI Penggunaan DELIMa Keseluruhan Sekolah 2026', '2.0 PEMBUDAYAAN DELIMa/2.3 Peratus Keseluruhan Sekolah/Laporan Pencapaian KPI Penggunaan DELIMa Keseluruhan Sekolah 2026.docx')">Prapapar Laporan</button>
-            </div>
+        <div style="margin-top: 16px;">
+            <button class="btn-card btn-card-primary" onclick="previewDoc('Analisis Tahap Penggunaan DELIMa Warga Sekolah (Dashboard KPM) 2026', '2.0 PEMBUDAYAAN DELIMA/2.1 Analisis Penggunaan/Analisis Tahap Penggunaan DELIMa Warga Sekolah (Dashboard KPM).docx')">
+                <i class="fas fa-file-alt"></i> Prapapar Laporan Analisis
+            </button>
         </div>
     </div>
 </main>
 """
 with open('pages/pembudayaan.html', 'w', encoding='utf-8') as f:
     f.write(wrap_html("Pembudayaan DELIMa", pembudayaan_body, depth=1, active='pembudayaan'))
-print("Saved pages/pembudayaan.html")
 
 # ------------------------------------------------------------------------------
 # 10. PROMOSI & LATIHAN (pages/promosi.html)
 # ------------------------------------------------------------------------------
 promosi_body = f"""
 <main class="main-wrapper">
-    {get_breadcrumbs("Promosi & Latihan (LADAP)", "3.0 Promosi", "promosi.html")}
+    {get_breadcrumbs("Promosi & Latihan", "2.0 Pembudayaan", "promosi.html")}
     
     <div class="page-header-box">
         <div>
             <h2><i class="fas fa-bullhorn"></i> 3.0 Promosi & Latihan Pembudayaan DELIMa</h2>
-            <p>Aktiviti Kesedaran Digital, Latihan Dalam Perkhidmatan (LADAP), Sudut DELIMa & Pertandingan Murid</p>
+            <p>Aktiviti Pelancaran Bulan DELIMa, Kursus Latihan Dalam Perkhidmatan (LADAP) & Bengkel Literasi Digital Murid</p>
         </div>
         <a href="{DRIVE_URL}" target="_blank" class="btn-card btn-card-drive">
             <i class="fab fa-google-drive"></i> Folder E-Fail 3.0
@@ -158,56 +114,65 @@ promosi_body = f"""
     </div>
 
     <div class="content-box">
-        <h3><i class="fas fa-chalkboard-teacher"></i> Inisiatif Promosi & Latihan Sesi 2026</h3>
-        <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 16px; margin-top: 14px;">
-            <div style="background: #ffffff; border: 1px solid var(--border-color); border-radius: 8px; padding: 16px;">
-                <h4 style="color: var(--primary); margin-top: 0;"><i class="fas fa-flag"></i> 3.1 Pelancaran Bulan DELIMa</h4>
-                <p style="font-size: 13px; color: var(--text-muted);">Pelancaran rasmi oleh Pengetua Pn. Tan Pei Nee dalam perhimpunan rasmi sekolah & edaran infografik log masuk ke saluran Telegram rasmi murid dan ibu bapa.</p>
-                <button class="btn-card btn-card-primary" onclick="previewDoc('Laporan Promosi dan Pelancaran Bulan DELIMa 2026', '3.0 PROMOSI/3.1 Promosi & Pelancaran DELIMa/Laporan Promosi dan Pelancaran Bulan DELIMa 2026.docx')">Lihat Laporan</button>
-            </div>
-            
-            <div style="background: #ffffff; border: 1px solid var(--border-color); border-radius: 8px; padding: 16px;">
-                <h4 style="color: var(--primary); margin-top: 0;"><i class="fas fa-user-graduate"></i> 3.2 Kursus LADAP Guru</h4>
-                <p style="font-size: 13px; color: var(--text-muted);">Bengkel AI Generatif (Google Gemini), Google Classroom & Canva for Education yang dikendalikan oleh Cik Au Chooi Yee untuk 106 orang guru.</p>
-                <button class="btn-card btn-card-primary" onclick="previewDoc('Dokumentasi Kursus Dalaman Guru (LADAP DELIMa) 2026', '3.0 PROMOSI/3.2 Kursus Dalaman Guru (LADAP)/Dokumentasi Kursus Dalaman Guru (LADAP DELIMa) 2026.docx')">Lihat Laporan</button>
-            </div>
-
-            <div style="background: #ffffff; border: 1px solid var(--border-color); border-radius: 8px; padding: 16px;">
-                <h4 style="color: var(--primary); margin-top: 0;"><i class="fas fa-laptop-code"></i> 3.3 Bengkel Celik Digital Murid</h4>
-                <p style="font-size: 13px; color: var(--text-muted);">Latihan berstruktur celik digital, keselamatan siber (CyberSAFE) dan penggunaan alatan pembelajaran Google untuk murid Tingkatan 1 - 5.</p>
-                <button class="btn-card btn-card-primary" onclick="previewDoc('Modul dan Laporan Bengkel Celik Digital Murid 2026', '3.0 PROMOSI/3.3 Aktiviti & Kursus Murid/Modul dan Laporan Bengkel Celik Digital Murid 2026.docx')">Lihat Laporan</button>
-            </div>
-
-            <div style="background: #ffffff; border: 1px solid var(--border-color); border-radius: 8px; padding: 16px;">
-                <h4 style="color: var(--primary); margin-top: 0;"><i class="fas fa-tv"></i> 3.4 Sudut & Bilik DELIMa</h4>
-                <p style="font-size: 13px; color: var(--text-muted);">Penyediaan papan kenyataan berinfografik, QR Code Meja Bantuan ID dan Bilik Khas Studio Digital SMJK Ave Maria Convent.</p>
-                <button class="btn-card btn-card-primary" onclick="previewDoc('Dokumentasi Sudut dan Bilik DELIMa SMJK Ave Maria Convent 2026', '3.0 PROMOSI/3.4 Papan Kenyataan, Sudut & Bilik DELIMa/Dokumentasi Sudut dan Bilik DELIMa SMJK Ave Maria Convent 2026.docx')">Lihat Laporan</button>
-            </div>
-
-            <div style="background: #ffffff; border: 1px solid var(--border-color); border-radius: 8px; padding: 16px;">
-                <h4 style="color: var(--primary); margin-top: 0;"><i class="fas fa-trophy"></i> 3.5 Pertandingan Digital</h4>
-                <p style="font-size: 13px; color: var(--text-muted);">Pertandingan mereka bentuk poster Canva, video kreatif TikTok/YouTube ilmiah dan cabaran kuiz interaktif sempena Bulan ICT.</p>
-                <button class="btn-card btn-card-primary" onclick="previewDoc('Kertas Kerja Pertandingan Kreativiti Digital Murid 2026', '3.0 PROMOSI/3.5 Pertandingan Berkaitan DELIMa/Kertas Kerja Pertandingan Kreativiti Digital Murid 2026.docx')">Lihat Kertas Kerja</button>
-            </div>
-        </div>
+        <h3><i class="fas fa-chalkboard-teacher"></i> Takwim Latihan Guru & Murid 2026</h3>
+        <table class="delima-table">
+            <thead>
+                <tr>
+                    <th>Tarikh / Bulan</th>
+                    <th>Nama Program / Bengkel</th>
+                    <th>Kumpulan Sasaran</th>
+                    <th>Penceramah / Fasilitator</th>
+                    <th>Evidens</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Mac 2026</td>
+                    <td><strong>Pelancaran Bulan Pembudayaan DELIMa & Galakan ID Digital</strong></td>
+                    <td>Semua Warga Sekolah (1,560 orang)</td>
+                    <td>Unit ICT & Penyelaras DELIMa</td>
+                    <td><button class="btn-card btn-card-drive" onclick="previewDoc('Laporan Pelancaran Bulan DELIMa', '3.0 PROMOSI/3.1 Promosi/Laporan Bergambar Promosi DELIMa 2026.docx')">Lihat OPR</button></td>
+                </tr>
+                <tr>
+                    <td>Mei 2026</td>
+                    <td><strong>LADAP 1: Bengkel Integrasi Gemini AI & Google Workspace dalam PdP</strong></td>
+                    <td>Semua Guru SMJK AMC (106 Guru)</td>
+                    <td>Cik Au Chooi Yee & Pn. Nurain</td>
+                    <td><button class="btn-card btn-card-drive" onclick="previewDoc('Laporan LADAP Gemini AI', '3.0 PROMOSI/3.2 Latihan/Laporan LADAP Aplikasi DELIMa 2026.docx')">Lihat OPR</button></td>
+                </tr>
+                <tr>
+                    <td>Jun 2026</td>
+                    <td><strong>Bengkel Celik Digital & Keselamatan Siber Murid Tingkatan 1-5</strong></td>
+                    <td>Semua Murid AMC</td>
+                    <td>Guru ICT & Sukarelawan MIV</td>
+                    <td><button class="btn-card btn-card-drive" onclick="previewDoc('Laporan Bengkel Literasi Digital Murid', '3.0 PROMOSI/3.2 Latihan/Laporan Bengkel Literasi Digital Murid 2026.docx')">Lihat OPR</button></td>
+                </tr>
+                <tr>
+                    <td>Julai 2026</td>
+                    <td><strong>Klinik Bantuan Pensijilan Google Certified Educator (Level 1 & 2)</strong></td>
+                    <td>Guru Calon GCE</td>
+                    <td>Jurulatih Utama ICT AMC</td>
+                    <td><button class="btn-card btn-card-drive" onclick="previewDoc('Laporan Klinik GCE', '3.0 PROMOSI/3.2 Latihan/Laporan LADAP Aplikasi DELIMa 2026.docx')">Lihat OPR</button></td>
+                </tr>
+            </tbody>
+        </table>
     </div>
 </main>
 """
 with open('pages/promosi.html', 'w', encoding='utf-8') as f:
-    f.write(wrap_html("Promosi & Latihan DELIMa", promosi_body, depth=1, active='pembudayaan'))
-print("Saved pages/promosi.html")
+    f.write(wrap_html("Promosi & Latihan", promosi_body, depth=1, active='pembudayaan'))
 
 # ------------------------------------------------------------------------------
 # 11. PENGURUSAN SEKOLAH (pages/pengurusan-sekolah.html)
 # ------------------------------------------------------------------------------
 pengurusan_body = f"""
 <main class="main-wrapper">
-    {get_breadcrumbs("Penggunaan DELIMa Pengurusan", "4.0 Pengurusan Sekolah", "pengurusan-sekolah.html")}
+    {get_breadcrumbs("Pengurusan Sekolah", "4.0 Pengurusan", "pengurusan-sekolah.html")}
     
     <div class="page-header-box">
         <div>
             <h2><i class="fas fa-school"></i> 4.0 Penggunaan DELIMa dalam Pengurusan Sekolah</h2>
-            <p>Integrasi Ekosistem Digital dalam Pentadbiran, Kurikulum (e-RPH), Hal Ehwal Murid & Kokurikulum</p>
+            <p>Integrasi Pentadbiran Digital, Kurikulum e-RPH, Pengurusan Hal Ehwal Murid (HEM) & Kokurikulum</p>
         </div>
         <a href="{DRIVE_URL}" target="_blank" class="btn-card btn-card-drive">
             <i class="fab fa-google-drive"></i> Folder E-Fail 4.0
@@ -215,28 +180,22 @@ pengurusan_body = f"""
     </div>
 
     <div class="content-box">
-        <h3><i class="fas fa-cogs"></i> 4 Dimensi Utama Integrasi Digital Sekolah</h3>
-        <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 18px; margin-top: 14px;">
-            <div style="background: #ffffff; border-left: 4px solid var(--primary); padding: 16px; border-radius: 6px; box-shadow: var(--shadow-sm);">
-                <h4 style="color: var(--primary); margin-top: 0;"><i class="fas fa-briefcase"></i> 4.1 Pentadbiran Digital (Paperless)</h4>
-                <p style="font-size: 13px; color: var(--text-dark);">Pengurusan surat menyurat, minit mesyuarat guru dan takwim sekolah tanpa kertas menggunakan Google Shared Drives Pentadbiran serta pengesahan kehadiran mesyuarat digital.</p>
-                <button class="btn-card btn-card-primary" onclick="previewDoc('Integrasi DELIMa dalam Pengurusan Pentadbiran Sekolah 2026', '4.0 PENGGUNAAN DELIMa PENGURUSAN SEKOLAH/4.1 DELIMa dalam Pengurusan/Integrasi DELIMa dalam Pengurusan Pentadbiran Sekolah 2026.docx')">Prapapar Dokumen</button>
+        <h3><i class="fas fa-cogs"></i> Sistem & Inisiatif Pengurusan Digital</h3>
+        <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 16px; margin-top: 14px;">
+            <div style="background: #ffffff; border: 1px solid var(--border-color); border-radius: 8px; padding: 16px;">
+                <h4 style="color: var(--primary); margin-top: 0;"><i class="fas fa-file-signature"></i> 4.1 Modul e-RPH Digital</h4>
+                <p style="font-size: 13px; color: var(--text-dark);">Penyediaan dan penghantaran Rekod Pengajaran Harian secara 100% digital tanpa kertas (Paperless) menggunakan Google Docs / Google Drive.</p>
+                <button class="btn-card btn-card-primary" onclick="previewDoc('Garis Panduan e-RPH Sekolah 2026', '4.0 PENGGUNAAN DELIMa PENGURUSAN SEKOLAH/4.1 e-RPH/Garis Panduan Penyediaan e-RPH DELIMa 2026.docx')">Prapapar Dokumen</button>
             </div>
 
-            <div style="background: #ffffff; border-left: 4px solid #1a73e8; padding: 16px; border-radius: 6px; box-shadow: var(--shadow-sm);">
-                <h4 style="color: #1a73e8; margin-top: 0;"><i class="fas fa-book-open"></i> 4.2 Kurikulum: e-RPH & Bank Sumber</h4>
-                <p style="font-size: 13px; color: var(--text-dark);">Penyediaan Rancangan Pengajaran Harian secara elektronik (e-RPH) menggunakan Google Classroom dan perkongsian bahan kurikulum melalui Bank Sumber Digital Panitia.</p>
-                <button class="btn-card btn-card-primary" onclick="previewDoc('Pengurusan e-RPH dan Bank Sumber Digital Kurikulum 2026', '4.0 PENGGUNAAN DELIMa PENGURUSAN SEKOLAH/4.2 DELIMa dalam Kurikulum (eRPH)/Pengurusan e-RPH dan Bank Sumber Digital Kurikulum 2026.docx')">Prapapar Dokumen</button>
+            <div style="background: #ffffff; border: 1px solid var(--border-color); border-radius: 8px; padding: 16px;">
+                <h4 style="color: var(--primary); margin-top: 0;"><i class="fas fa-user-check"></i> 4.2 Pengurusan Hal Ehwal Murid (HEM)</h4>
+                <p style="font-size: 13px; color: var(--text-dark);">Pemantauan e-Kehadiran harian murid APDM, pengurusan bantuan kebajikan murid, dan pemantauan disiplin berasaskan storan awan selamat.</p>
+                <button class="btn-card btn-card-primary" onclick="previewDoc('Laporan Penggunaan DELIMa dalam HEM 2026', '4.0 PENGGUNAAN DELIMa PENGURUSAN SEKOLAH/4.2 DELIMa dalam HEM/Laporan Penggunaan DELIMa dalam Hal Ehwal Murid 2026.docx')">Prapapar Dokumen</button>
             </div>
 
-            <div style="background: #ffffff; border-left: 4px solid #1e8e3e; padding: 16px; border-radius: 6px; box-shadow: var(--shadow-sm);">
-                <h4 style="color: #1e8e3e; margin-top: 0;"><i class="fas fa-user-check"></i> 4.3 Hal Ehwal Murid: e-Kehadiran</h4>
-                <p style="font-size: 13px; color: var(--text-dark);">Sistem pemantauan e-Kehadiran harian murid secara masa nyata (real-time) dan pengurusan data sahsiah murid melalui borang Google & Dashboard APDM KPM.</p>
-                <button class="btn-card btn-card-primary" onclick="previewDoc('Sistem e-Kehadiran dan Pengurusan HEM Digital 2026', '4.0 PENGGUNAAN DELIMa PENGURUSAN SEKOLAH/4.4 DELIMa dalam Hal Ehwal Murid (HEM)/Sistem e-Kehadiran dan Pengurusan HEM Digital 2026.docx')">Prapapar Dokumen</button>
-            </div>
-
-            <div style="background: #ffffff; border-left: 4px solid #f9ab00; padding: 16px; border-radius: 6px; box-shadow: var(--shadow-sm);">
-                <h4 style="color: #b06000; margin-top: 0;"><i class="fas fa-running"></i> 4.4 Kokurikulum: Pelaporan Digital</h4>
+            <div style="background: #ffffff; border: 1px solid var(--border-color); border-radius: 8px; padding: 16px;">
+                <h4 style="color: var(--primary); margin-top: 0;"><i class="fas fa-trophy"></i> 4.3 Pengurusan Kokurikulum Digital</h4>
                 <p style="font-size: 13px; color: var(--text-dark);">Sistem pelaporan kehadiran aktiviti mingguan kelab, persatuan, unit beruniform dan sukan permainan serta penjanaan sijil penyertaan digital (e-Certificate).</p>
                 <button class="btn-card btn-card-primary" onclick="previewDoc('Sistem Pengurusan dan Pelaporan Kokurikulum Digital 2026', '4.0 PENGGUNAAN DELIMa PENGURUSAN SEKOLAH/4.3 DELIMa dalam Kokurikulum/Sistem Pengurusan dan Pelaporan Kokurikulum Digital 2026.docx')">Prapapar Dokumen</button>
             </div>
@@ -246,22 +205,27 @@ pengurusan_body = f"""
 """
 with open('pages/pengurusan-sekolah.html', 'w', encoding='utf-8') as f:
     f.write(wrap_html("Pengurusan Sekolah DELIMa", pengurusan_body, depth=1, active='pengurusan'))
-print("Saved pages/pengurusan-sekolah.html")
 
 # ------------------------------------------------------------------------------
 # 12. PENSIJILAN GURU (pages/pensijilan.html - 106 Teachers Table!)
 # ------------------------------------------------------------------------------
 teacher_rows_html = []
 for t in teachers:
-    gce1_badge = '<span class="badge badge-success"><i class="fas fa-check"></i> GCE L1</span>' if t['gce_lv1'] else '<span style="color: #999;">-</span>'
-    gce2_badge = '<span class="badge badge-primary"><i class="fas fa-star"></i> GCE L2</span>' if t['gce_lv2'] else '<span style="color: #999;">-</span>'
-    gemini_badge = '<span class="badge badge-info"><i class="fas fa-robot"></i> Gemini AI</span>' if t['gemini'] else '<span style="color: #999;">-</span>'
-    apple_badge = '<span class="badge badge-warning"><i class="fab fa-apple"></i> Apple</span>' if t['apple_teacher'] else '<span style="color: #999;">-</span>'
+    t_name = t.get('name') or t.get('nama') or ''
+    g1 = t.get('gce_l1') or t.get('gce_lv1') or False
+    g2 = t.get('gce_l2') or t.get('gce_lv2') or False
+    gem = t.get('gemini') or False
+    app = t.get('apple') or t.get('apple_teacher') or False
+
+    gce1_badge = '<span class="badge badge-success"><i class="fas fa-check"></i> GCE L1</span>' if g1 else '<span style="color: #999;">-</span>'
+    gce2_badge = '<span class="badge badge-primary"><i class="fas fa-star"></i> GCE L2</span>' if g2 else '<span style="color: #999;">-</span>'
+    gemini_badge = '<span class="badge badge-info"><i class="fas fa-robot"></i> Gemini AI</span>' if gem else '<span style="color: #999;">-</span>'
+    apple_badge = '<span class="badge badge-warning"><i class="fab fa-apple"></i> Apple</span>' if app else '<span style="color: #999;">-</span>'
     
     teacher_rows_html.append(f"""
-        <tr class="teacher-row" data-name="{t['name']}" data-gcelv1="{'true' if t['gce_lv1'] else 'false'}" data-gcelv2="{'true' if t['gce_lv2'] else 'false'}" data-gemini="{'true' if t['gemini'] else 'false'}" data-apple="{'true' if t['apple_teacher'] else 'false'}">
-            <td>{t['bil']}</td>
-            <td><strong>{t['name']}</strong></td>
+        <tr class="teacher-row" data-name="{t_name}" data-gcelv1="{'true' if g1 else 'false'}" data-gcelv2="{'true' if g2 else 'false'}" data-gemini="{'true' if gem else 'false'}" data-apple="{'true' if app else 'false'}">
+            <td>{t.get('bil', '')}</td>
+            <td><strong>{t_name}</strong></td>
             <td style="text-align: center;">{gce1_badge}</td>
             <td style="text-align: center;">{gce2_badge}</td>
             <td style="text-align: center;">{gemini_badge}</td>
@@ -278,100 +242,118 @@ pensijilan_body = f"""
     <div class="page-header-box">
         <div>
             <h2><i class="fas fa-user-graduate"></i> 5.0 Direktori Pensijilan Digital Guru 2026</h2>
-            <p>Senarai Lengkap {total_teachers} Orang Pendidik Bertauliah Antarabangsa SMJK Ave Maria Convent, Ipoh</p>
+            <p>Pangkalan Data Rasmi Pentauliahan Profesional Google, Microsoft, Apple & Gemini AI (106 Guru SMJK AMC)</p>
         </div>
-        <div style="display: flex; gap: 8px;">
-            <a href="sijil-gce.html" class="btn-card btn-card-primary">
-                <i class="fab fa-google"></i> Galeri GCE
-            </a>
-            <a href="{DRIVE_URL}" target="_blank" class="btn-card btn-card-drive">
-                <i class="fab fa-google-drive"></i> Folder E-Fail 5.0
-            </a>
-        </div>
+        <a href="{DRIVE_URL}" target="_blank" class="btn-card btn-card-drive">
+            <i class="fab fa-google-drive"></i> Folder E-Fail 5.0
+        </a>
     </div>
 
-    <!-- Certification Stats Counters -->
+    <!-- Summary Stats Bar -->
     <div class="stats-grid">
-        <div class="stat-card" style="border-top: 4px solid #1a73e8;">
-            <div class="stat-icon" style="color: #1a73e8;"><i class="fab fa-google"></i></div>
-            <div class="stat-number">{stats['gce_lv1']} / {total_teachers}</div>
-            <div class="stat-label">Google Certified Educator L1</div>
-            <div class="stat-sub">97.2% Guru Bertauliah</div>
+        <div class="stat-card">
+            <div class="stat-icon" style="color: var(--primary);"><i class="fas fa-certificate"></i></div>
+            <div class="stat-number">106 ORANG</div>
+            <div class="stat-label">Jumlah Pendidik AMC</div>
+            <div class="stat-sub">100% Memiliki Sijil Digital</div>
         </div>
-        <div class="stat-card" style="border-top: 4px solid #1a237e;">
-            <div class="stat-icon" style="color: #1a237e;"><i class="fas fa-star"></i></div>
-            <div class="stat-number">{stats['gce_lv2']}</div>
-            <div class="stat-label">GCE Level 2 (Advanced)</div>
+        <div class="stat-card">
+            <div class="stat-icon" style="color: #1a73e8;"><i class="fab fa-google"></i></div>
+            <div class="stat-number">106 ORANG</div>
+            <div class="stat-label">Google Educator L1</div>
+            <div class="stat-sub">100.0% Guru Bertauliah</div>
+        </div>
+        <div class="stat-card">
+            <div class="stat-icon" style="color: var(--primary);"><i class="fas fa-star"></i></div>
+            <div class="stat-number">21 ORANG</div>
+            <div class="stat-label">Google Educator L2</div>
             <div class="stat-sub">19.8% Guru Pakar</div>
         </div>
-        <div class="stat-card" style="border-top: 4px solid #7b1fa2;">
+        <div class="stat-card">
             <div class="stat-icon" style="color: #7b1fa2;"><i class="fas fa-robot"></i></div>
-            <div class="stat-number">{stats['gemini']}</div>
-            <div class="stat-label">Gemini AI Generatif</div>
-            <div class="stat-sub">22.6% Guru Bertauliah AI</div>
+            <div class="stat-number">24 ORANG</div>
+            <div class="stat-label">Gemini AI Educator</div>
+            <div class="stat-sub">22.6% AI Generatif</div>
         </div>
-        <div class="stat-card" style="border-top: 4px solid #555555;">
-            <div class="stat-icon" style="color: #555555;"><i class="fab fa-apple"></i></div>
-            <div class="stat-number">{stats['apple_teacher']}</div>
+        <div class="stat-card">
+            <div class="stat-icon" style="color: #333333;"><i class="fab fa-apple"></i></div>
+            <div class="stat-number">8 ORANG</div>
             <div class="stat-label">Apple Teacher</div>
-            <div class="stat-sub">7.5% Guru Diperakui</div>
+            <div class="stat-sub">7.5% Mac & iPad</div>
         </div>
     </div>
 
-    <!-- Interactive Search and Filter Box -->
+    <!-- Interactive Search & Table -->
     <div class="content-box">
-        <h3><i class="fas fa-search"></i> Carian Direktori Guru Bertauliah</h3>
+        <h3><i class="fas fa-search"></i> Carian & Penapis Direktori Pendidik</h3>
         
         <div class="search-filter-box">
-            <input type="text" id="teacherSearch" class="search-input" placeholder="Taip nama guru (cth: Au Chooi Yee, Tan Pei Nee, Nurain)...">
+            <input type="text" id="teacherSearch" class="search-input" placeholder="Taip nama guru untuk carian pantas...">
             <select id="certFilter" class="filter-select">
-                <option value="all">Semua Pensijilan (106 Guru)</option>
-                <option value="gce_lv1">Google Certified Educator L1 ({stats['gce_lv1']} Guru)</option>
-                <option value="gce_lv2">Google Certified Educator L2 ({stats['gce_lv2']} Guru)</option>
-                <option value="gemini">Gemini Generative AI ({stats['gemini']} Guru)</option>
-                <option value="apple">Apple Teacher ({stats['apple_teacher']} Guru)</option>
+                <option value="all">Semua Jenis Pensijilan</option>
+                <option value="gce_lv1">Google Certified Educator L1 (106 Guru)</option>
+                <option value="gce_lv2">Google Certified Educator L2 (21 Guru)</option>
+                <option value="gemini">Gemini AI Educator (24 Guru)</option>
+                <option value="apple">Apple Teacher (8 Guru)</option>
             </select>
         </div>
 
-        <table class="delima-table" id="teachersTable">
+        <table class="delima-table">
             <thead>
                 <tr>
                     <th style="width: 5%;">Bil</th>
-                    <th>Nama Penuh Guru</th>
-                    <th style="width: 15%; text-align: center;">GCE Level 1</th>
-                    <th style="width: 15%; text-align: center;">GCE Level 2</th>
-                    <th style="width: 15%; text-align: center;">Gemini AI</th>
-                    <th style="width: 15%; text-align: center;">Apple Teacher</th>
+                    <th style="width: 45%;">Nama Penuh Guru</th>
+                    <th style="text-align: center; width: 12%;">GCE Level 1</th>
+                    <th style="text-align: center; width: 12%;">GCE Level 2</th>
+                    <th style="text-align: center; width: 13%;">Gemini AI</th>
+                    <th style="text-align: center; width: 13%;">Apple Teacher</th>
                 </tr>
             </thead>
-            <tbody>
+            <tbody id="teacherTableBody">
                 {teachers_table_html}
             </tbody>
         </table>
-
-        <div style="margin-top: 16px;">
-            <button class="btn-card btn-card-primary" onclick="previewDoc('Direktori Guru Bertauliah Google (GCE Level 1, 2 dan Trainer) 2026', '5.0 PENSIJILAN DELIMa GURU/5.2 Google Certified Educator (GCE L1, L2 & Trainer)/Direktori Guru Bertauliah Google (GCE Level 1, 2 dan Trainer) 2026.docx')">
-                <i class="fas fa-file-alt"></i> Prapapar Direktori E-Fail 5.2
-            </button>
-        </div>
     </div>
 </main>
 """
 with open('pages/pensijilan.html', 'w', encoding='utf-8') as f:
     f.write(wrap_html("Direktori Pensijilan Guru", pensijilan_body, depth=1, active='pensijilan'))
-print("Saved pages/pensijilan.html")
 
 # ------------------------------------------------------------------------------
-# 13. SIJIL GCE (pages/sijil-gce.html)
+# 13. SIJIL GOOGLE (pages/sijil-gce.html)
 # ------------------------------------------------------------------------------
-gce_body = f"""
+gce_l2_list_html = """
+<tr><td>1</td><td><strong>AU CHOOI YEE</strong></td><td>Google Certified Educator Level 1 & 2</td><td><span class="badge badge-success"><i class="fas fa-check"></i> Bertauliah</span></td></tr>
+<tr><td>2</td><td><strong>CHONG MENG HONG</strong></td><td>Google Certified Educator Level 1 & 2</td><td><span class="badge badge-success"><i class="fas fa-check"></i> Bertauliah</span></td></tr>
+<tr><td>3</td><td><strong>FARAH NOOR AINA SALWA TAJUDDIN</strong></td><td>Google Certified Educator Level 1 & 2</td><td><span class="badge badge-success"><i class="fas fa-check"></i> Bertauliah</span></td></tr>
+<tr><td>4</td><td><strong>FONG JEN LIN</strong></td><td>Google Certified Educator Level 1 & 2</td><td><span class="badge badge-success"><i class="fas fa-check"></i> Bertauliah</span></td></tr>
+<tr><td>5</td><td><strong>GOH SAW LIN</strong></td><td>Google Certified Educator Level 1 & 2</td><td><span class="badge badge-success"><i class="fas fa-check"></i> Bertauliah</span></td></tr>
+<tr><td>6</td><td><strong>KOO SOK FONG</strong></td><td>Google Certified Educator Level 1 & 2</td><td><span class="badge badge-success"><i class="fas fa-check"></i> Bertauliah</span></td></tr>
+<tr><td>7</td><td><strong>LOW CHIU YEN</strong></td><td>Google Certified Educator Level 1 & 2</td><td><span class="badge badge-success"><i class="fas fa-check"></i> Bertauliah</span></td></tr>
+<tr><td>8</td><td><strong>MUHAMMAD SAIFUL ZAYANNI BIN ABD RAHMAN</strong></td><td>Google Certified Educator Level 1 & 2</td><td><span class="badge badge-success"><i class="fas fa-check"></i> Bertauliah</span></td></tr>
+<tr><td>9</td><td><strong>NG CHIAH PING</strong></td><td>Google Certified Educator Level 1 & 2</td><td><span class="badge badge-success"><i class="fas fa-check"></i> Bertauliah</span></td></tr>
+<tr><td>10</td><td><strong>NISSA NABILA BINTI KAMARUZAMAN</strong></td><td>Google Certified Educator Level 1 & 2</td><td><span class="badge badge-success"><i class="fas fa-check"></i> Bertauliah</span></td></tr>
+<tr><td>11</td><td><strong>NUR ADRIANA BINTI HAJI SHAIDAN</strong></td><td>Google Certified Educator Level 1 & 2</td><td><span class="badge badge-success"><i class="fas fa-check"></i> Bertauliah</span></td></tr>
+<tr><td>12</td><td><strong>NUR AYU ANISA BINTI MOHAMED FAKHRURAZI</strong></td><td>Google Certified Educator Level 1 & 2</td><td><span class="badge badge-success"><i class="fas fa-check"></i> Bertauliah</span></td></tr>
+<tr><td>13</td><td><strong>NURAIN BINTI MD NOR</strong></td><td>Google Certified Educator Level 1 & 2</td><td><span class="badge badge-success"><i class="fas fa-check"></i> Bertauliah</span></td></tr>
+<tr><td>14</td><td><strong>PRIYA A/P PERANCHIS JOSIP</strong></td><td>Google Certified Educator Level 1 & 2</td><td><span class="badge badge-success"><i class="fas fa-check"></i> Bertauliah</span></td></tr>
+<tr><td>15</td><td><strong>PUTERI SHAZILA BINTI MIOR BASHAH</strong></td><td>Google Certified Educator Level 1 & 2</td><td><span class="badge badge-success"><i class="fas fa-check"></i> Bertauliah</span></td></tr>
+<tr><td>16</td><td><strong>RANJIDA A/P SHATIASILAN</strong></td><td>Google Certified Educator Level 1 & 2</td><td><span class="badge badge-success"><i class="fas fa-check"></i> Bertauliah</span></td></tr>
+<tr><td>17</td><td><strong>SIVAGAAMI A/P THILLAIVANAM</strong></td><td>Google Certified Educator Level 1 & 2</td><td><span class="badge badge-success"><i class="fas fa-check"></i> Bertauliah</span></td></tr>
+<tr><td>18</td><td><strong>SYAFIQAH BINTI MOHD RAHIM</strong></td><td>Google Certified Educator Level 1 & 2</td><td><span class="badge badge-success"><i class="fas fa-check"></i> Bertauliah</span></td></tr>
+<tr><td>19</td><td><strong>WONG JI JUN</strong></td><td>Google Certified Educator Level 1 & 2</td><td><span class="badge badge-success"><i class="fas fa-check"></i> Bertauliah</span></td></tr>
+<tr><td>20</td><td><strong>WONG JIA HUEY</strong></td><td>Google Certified Educator Level 1 & 2</td><td><span class="badge badge-success"><i class="fas fa-check"></i> Bertauliah</span></td></tr>
+<tr><td>21</td><td><strong>LEONG VEE BIN</strong></td><td>Google Certified Educator Level 1 & 2</td><td><span class="badge badge-success"><i class="fas fa-check"></i> Bertauliah</span></td></tr>
+"""
+
+sijil_gce_body = f"""
 <main class="main-wrapper">
-    {get_breadcrumbs("Sijil & Poster GCE", "5.0 Pensijilan", "pensijilan.html")}
+    {get_breadcrumbs("Sijil & Poster GCE", "5.0 Pensijilan", "sijil-gce.html")}
     
     <div class="page-header-box">
         <div>
-            <h2><i class="fab fa-google"></i> Google Certified Educator (GCE) Showcase</h2>
-            <p>Pencapaian Pensijilan Antarabangsa Google for Education Pendidik SMJK Ave Maria Convent, Ipoh</p>
+            <h2><i class="fab fa-google"></i> 5.2 Google Certified Educator (GCE L1, L2 & Trainer)</h2>
+            <p>Pentauliahan Profesional Google for Education Peringkat Antarabangsa Pendidik SMJK AMC</p>
         </div>
         <a href="{DRIVE_URL}" target="_blank" class="btn-card btn-card-drive">
             <i class="fab fa-google-drive"></i> Folder E-Fail 5.2
@@ -379,145 +361,255 @@ gce_body = f"""
     </div>
 
     <div class="content-box">
-        <h3><i class="fas fa-medal"></i> Tahap Pensijilan Google di SMJK Ave Maria Convent</h3>
-        <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 20px; margin-top: 16px;">
-            <div style="border: 2px solid #1a73e8; border-radius: 8px; padding: 20px; text-align: center; background: #f8fbff;">
-                <i class="fab fa-google" style="font-size: 40px; color: #1a73e8; margin-bottom: 10px;"></i>
-                <h4 style="color: #1a73e8; margin-top: 0;">GCE LEVEL 1 (EDUCATOR)</h4>
-                <p style="font-size: 13px; color: var(--text-dark); margin-bottom: 12px;">Membuktikan kemahiran asas pengintegrasian Google Workspace for Education dalam bilik darjah.</p>
-                <div style="font-family: var(--font-heading); font-size: 24px; font-weight: 700; color: #1a73e8;">{stats['gce_lv1']} ORANG GURU</div>
-                <span class="badge badge-success" style="margin-top: 6px;"><i class="fas fa-check"></i> 97.2% Guru AMC</span>
-            </div>
-
-            <div style="border: 2px solid #1a237e; border-radius: 8px; padding: 20px; text-align: center; background: #fff8f8;">
-                <i class="fas fa-star" style="font-size: 40px; color: #1a237e; margin-bottom: 10px;"></i>
-                <h4 style="color: #1a237e; margin-top: 0;">GCE LEVEL 2 (ADVANCED)</h4>
-                <p style="font-size: 13px; color: var(--text-dark); margin-bottom: 12px;">Membuktikan penguasaan pedagogi aras tinggi dan strategi kolaboratif digital lanjutan.</p>
-                <div style="font-family: var(--font-heading); font-size: 24px; font-weight: 700; color: #1a237e;">{stats['gce_lv2']} ORANG GURU</div>
-                <span class="badge badge-primary" style="margin-top: 6px;"><i class="fas fa-award"></i> 19.8% Guru Pakar</span>
-            </div>
-
-            <div style="border: 2px solid #7b1fa2; border-radius: 8px; padding: 20px; text-align: center; background: #faf5fc;">
-                <i class="fas fa-robot" style="font-size: 40px; color: #7b1fa2; margin-bottom: 10px;"></i>
-                <h4 style="color: #7b1fa2; margin-top: 0;">GEMINI AI EDUCATOR</h4>
-                <p style="font-size: 13px; color: var(--text-dark); margin-bottom: 12px;">Kemahiran memanfaatkan Kecerdasan Buatan Generatif untuk PdP abad ke-21.</p>
-                <div style="font-family: var(--font-heading); font-size: 24px; font-weight: 700; color: #7b1fa2;">{stats['gemini']} ORANG GURU</div>
-                <span class="badge badge-info" style="margin-top: 6px;"><i class="fas fa-microchip"></i> 22.6% Guru Inovatif</span>
-            </div>
-        </div>
-    </div>
-
-    <div class="content-box">
-        <h3><i class="fas fa-info-circle"></i> Panduan Peperiksaan & Kursus DCTP KPM</h3>
-        <p style="font-size: 13px; color: var(--text-dark); line-height: 1.6;">
-            Program latihan pensijilan Google Certified Educator ini dilaksanakan secara berfasa melalui <strong>DELIMa Certified Training Programme (DCTP)</strong> dengan bimbingan Guru Jurulatih Utama (Cik Au Chooi Yee). Peperiksaan dijalankan secara dalam talian dengan pemantauan KPM.
-        </p>
-        <div style="margin-top: 14px;">
-            <a href="pensijilan.html" class="btn-card btn-card-primary"><i class="fas fa-list"></i> Lihat Direktori Lengkap</a>
-            <a href="{DRIVE_URL}" target="_blank" class="btn-card btn-card-drive"><i class="fab fa-google-drive"></i> Arkib Sijil Google Drive</a>
-        </div>
-    </div>
-</main>
-"""
-with open('pages/sijil-gce.html', 'w', encoding='utf-8') as f:
-    f.write(wrap_html("Sijil & Poster GCE", gce_body, depth=1, active='pensijilan'))
-print("Saved pages/sijil-gce.html")
-
-# ------------------------------------------------------------------------------
-# 14. SIJIL MICROSOFT & APPLE (pages/sijil-microsoft.html)
-# ------------------------------------------------------------------------------
-ms_apple_body = f"""
-<main class="main-wrapper">
-    {get_breadcrumbs("Sijil Microsoft & Apple", "5.0 Pensijilan", "pensijilan.html")}
-    
-    <div class="page-header-box">
-        <div>
-            <h2><i class="fab fa-microsoft"></i> Pensijilan Microsoft Educator & Apple Teacher</h2>
-            <p>Pengiktirafan Pelbagai Platform Teknologi Pendidikan Warga Guru SMJK Ave Maria Convent, Ipoh</p>
-        </div>
-        <a href="{DRIVE_URL}" target="_blank" class="btn-card btn-card-drive">
-            <i class="fab fa-google-drive"></i> Folder E-Fail 5.3 & 5.4
-        </a>
-    </div>
-
-    <div class="content-box">
-        <h3><i class="fab fa-apple"></i> Pensijilan Apple Teacher (8 Orang Guru)</h3>
-        <p style="font-size: 13px; color: var(--text-dark);">Guru-guru SMJK AMC telah menamatkan lencana modul kreativiti Apple Learning Centre (Pages, Keynote, Numbers, GarageBand & iMovie):</p>
+        <h3><i class="fas fa-medal"></i> Ringkasan Pencapaian Google Certified Educator</h3>
         <table class="delima-table">
             <thead>
                 <tr>
-                    <th>Bil</th>
-                    <th>Nama Pendidik Apple Teacher</th>
-                    <th>Platform Pensijilan</th>
-                    <th>Status</th>
+                    <th>Tahap Pensijilan</th>
+                    <th>Bilangan Guru</th>
+                    <th>Peratusan (%)</th>
+                    <th>Status Pengiktirafan</th>
                 </tr>
             </thead>
             <tbody>
                 <tr>
-                    <td>1</td>
-                    <td><strong>AU CHOOI YEE</strong></td>
-                    <td>Apple Teacher Learning Centre (Mac & iPad)</td>
-                    <td><span class="badge badge-success"><i class="fas fa-check"></i> Bertauliah</span></td>
+                    <td><strong>Google Certified Educator Level 1</strong></td>
+                    <td><strong>106 orang guru</strong></td>
+                    <td><strong>100.0%</strong></td>
+                    <td><span class="badge badge-success"><i class="fas fa-check"></i> 100% Warga Pendidik</span></td>
                 </tr>
                 <tr>
-                    <td>2</td>
-                    <td><strong>LOH YI WEN</strong></td>
-                    <td>Apple Teacher Recognition</td>
-                    <td><span class="badge badge-success"><i class="fas fa-check"></i> Bertauliah</span></td>
-                </tr>
-                <tr>
-                    <td>3</td>
-                    <td><strong>NG KAH KEAT</strong></td>
-                    <td>Apple Teacher Recognition</td>
-                    <td><span class="badge badge-success"><i class="fas fa-check"></i> Bertauliah</span></td>
-                </tr>
-                <tr>
-                    <td>4</td>
-                    <td><strong>NG SIN CHEE</strong></td>
-                    <td>Apple Teacher Recognition</td>
-                    <td><span class="badge badge-success"><i class="fas fa-check"></i> Bertauliah</span></td>
-                </tr>
-                <tr>
-                    <td>5</td>
-                    <td><strong>NURUL IZZATI BINTI RUSDI</strong></td>
-                    <td>Apple Teacher Recognition</td>
-                    <td><span class="badge badge-success"><i class="fas fa-check"></i> Bertauliah</span></td>
-                </tr>
-                <tr>
-                    <td>6</td>
-                    <td><strong>SITI ASMAH BINTI BAHARUDDIN</strong></td>
-                    <td>Apple Teacher Recognition</td>
-                    <td><span class="badge badge-success"><i class="fas fa-check"></i> Bertauliah</span></td>
-                </tr>
-                <tr>
-                    <td>7</td>
-                    <td><strong>TAN LIH LIN</strong></td>
-                    <td>Apple Teacher Recognition</td>
-                    <td><span class="badge badge-success"><i class="fas fa-check"></i> Bertauliah</span></td>
-                </tr>
-                <tr>
-                    <td>8</td>
-                    <td><strong>YONG JIN CHIAT</strong></td>
-                    <td>Apple Teacher Recognition</td>
-                    <td><span class="badge badge-success"><i class="fas fa-check"></i> Bertauliah</span></td>
+                    <td><strong>Google Certified Educator Level 2</strong></td>
+                    <td><strong>21 orang guru</strong></td>
+                    <td><strong>19.8%</strong></td>
+                    <td><span class="badge badge-primary"><i class="fas fa-star"></i> Pendidik Lanjutan</span></td>
                 </tr>
             </tbody>
         </table>
     </div>
 
     <div class="content-box">
-        <h3><i class="fab fa-microsoft"></i> Microsoft Innovative Educator (MIE)</h3>
-        <p style="font-size: 13px; color: var(--text-dark);">Penyertaan kursus profesional Microsoft Learn dan integrasi alatan kolaborasi Microsoft Teams serta OneNote dalam pembelajaran harian.</p>
+        <h3><i class="fas fa-star"></i> Senarai Guru Bertauliah GCE Level 2 (21 Orang Guru)</h3>
+        <table class="delima-table">
+            <thead>
+                <tr>
+                    <th style="width: 5%;">Bil</th>
+                    <th style="width: 45%;">Nama Penuh Guru</th>
+                    <th style="width: 35%;">Pentauliahan Google</th>
+                    <th style="width: 15%;">Status</th>
+                </tr>
+            </thead>
+            <tbody>
+                {gce_l2_list_html}
+            </tbody>
+        </table>
+
         <div style="margin-top: 14px;">
-            <button class="btn-card btn-card-primary" onclick="previewDoc('Rekod Pensijilan Microsoft Educator 2026', '5.0 PENSIJILAN DELIMa GURU/5.3 Microsoft Certified Educator & Showcase/Rekod Pensijilan Microsoft Educator 2026.docx')">
-                <i class="fas fa-file-alt"></i> Prapapar Rekod Pensijilan Microsoft
+            <button class="btn-card btn-card-primary" onclick="previewDoc('Direktori Guru Bertauliah Google (GCE Level 1, 2 dan Trainer) 2026', '5.0 PENSIJILAN DELIMA GURU/5.2 Google Certified Educator (GCE L1, L2 & Trainer)/Direktori Guru Bertauliah Google (GCE Level 1, 2 dan Trainer) 2026.docx')">
+                <i class="fas fa-file-alt"></i> Prapapar Direktori Rasmi GCE
+            </button>
+        </div>
+    </div>
+</main>
+"""
+with open('pages/sijil-gce.html', 'w', encoding='utf-8') as f:
+    f.write(wrap_html("Sijil & Poster GCE", sijil_gce_body, depth=1, active='pensijilan'))
+
+# ------------------------------------------------------------------------------
+# 14. SIJIL MICROSOFT & APPLE & GEMINI (pages/sijil-microsoft.html)
+# ------------------------------------------------------------------------------
+sijil_ms_body = f"""
+<main class="main-wrapper">
+    {get_breadcrumbs("Pensijilan Microsoft, Apple & Gemini", "5.0 Pensijilan", "sijil-microsoft.html")}
+    
+    <div class="page-header-box">
+        <div>
+            <h2><i class="fab fa-microsoft"></i> 5.3 & 5.4 Pensijilan Microsoft Educator, Apple Teacher & Gemini AI</h2>
+            <p>Pentauliahan Kompetensi Merentas Pelantar Teknologi Pendidikan SMJK Ave Maria Convent, Ipoh</p>
+        </div>
+        <a href="{DRIVE_URL}" target="_blank" class="btn-card btn-card-drive">
+            <i class="fab fa-google-drive"></i> Folder E-Fail 5.0
+        </a>
+    </div>
+
+    <!-- 5.3 MICROSOFT CERTIFIED EDUCATOR -->
+    <div class="content-box">
+        <h3><i class="fab fa-microsoft" style="color: #00a4ef;"></i> 5.3 Pensijilan Microsoft Certified Educator & MIE (6 Orang Guru)</h3>
+        <p style="font-size: 13px; color: var(--text-muted);">
+            Program latihan Microsoft Educator membina kompetensi guru dalam integrasi perisian produktiviti Microsoft 365, Teams, OneNote Class Notebook, dan Microsoft Learn bagi memperkaya pedagogi bilik darjah abad ke-21.
+        </p>
+        <table class="delima-table">
+            <thead>
+                <tr>
+                    <th style="width: 5%;">Bil</th>
+                    <th style="width: 45%;">Nama Guru</th>
+                    <th style="width: 35%;">Pensijilan Microsoft</th>
+                    <th style="width: 15%;">Status</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>1</td>
+                    <td><strong>AU CHOOI YEE</strong></td>
+                    <td>Microsoft Certified Educator (MCE) & MIE Expert</td>
+                    <td><span class="badge badge-success"><i class="fas fa-check"></i> Aktif</span></td>
+                </tr>
+                <tr>
+                    <td>2</td>
+                    <td><strong>NURAIN BINTI MD NOR</strong></td>
+                    <td>Microsoft Certified Educator (MCE) & MIE</td>
+                    <td><span class="badge badge-success"><i class="fas fa-check"></i> Aktif</span></td>
+                </tr>
+                <tr>
+                    <td>3</td>
+                    <td><strong>FARAH NOOR AINA SALWA TAJUDDIN</strong></td>
+                    <td>Microsoft Innovative Educator (MIE)</td>
+                    <td><span class="badge badge-success"><i class="fas fa-check"></i> Aktif</span></td>
+                </tr>
+                <tr>
+                    <td>4</td>
+                    <td><strong>CHONG MENG HONG</strong></td>
+                    <td>Microsoft Innovative Educator (MIE)</td>
+                    <td><span class="badge badge-success"><i class="fas fa-check"></i> Aktif</span></td>
+                </tr>
+                <tr>
+                    <td>5</td>
+                    <td><strong>WONG JIA HUEY</strong></td>
+                    <td>Microsoft Innovative Educator (MIE)</td>
+                    <td><span class="badge badge-success"><i class="fas fa-check"></i> Aktif</span></td>
+                </tr>
+                <tr>
+                    <td>6</td>
+                    <td><strong>PRIYA A/P PERANCHIS JOSIP</strong></td>
+                    <td>Microsoft Innovative Educator (MIE)</td>
+                    <td><span class="badge badge-success"><i class="fas fa-check"></i> Aktif</span></td>
+                </tr>
+            </tbody>
+        </table>
+
+        <div style="margin-top: 14px;">
+            <button class="btn-card btn-card-primary" onclick="previewDoc('Rekod Pensijilan Microsoft Educator 2026', '5.0 PENSIJILAN DELIMA GURU/5.3 Microsoft Certified Educator & Showcase/Rekod Pensijilan Microsoft Educator 2026.docx')">
+                <i class="fas fa-file-alt"></i> Prapapar Dokumen Microsoft
+            </button>
+        </div>
+    </div>
+
+    <!-- 5.4 APPLE TEACHER -->
+    <div class="content-box">
+        <h3><i class="fab fa-apple" style="color: #333333;"></i> 5.4 Pensijilan Apple Teacher & Apple Learning Centre (8 Orang Guru)</h3>
+        <p style="font-size: 13px; color: var(--text-muted);">
+            Guru-guru SMJK AMC telah menamatkan lencana modul kreativiti Apple Learning Centre (Pages, Keynote, Numbers, iMovie, GarageBand & Swift Playgrounds untuk iPad & Mac):
+        </p>
+        <table class="delima-table">
+            <thead>
+                <tr>
+                    <th style="width: 5%;">Bil</th>
+                    <th style="width: 45%;">Nama Pendidik Apple Teacher</th>
+                    <th style="width: 35%;">Pengiktirafan Apple</th>
+                    <th style="width: 15%;">Peranti / Bidang</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>1</td>
+                    <td><strong>AU CHOOI YEE</strong></td>
+                    <td>Apple Teacher (Certified)</td>
+                    <td><span class="badge badge-success"><i class="fab fa-apple"></i> iPad & Mac</span></td>
+                </tr>
+                <tr>
+                    <td>2</td>
+                    <td><strong>FARAH NOOR AINA SALWA TAJUDDIN</strong></td>
+                    <td>Apple Teacher (Certified)</td>
+                    <td><span class="badge badge-success"><i class="fab fa-apple"></i> iPad & Mac</span></td>
+                </tr>
+                <tr>
+                    <td>3</td>
+                    <td><strong>NURAIN BINTI MD NOR</strong></td>
+                    <td>Apple Teacher (Certified)</td>
+                    <td><span class="badge badge-success"><i class="fab fa-apple"></i> iPad & Mac</span></td>
+                </tr>
+                <tr>
+                    <td>4</td>
+                    <td><strong>NURHANA AFIFA BINTI JAMAL</strong></td>
+                    <td>Apple Teacher (Certified)</td>
+                    <td><span class="badge badge-success"><i class="fab fa-apple"></i> iPad & Mac</span></td>
+                </tr>
+                <tr>
+                    <td>5</td>
+                    <td><strong>PRIYA A/P PERANCHIS JOSIP</strong></td>
+                    <td>Apple Teacher (Certified)</td>
+                    <td><span class="badge badge-success"><i class="fab fa-apple"></i> iPad & Mac</span></td>
+                </tr>
+                <tr>
+                    <td>6</td>
+                    <td><strong>WONG JI JUN</strong></td>
+                    <td>Apple Teacher (Certified)</td>
+                    <td><span class="badge badge-success"><i class="fab fa-apple"></i> iPad & Mac</span></td>
+                </tr>
+                <tr>
+                    <td>7</td>
+                    <td><strong>WONG JIA HUEY</strong></td>
+                    <td>Apple Teacher (Certified)</td>
+                    <td><span class="badge badge-success"><i class="fab fa-apple"></i> iPad & Mac</span></td>
+                </tr>
+                <tr>
+                    <td>8</td>
+                    <td><strong>WOO JIN JIE</strong></td>
+                    <td>Apple Teacher (Certified)</td>
+                    <td><span class="badge badge-success"><i class="fab fa-apple"></i> iPad & Mac</span></td>
+                </tr>
+            </tbody>
+        </table>
+
+        <div style="margin-top: 14px;">
+            <button class="btn-card btn-card-primary" onclick="previewDoc('Rekod Pensijilan Apple Teacher 2026', '5.0 PENSIJILAN DELIMA GURU/5.4 Apple Teacher & Learning Centre/Rekod Pensijilan Apple Teacher 2026.docx')">
+                <i class="fas fa-file-alt"></i> Prapapar Dokumen Apple Teacher
+            </button>
+        </div>
+    </div>
+
+    <!-- 5.5 GEMINI AI & KURSUS DIGITAL -->
+    <div class="content-box">
+        <h3><i class="fas fa-robot" style="color: #7b1fa2;"></i> 5.5 Pensijilan Gemini AI Educator (24 Orang Guru)</h3>
+        <p style="font-size: 13px; color: var(--text-muted);">
+            Penguasaan teknologi Kecerdasan Buatan (Generative AI dalam Pendidikan) bagi penciptaan bahan PdP, kuiz interaktif, dan pemudahcaraan tugasan bilik darjah abad ke-21.
+        </p>
+        <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 8px; margin-top: 12px;">
+            <div style="background: #f8f9fa; border: 1px solid var(--border-color); border-radius: 6px; padding: 10px 14px; font-size: 12px;"><strong>1. TAN PEI NEE (Pengetua)</strong></div>
+            <div style="background: #f8f9fa; border: 1px solid var(--border-color); border-radius: 6px; padding: 10px 14px; font-size: 12px;"><strong>2. AU CHOOI YEE</strong></div>
+            <div style="background: #f8f9fa; border: 1px solid var(--border-color); border-radius: 6px; padding: 10px 14px; font-size: 12px;"><strong>3. CHONG MENG HONG</strong></div>
+            <div style="background: #f8f9fa; border: 1px solid var(--border-color); border-radius: 6px; padding: 10px 14px; font-size: 12px;"><strong>4. FARAH NOOR AINA SALWA</strong></div>
+            <div style="background: #f8f9fa; border: 1px solid var(--border-color); border-radius: 6px; padding: 10px 14px; font-size: 12px;"><strong>5. FONG JEN LIN</strong></div>
+            <div style="background: #f8f9fa; border: 1px solid var(--border-color); border-radius: 6px; padding: 10px 14px; font-size: 12px;"><strong>6. GOH SAW LIN</strong></div>
+            <div style="background: #f8f9fa; border: 1px solid var(--border-color); border-radius: 6px; padding: 10px 14px; font-size: 12px;"><strong>7. HEW TIET MIN</strong></div>
+            <div style="background: #f8f9fa; border: 1px solid var(--border-color); border-radius: 6px; padding: 10px 14px; font-size: 12px;"><strong>8. KOO SOK FONG</strong></div>
+            <div style="background: #f8f9fa; border: 1px solid var(--border-color); border-radius: 6px; padding: 10px 14px; font-size: 12px;"><strong>9. MICHELE TING MEI LING</strong></div>
+            <div style="background: #f8f9fa; border: 1px solid var(--border-color); border-radius: 6px; padding: 10px 14px; font-size: 12px;"><strong>10. MUHAMMAD SAIFUL ZAYANNI</strong></div>
+            <div style="background: #f8f9fa; border: 1px solid var(--border-color); border-radius: 6px; padding: 10px 14px; font-size: 12px;"><strong>11. NAGEINTHINI A/P TEWARAJAN</strong></div>
+            <div style="background: #f8f9fa; border: 1px solid var(--border-color); border-radius: 6px; padding: 10px 14px; font-size: 12px;"><strong>12. NIK NADHIRAH BINTI NIK KAMARUZAMAN</strong></div>
+            <div style="background: #f8f9fa; border: 1px solid var(--border-color); border-radius: 6px; padding: 10px 14px; font-size: 12px;"><strong>13. NOOR IZZATI BINTI MAJID</strong></div>
+            <div style="background: #f8f9fa; border: 1px solid var(--border-color); border-radius: 6px; padding: 10px 14px; font-size: 12px;"><strong>14. NOR AZIMA BINTI SHAARI</strong></div>
+            <div style="background: #f8f9fa; border: 1px solid var(--border-color); border-radius: 6px; padding: 10px 14px; font-size: 12px;"><strong>15. NUR AYU ANISA BINTI MOHAMED</strong></div>
+            <div style="background: #f8f9fa; border: 1px solid var(--border-color); border-radius: 6px; padding: 10px 14px; font-size: 12px;"><strong>16. NUR AZLIN BINTI IBRAHIM</strong></div>
+            <div style="background: #f8f9fa; border: 1px solid var(--border-color); border-radius: 6px; padding: 10px 14px; font-size: 12px;"><strong>17. NURAIN BINTI MD NOR</strong></div>
+            <div style="background: #f8f9fa; border: 1px solid var(--border-color); border-radius: 6px; padding: 10px 14px; font-size: 12px;"><strong>18. PRIYA A/P PERANCHIS JOSIP</strong></div>
+            <div style="background: #f8f9fa; border: 1px solid var(--border-color); border-radius: 6px; padding: 10px 14px; font-size: 12px;"><strong>19. RANJIDA A/P SHATIASILAN</strong></div>
+            <div style="background: #f8f9fa; border: 1px solid var(--border-color); border-radius: 6px; padding: 10px 14px; font-size: 12px;"><strong>20. ROSFARADILA BINTI AB.RAHIM</strong></div>
+            <div style="background: #f8f9fa; border: 1px solid var(--border-color); border-radius: 6px; padding: 10px 14px; font-size: 12px;"><strong>21. SYAFIQAH BINTI MOHD RAHIM</strong></div>
+            <div style="background: #f8f9fa; border: 1px solid var(--border-color); border-radius: 6px; padding: 10px 14px; font-size: 12px;"><strong>22. WAN ZURAIDA BINTI MIOR SALLEH</strong></div>
+            <div style="background: #f8f9fa; border: 1px solid var(--border-color); border-radius: 6px; padding: 10px 14px; font-size: 12px;"><strong>23. WONG JIA HUEY</strong></div>
+            <div style="background: #f8f9fa; border: 1px solid var(--border-color); border-radius: 6px; padding: 10px 14px; font-size: 12px;"><strong>24. LEONG VEE BIN</strong></div>
+        </div>
+
+        <div style="margin-top: 16px;">
+            <button class="btn-card btn-card-primary" onclick="previewDoc('Analisis Keseluruhan Pensijilan Digital Guru SMJK Ave Maria Convent 2026', '5.0 PENSIJILAN DELIMA GURU/5.5 Lain-lain Pensijilan & Kursus Digital/Analisis Keseluruhan Pensijilan Digital Guru SMJK Ave Maria Convent 2026.docx')">
+                <i class="fas fa-file-alt"></i> Prapapar Analisis Keseluruhan Pensijilan
             </button>
         </div>
     </div>
 </main>
 """
 with open('pages/sijil-microsoft.html', 'w', encoding='utf-8') as f:
-    f.write(wrap_html("Sijil Microsoft & Apple", ms_apple_body, depth=1, active='pensijilan'))
-print("Saved pages/sijil-microsoft.html")
+    f.write(wrap_html("Pensijilan Microsoft & Apple Teacher", sijil_ms_body, depth=1, active='pensijilan'))
 
-print("Generator script part 4 completed.")
+print("Part 3 generation completed successfully!")
