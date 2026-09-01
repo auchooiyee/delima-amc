@@ -416,7 +416,7 @@ with open('pages/sijil-gce.html', 'w', encoding='utf-8') as f:
     f.write(wrap_html("Sijil & Poster GCE", sijil_gce_body, depth=1, active='pensijilan'))
 
 # ------------------------------------------------------------------------------
-# 14. SIJIL MICROSOFT & APPLE & GEMINI (pages/sijil-microsoft.html)
+# 14. SIJIL MICROSOFT, APPLE & GEMINI (pages/sijil-microsoft.html)
 # ------------------------------------------------------------------------------
 sijil_ms_body = f"""
 <main class="main-wrapper">
@@ -434,7 +434,7 @@ sijil_ms_body = f"""
 
     <!-- 5.3 MICROSOFT CERTIFIED EDUCATOR -->
     <div class="content-box">
-        <h3><i class="fab fa-microsoft" style="color: #00a4ef;"></i> 5.3 Pensijilan Microsoft Certified Educator & MIE (6 Orang Guru)</h3>
+        <h3><i class="fab fa-microsoft" style="color: #00a4ef;"></i> 5.3 Pensijilan Microsoft Certified Educator & MIE</h3>
         <p style="font-size: 13px; color: var(--text-muted);">
             Program latihan Microsoft Educator membina kompetensi guru dalam integrasi perisian produktiviti Microsoft 365, Teams, OneNote Class Notebook, dan Microsoft Learn bagi memperkaya pedagogi bilik darjah abad ke-21.
         </p>
@@ -450,39 +450,9 @@ sijil_ms_body = f"""
             <tbody>
                 <tr>
                     <td>1</td>
-                    <td><strong>AU CHOOI YEE</strong></td>
-                    <td>Microsoft Certified Educator (MCE) & MIE Expert</td>
-                    <td><span class="badge badge-success"><i class="fas fa-check"></i> Aktif</span></td>
-                </tr>
-                <tr>
-                    <td>2</td>
-                    <td><strong>NURAIN BINTI MD NOR</strong></td>
-                    <td>Microsoft Certified Educator (MCE) & MIE</td>
-                    <td><span class="badge badge-success"><i class="fas fa-check"></i> Aktif</span></td>
-                </tr>
-                <tr>
-                    <td>3</td>
-                    <td><strong>FARAH NOOR AINA SALWA TAJUDDIN</strong></td>
-                    <td>Microsoft Innovative Educator (MIE)</td>
-                    <td><span class="badge badge-success"><i class="fas fa-check"></i> Aktif</span></td>
-                </tr>
-                <tr>
-                    <td>4</td>
-                    <td><strong>CHONG MENG HONG</strong></td>
-                    <td>Microsoft Innovative Educator (MIE)</td>
-                    <td><span class="badge badge-success"><i class="fas fa-check"></i> Aktif</span></td>
-                </tr>
-                <tr>
-                    <td>5</td>
-                    <td><strong>WONG JIA HUEY</strong></td>
-                    <td>Microsoft Innovative Educator (MIE)</td>
-                    <td><span class="badge badge-success"><i class="fas fa-check"></i> Aktif</span></td>
-                </tr>
-                <tr>
-                    <td>6</td>
-                    <td><strong>PRIYA A/P PERANCHIS JOSIP</strong></td>
-                    <td>Microsoft Innovative Educator (MIE)</td>
-                    <td><span class="badge badge-success"><i class="fas fa-check"></i> Aktif</span></td>
+                    <td><strong>Tiada</strong></td>
+                    <td>-</td>
+                    <td><span class="badge" style="background: #f1f3f4; color: #5f6368;">-</span></td>
                 </tr>
             </tbody>
         </table>
@@ -610,6 +580,6 @@ sijil_ms_body = f"""
 </main>
 """
 with open('pages/sijil-microsoft.html', 'w', encoding='utf-8') as f:
-    f.write(wrap_html("Pensijilan Microsoft & Apple Teacher", sijil_ms_body, depth=1, active='pensijilan'))
+    f.write(wrap_html("Pensijilan Microsoft, Apple & Gemini", sijil_ms_body, depth=1, active='pensijilan'))
 
 print("Part 3 generation completed successfully!")
