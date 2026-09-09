@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="ms">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&family=Oswald:wght@600;700&display=swap" rel="stylesheet">
+    <style>
+        body { font-family: 'Open Sans', sans-serif; background: #ffffff; margin: 0; padding: 12px; color: #202124; }
+        .dash-card { border: 1px solid #dadce0; border-radius: 12px; padding: 20px; background: #ffffff; box-shadow: 0 2px 8px rgba(0,0,0,0.08); max-width: 650px; margin: 0 auto; }
+        .dash-header { display: flex; align-items: center; gap: 12px; border-bottom: 2px solid #e8eaf6; padding-bottom: 12px; margin-bottom: 14px; }
+        .dash-header i { font-size: 28px; color: #1a237e; }
+        .dash-header h3 { font-family: 'Oswald', sans-serif; font-size: 20px; margin: 0; color: #1a237e; text-transform: uppercase; }
+        .hero-callout { background: linear-gradient(135deg, #0d1442 0%, #1a237e 60%, #1565c0 100%); color: #ffffff; border-radius: 8px; padding: 16px; margin-bottom: 16px; }
+        .hero-callout p { margin: 0; font-size: 13.5px; line-height: 1.5; color: #e8eaf6; }
+        .hero-callout strong { color: #fbc02d; }
+        .btn-launch { display: inline-flex; align-items: center; justify-content: center; gap: 8px; background: #fbc02d; color: #0d1442; font-weight: 700; font-size: 14px; text-decoration: none; padding: 12px 20px; border-radius: 6px; text-transform: uppercase; margin-top: 12px; box-shadow: 0 2px 6px rgba(0,0,0,0.2); transition: transform 0.15s; }
+        .btn-launch:hover { transform: translateY(-2px); background: #f9a825; color: #0d1442; }
+        .steps-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 10px; margin-bottom: 16px; }
+        @media(max-width: 540px){ .steps-grid { grid-template-columns: 1fr; } }
+        .step-box { background: #f8f9fa; border: 1px solid #e8eaed; border-radius: 6px; padding: 10px 12px; font-size: 12px; }
+        .step-box strong { color: #1a237e; display: block; margin-bottom: 4px; }
+        .info-footer { font-size: 11px; color: #5f6368; border-top: 1px solid #e8eaed; padding-top: 10px; display: flex; justify-content: space-between; flex-wrap: wrap; gap: 6px; }
+    </style>
+</head>
+<body>
+    <div class="dash-card">
+        <div class="dash-header">
+            <i class="fas fa-key"></i>
+            <div>
+                <h3>DaSH Portal SMJK AMC</h3>
+                <span style="font-size: 12px; color: #5f6368;">Sistem Reset Kata Laluan DELIMa Murid Secara Kendiri</span>
+            </div>
+        </div>
+
+        <div class="hero-callout">
+            <p>
+                <strong>DaSH Portal</strong> ialah laman web sekolah yang membolehkan anda menukar (reset) password akaun DELIMa anda sendiri — <strong>tanpa perlu tunggu Cikgu ICT</strong> untuk buat untuk anda!
+            </p>
+            <div style="text-align: center;">
+                <a href="https://script.google.com/macros/s/AKfycbw3yy7rRiEnUkG-zhOi3nvgzbsjTakH9eD4Uapny0FZfQoidWmBs5zooq25Ub6RqGrfKA/exec?page=student" target="_blank" class="btn-launch">
+                    <i class="fas fa-external-link-alt"></i> Buka DaSH Portal Sekarang
+                </a>
+            </div>
+        </div>
+
+        <div style="margin-bottom: 10px; font-size: 12.5px; font-weight: 700; color: #1a237e;">
+            <i class="fas fa-list-ol"></i> 3 Langkah Mudah Reset Password:
+        </div>
+
+        <div class="steps-grid">
+            <div class="step-box">
+                <strong>1. Cari Nama</strong>
+                Taip & pilih nama anda daripada senarai carian portal.
+            </div>
+            <div class="step-box">
+                <strong>2. Sahkan Maklumat</strong>
+                Masukkan No. IC & nama Guru Kelas (HURUF BESAR) dan tekan Reset.
+            </div>
+            <div class="step-box">
+                <strong>3. Salin Password</strong>
+                Tulis password baharu serta-merta & terus log masuk Google!
+            </div>
+        </div>
+
+        <div class="info-footer">
+            <span><i class="fas fa-shield-alt"></i> Had 1 kali reset setiap 24 jam</span>
+            <span>Unit ICT SMJK Ave Maria Convent, Ipoh</span>
+        </div>
+    </div>
+</body>
+</html>

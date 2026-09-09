@@ -21,6 +21,7 @@ const SCHOOL_CONFIG = {
     delimaLoginUrl: "https://portal.moe.edu.my/",
     googleDriveFolderUrl: "https://drive.google.com/drive/folders/10HBSO2m-RKMAEJPsKmPmHZ1HU6zw4-y8?usp=sharing",
     smartBookingUrl: "https://sites.google.com/moe-dl.edu.my/amc-smart-booking-ver1/laman-utama",
+    dashPortalUrl: "https://script.google.com/macros/s/AKfycbw3yy7rRiEnUkG-zhOi3nvgzbsjTakH9eD4Uapny0FZfQoidWmBs5zooq25Ub6RqGrfKA/exec?page=student",
     
     // Google Apps Script Web App Endpoint for Live Complaints & Google Sheets
     gasWebAppUrl: "https://script.google.com/macros/s/AKfycbxQIaKyycEbexVkCqr6qtLIexJHsUoutDRAJnSGmOGHAbFSrNMMr0RWyHLuStrqurk6/exec",

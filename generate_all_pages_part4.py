@@ -381,88 +381,202 @@ dashboard_body = f"""
 with open('pages/portal-dashboard.html', 'w', encoding='utf-8') as f:
     f.write(wrap_html("Portal & Dashboard", dashboard_body, depth=1, active='dashboard'))
 
+DASH_PORTAL_URL = "https://script.google.com/macros/s/AKfycbw3yy7rRiEnUkG-zhOi3nvgzbsjTakH9eD4Uapny0FZfQoidWmBs5zooq25Ub6RqGrfKA/exec?page=student"
+
 # ------------------------------------------------------------------------------
-# 21. ADUAN ID DELIMA (pages/aduan-id.html)
+# 21. DASH PORTAL (pages/dash-portal.html & pages/aduan-id.html)
 # ------------------------------------------------------------------------------
-aduan_body = f"""
+dash_portal_body = f"""
 <main class="main-wrapper">
-    {get_breadcrumbs("Aduan ID & Kata Laluan", "Bantuan", "aduan-id.html")}
+    {get_breadcrumbs("DaSH Portal (Reset Password)", "Bantuan", "dash-portal.html")}
     
     <div class="page-header-box">
         <div>
-            <h2><i class="fas fa-key"></i> Borang Aduan Masalah ID DELIMa & Reset Kata Laluan</h2>
-            <p>Pusat Meja Bantuan Rasmi Unit ICT SMJK Ave Maria Convent, Ipoh untuk Guru & Murid</p>
+            <h2><i class="fas fa-key"></i> DaSH Portal — Panduan Reset Password Akaun DELIMa</h2>
+            <p>Sistem Pertukaran & Penetapan Semula Kata Laluan DELIMa Kendiri SMJK Ave Maria Convent, Ipoh • Khas untuk Murid</p>
         </div>
+        <a href="{DASH_PORTAL_URL}" target="_blank" class="btn-hero btn-hero-yellow" style="box-shadow: 0 4px 15px rgba(251, 192, 45, 0.4); text-transform: uppercase;">
+            <i class="fas fa-external-link-alt"></i> Buka DaSH Portal (Pelajar)
+        </a>
     </div>
 
-    <!-- Admin Notification Info Box -->
-    <div style="background: #e8f0fe; border-left: 4px solid #1a73e8; border-radius: 8px; padding: 16px 20px; margin-bottom: 24px; box-shadow: var(--shadow-sm);">
-        <div style="display: flex; align-items: center; gap: 10px; margin-bottom: 6px;">
-            <i class="fas fa-envelope-circle-check" style="font-size: 20px; color: #1a73e8;"></i>
-            <h4 style="margin: 0; color: #1a73e8; font-size: 15px;">Penghantaran Automatik ke Admin DELIMa</h4>
+    <!-- Core Feature Highlight Banner -->
+    <div class="content-box" style="background: linear-gradient(135deg, #0d1442 0%, #1a237e 50%, #1565c0 100%); color: #ffffff; border-radius: 12px; padding: 26px 28px; box-shadow: 0 6px 20px rgba(26, 35, 126, 0.25);">
+        <div style="display: flex; align-items: center; gap: 18px; margin-bottom: 16px; flex-wrap: wrap;">
+            <div style="width: 56px; height: 56px; border-radius: 50%; background: #fbc02d; color: #0d1442; display: flex; align-items: center; justify-content: center; font-size: 26px; box-shadow: 0 4px 12px rgba(0,0,0,0.2);">
+                <i class="fas fa-bolt"></i>
+            </div>
+            <div>
+                <span class="badge" style="background: #fbc02d; color: #0d1442; font-weight: 800; font-size: 11px; text-transform: uppercase; padding: 4px 10px; margin-bottom: 6px; display: inline-block;">Sistem Kendiri Murid</span>
+                <h3 style="margin: 0; color: #ffffff; font-family: 'Oswald', sans-serif; font-size: 24px; letter-spacing: 0.5px; border: none; padding: 0;">Apa itu DaSH Portal?</h3>
+            </div>
         </div>
-        <p style="font-size: 13px; color: var(--text-dark); margin: 0;">
-            Setiap aduan yang dihantar akan disalurkan secara terus dan serta-merta ke peti masuk e-mel Admin DELIMa Sekolah:
+        <p style="font-size: 16px; line-height: 1.6; color: #e8eaf6; margin-bottom: 18px;">
+            <strong>DaSH Portal</strong> ialah laman web sekolah yang membolehkan anda menukar (reset) password akaun DELIMa anda sendiri — <strong>tanpa perlu tunggu Cikgu ICT untuk buat untuk anda!</strong>
         </p>
-        <div style="display: flex; flex-wrap: wrap; gap: 8px; margin-top: 10px;">
-            <span class="badge badge-info" style="font-size: 12px; padding: 4px 10px;"><i class="fas fa-user-shield"></i> Pn. Nurain: <strong>g-00556750@moe-dl.edu.my</strong></span>
-            <span class="badge badge-info" style="font-size: 12px; padding: 4px 10px;"><i class="fas fa-user-shield"></i> Cik Au Chooi Yee: <strong>g-24188210@moe-dl.edu.my</strong></span>
+        <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 12px; margin-bottom: 20px;">
+            <div style="background: rgba(255,255,255,0.1); border-radius: 8px; padding: 12px 16px; border-left: 3px solid #fbc02d;">
+                <div style="font-weight: 700; color: #fbc02d; font-size: 13px; margin-bottom: 4px;"><i class="fas fa-question-circle"></i> Terlupa Password</div>
+                <div style="font-size: 12px; color: #ffffff; opacity: 0.9;">Akaun DELIMa (contoh: <code>m-xxxxxxxx@moe-dl.edu.my</code>)</div>
+            </div>
+            <div style="background: rgba(255,255,255,0.1); border-radius: 8px; padding: 12px 16px; border-left: 3px solid #fbc02d;">
+                <div style="font-weight: 700; color: #fbc02d; font-size: 13px; margin-bottom: 4px;"><i class="fas fa-ban"></i> Gagal Log Masuk</div>
+                <div style="font-size: 12px; color: #ffffff; opacity: 0.9;">Tidak boleh akses Google Classroom atau Gmail sekolah</div>
+            </div>
+            <div style="background: rgba(255,255,255,0.1); border-radius: 8px; padding: 12px 16px; border-left: 3px solid #fbc02d;">
+                <div style="font-weight: 700; color: #fbc02d; font-size: 13px; margin-bottom: 4px;"><i class="fas fa-sync-alt"></i> Kemas Kini Password</div>
+                <div style="font-size: 12px; color: #ffffff; opacity: 0.9;">Ingin menukar kata laluan lama kepada yang baharu</div>
+            </div>
+        </div>
+        <div>
+            <a href="{DASH_PORTAL_URL}" target="_blank" class="btn-hero btn-hero-yellow" style="font-size: 14px; padding: 10px 22px;">
+                <i class="fas fa-external-link-alt"></i> Klik Sini Untuk Buka DaSH Portal
+            </a>
         </div>
     </div>
 
+    <!-- Sebelum Mula Box -->
+    <div class="content-box" style="border-left: 4px solid #fbc02d; background: #fffdf5;">
+        <h3 style="color: #b78103; margin-bottom: 8px; border: none; padding: 0;"><i class="fas fa-clipboard-list"></i> Sebelum Mula: Sediakan 3 Maklumat Ini Dahulu</h3>
+        <p style="font-size: 13.5px; color: var(--text-dark); margin-bottom: 12px;">Pastikan anda telah bersedia dengan maklumat pengesahan identiti berikut:</p>
+        <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 12px;">
+            <div style="background: #ffffff; border: 1px solid #ffe082; border-radius: 8px; padding: 12px 16px;">
+                <strong style="color: #b78103; font-size: 14px;">1. Nama Penuh Anda</strong>
+                <p style="font-size: 12px; color: var(--text-muted); margin: 4px 0 0;">Tepat seperti di dalam rekod pendaftaran sekolah.</p>
+            </div>
+            <div style="background: #ffffff; border: 1px solid #ffe082; border-radius: 8px; padding: 12px 16px;">
+                <strong style="color: #b78103; font-size: 14px;">2. No. Kad Pengenalan (IC)</strong>
+                <p style="font-size: 12px; color: var(--text-muted); margin: 4px 0 0;">Nombor MyKad anda (tanpa tanda sengkang '-').</p>
+            </div>
+            <div style="background: #ffffff; border: 1px solid #ffe082; border-radius: 8px; padding: 12px 16px;">
+                <strong style="color: #b78103; font-size: 14px;">3. Nama Penuh Guru Kelas</strong>
+                <p style="font-size: 12px; color: var(--text-muted); margin: 4px 0 0;">Ejaan nama guru kelas dalam SEMUA HURUF BESAR.</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- 3 Langkah Mudah -->
     <div class="content-box">
-        <h3><i class="fas fa-edit"></i> Hantar Maklumat Aduan</h3>
-        <p style="font-size: 13px; color: var(--text-muted); margin-bottom: 20px;">
-            Sila lengkapkan borang di bawah sekiranya anda terlupa kata laluan atau mengalami masalah log masuk akaun <code>@moe-dl.edu.my</code>. Tindakan semakan dan penetapan semula kata laluan akan diambil oleh Admin DELIMa dalam tempoh 24 jam.
+        <h3><i class="fas fa-list-ol"></i> Panduan 3 Langkah Reset Password</h3>
+        
+        <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 18px; margin-top: 16px;">
+            <!-- Langkah 1 -->
+            <div style="background: #ffffff; border: 1px solid var(--border-color); border-radius: 10px; padding: 20px; position: relative; box-shadow: var(--shadow-sm);">
+                <div style="position: absolute; top: -12px; left: 16px; background: #1a237e; color: #ffffff; font-weight: 800; font-size: 12px; padding: 2px 12px; border-radius: 12px;">LANGKAH 1</div>
+                <h4 style="color: #1a237e; margin-top: 10px; margin-bottom: 8px;"><i class="fas fa-search"></i> Cari Nama Anda</h4>
+                <p style="font-size: 13px; color: var(--text-dark); line-height: 1.5;">
+                    Buka pautan DaSH Portal. Taip nama anda dalam kotak carian, kemudian <strong>pilih nama anda</strong> daripada senarai nama yang terpapar.
+                </p>
+            </div>
+
+            <!-- Langkah 2 -->
+            <div style="background: #ffffff; border: 1px solid var(--border-color); border-radius: 10px; padding: 20px; position: relative; box-shadow: var(--shadow-sm);">
+                <div style="position: absolute; top: -12px; left: 16px; background: #1565c0; color: #ffffff; font-weight: 800; font-size: 12px; padding: 2px 12px; border-radius: 12px;">LANGKAH 2</div>
+                <h4 style="color: #1565c0; margin-top: 10px; margin-bottom: 8px;"><i class="fas fa-shield-alt"></i> Sahkan & Reset</h4>
+                <p style="font-size: 13px; color: var(--text-dark); line-height: 1.5;">
+                    Selepas memilih nama, isikan No. Kad Pengenalan (IC) dan nama Guru Kelas anda dengan tepat sebagai langkah keselamatan. Kemudian tekan butang <strong>"Reset Password Saya"</strong>.
+                </p>
+                <div style="background: #fff8e1; border-radius: 6px; padding: 8px 10px; font-size: 11.5px; color: #856404; margin-top: 10px;">
+                    <i class="fas fa-info-circle"></i> <strong>Penting:</strong> Had <strong>1 KALI sahaja</strong> dalam tempoh 24 jam.
+                </div>
+            </div>
+
+            <!-- Langkah 3 -->
+            <div style="background: #ffffff; border: 1px solid var(--border-color); border-radius: 10px; padding: 20px; position: relative; box-shadow: var(--shadow-sm);">
+                <div style="position: absolute; top: -12px; left: 16px; background: #0f9d58; color: #ffffff; font-weight: 800; font-size: 12px; padding: 2px 12px; border-radius: 12px;">LANGKAH 3</div>
+                <h4 style="color: #0f9d58; margin-top: 10px; margin-bottom: 8px;"><i class="fas fa-save"></i> Simpan Password Baharu</h4>
+                <p style="font-size: 13px; color: var(--text-dark); line-height: 1.5;">
+                    Jika maklumat disahkan, password baharu akan terus dipaparkan pada skrin. <strong>TULIS atau INGAT password ini serta-merta</strong> kerana ia tidak akan dipaparkan lagi selepas halaman ditutup.
+                </p>
+                <div style="background: #e6f4ea; border-radius: 6px; padding: 8px 10px; font-size: 11.5px; color: #137333; margin-top: 10px;">
+                    <i class="fas fa-check-circle"></i> Tekan <strong>"Log Masuk Google"</strong> untuk terus mula!
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Masalah Biasa & Troubleshooting -->
+    <div class="content-box">
+        <h3><i class="fas fa-question-circle"></i> Masalah Biasa & Penyelesaian (Troubleshooting)</h3>
+        
+        <div style="display: flex; flex-direction: column; gap: 12px; margin-top: 14px;">
+            <div style="background: #ffffff; border: 1px solid var(--border-color); border-radius: 8px; padding: 14px 18px;">
+                <div style="font-weight: 700; color: #d93025; font-size: 14px; margin-bottom: 4px;">
+                    <i class="fas fa-times-circle"></i> Paparan Ralat: "Maklumat tidak sepadan"
+                </div>
+                <p style="font-size: 13px; color: var(--text-dark); margin: 0;">
+                    Semak semula ejaan nama anda, nombor Kad Pengenalan, dan ejaan nama Guru Kelas. Semua maklumat perlu sama persis seperti yang didaftarkan dalam rekod sekolah (termasuk penggunaan SEMUA huruf besar bagi nama guru kelas).
+                </p>
+            </div>
+
+            <div style="background: #ffffff; border: 1px solid var(--border-color); border-radius: 8px; padding: 14px 18px;">
+                <div style="font-weight: 700; color: #f29900; font-size: 14px; margin-bottom: 4px;">
+                    <i class="fas fa-clock"></i> Paparan Ralat: "Sila cuba lagi selepas X jam"
+                </div>
+                <p style="font-size: 13px; color: var(--text-dark); margin: 0;">
+                    Anda telah melakukan pertukaran password dalam tempoh 24 jam yang lalu. Atas faktor keselamatan akaun, sila tunggu sehingga tempoh bertenang 24 jam tersebut tamat sebelum membuat reset baharu.
+                </p>
+            </div>
+
+            <div style="background: #ffffff; border: 1px solid var(--border-color); border-radius: 8px; padding: 14px 18px;">
+                <div style="font-weight: 700; color: #1a73e8; font-size: 14px; margin-bottom: 4px;">
+                    <i class="fas fa-search-minus"></i> Nama anda tiada dalam senarai carian portal
+                </div>
+                <p style="font-size: 13px; color: var(--text-dark); margin: 0;">
+                    Akaun anda mungkin murid baharu atau belum didaftarkan sepenuhnya ke dalam pangkalan data sistem. Sila hubungi Penyelaras DELIMa / Guru Penyelaras Bestari sekolah untuk bantuan pengaktifan.
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Peringatan Keselamatan & Sokongan Pentadbir -->
+    <div class="content-box" style="background: #f8f9fa; border: 1px solid var(--border-color);">
+        <div style="display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 16px;">
+            <div>
+                <h4 style="margin: 0 0 6px; color: var(--primary);"><i class="fas fa-user-shield"></i> Peringatan Keselamatan:</h4>
+                <p style="font-size: 13px; color: var(--text-dark); margin: 0;">
+                    Jangan sesekali berkongsi password akaun DELIMa anda dengan sesiapa pun, termasuk rakan sekelas.
+                </p>
+                <div style="margin-top: 10px; font-size: 12px; color: var(--text-muted);">
+                    Dibina khas oleh Unit ICT untuk murid SMJK Ave Maria Convent, Ipoh.
+                </div>
+            </div>
+            <div>
+                <a href="{DASH_PORTAL_URL}" target="_blank" class="btn-hero btn-hero-yellow" style="padding: 10px 20px; font-size: 13px;">
+                    <i class="fas fa-external-link-alt"></i> Buka DaSH Portal Sekarang
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Bantuan Admin DELIMa Sekolah -->
+    <div class="content-box">
+        <h3><i class="fas fa-headset"></i> Masih Menghadapi Masalah? Hubungi Admin DELIMa</h3>
+        <p style="font-size: 13px; color: var(--text-muted); margin-bottom: 16px;">
+            Sekiranya akaun anda disekat (*disabled*), terlupa ID @moe-dl, atau perlukan bantuan khas guru:
         </p>
-
-        <form id="aduanForm">
-            <div class="form-grid">
-                <div class="form-group">
-                    <label for="aduanNama"><i class="fas fa-user"></i> Nama Penuh Pemohon *</label>
-                    <input type="text" id="aduanNama" class="form-control" placeholder="Contoh: AU CHOOI YEE" required>
-                </div>
-                <div class="form-group">
-                    <label for="aduanPeranan"><i class="fas fa-user-tag"></i> Peranan Pemohon *</label>
-                    <select id="aduanPeranan" class="form-control" required>
-                        <option value="">-- Pilih Peranan --</option>
-                        <option value="Guru / Staf">Guru / Staf SMJK AMC</option>
-                        <option value="Murid Tingkatan 1">Murid Tingkatan 1</option>
-                        <option value="Murid Tingkatan 2">Murid Tingkatan 2</option>
-                        <option value="Murid Tingkatan 3">Murid Tingkatan 3</option>
-                        <option value="Murid Tingkatan 4">Murid Tingkatan 4</option>
-                        <option value="Murid Tingkatan 5">Murid Tingkatan 5</option>
-                    </select>
-                </div>
-                <div class="form-group">
-                    <label for="aduanKelas"><i class="fas fa-chalkboard"></i> Kelas / Panitia (Jika Berkaitan)</label>
-                    <input type="text" id="aduanKelas" class="form-control" placeholder="Contoh: 4 Sains 1 / Panitia ICT">
-                </div>
-                <div class="form-group">
-                    <label for="aduanKategori"><i class="fas fa-exclamation-triangle"></i> Jenis Masalah *</label>
-                    <select id="aduanKategori" class="form-control" required>
-                        <option value="Lupa Kata Laluan (Reset Password)">Lupa Kata Laluan (Reset Password)</option>
-                        <option value="Akaun Terkunci / Disabled">Akaun Terkunci / Disabled</option>
-                        <option value="Tidak Tahu / Belum Menerima ID DELIMa">Tidak Tahu / Belum Menerima ID DELIMa</option>
-                        <option value="Masalah Akses Google Classroom">Masalah Akses Google Classroom</option>
-                        <option value="Lain-lain Isu Teknikal">Lain-lain Isu Teknikal</option>
-                    </select>
-                </div>
+        <div style="display: flex; flex-wrap: wrap; gap: 12px;">
+            <div style="background: #ffffff; border: 1px solid var(--border-color); border-radius: 8px; padding: 12px 16px; flex: 1; min-width: 250px;">
+                <strong style="color: var(--primary);">Pn. Nurain Binti Md Nor</strong>
+                <div style="font-size: 12px; color: var(--text-muted);">Penyelaras DELIMa / Admin DELIMa Sekolah</div>
+                <div style="margin-top: 6px;"><a href="mailto:g-00556750@moe-dl.edu.my" style="color: #1a73e8; font-size: 13px;"><i class="fas fa-envelope"></i> g-00556750@moe-dl.edu.my</a></div>
             </div>
-
-            <div class="form-group" style="margin-bottom: 18px;">
-                <label for="aduanKeterangan"><i class="fas fa-comment-alt"></i> Keterangan Isu & No. Telefon / E-mel untuk Dihubungi *</label>
-                <textarea id="aduanKeterangan" class="form-control" placeholder="Sila nyatakan no. KP / maklumat kontak untuk penghantaran kata laluan baharu..." required></textarea>
+            <div style="background: #ffffff; border: 1px solid var(--border-color); border-radius: 8px; padding: 12px 16px; flex: 1; min-width: 250px;">
+                <strong style="color: var(--primary);">Cik Au Chooi Yee</strong>
+                <div style="font-size: 12px; color: var(--text-muted);">Penolong Penyelaras DELIMa / Guru ICT</div>
+                <div style="margin-top: 6px;"><a href="mailto:g-24188210@moe-dl.edu.my" style="color: #1a73e8; font-size: 13px;"><i class="fas fa-envelope"></i> g-24188210@moe-dl.edu.my</a></div>
             </div>
-
-            <button type="submit" class="btn-submit">
-                <i class="fas fa-paper-plane"></i> Hantar Aduan ID DELIMa
-            </button>
-        </form>
+        </div>
     </div>
 </main>
 """
+
+with open('pages/dash-portal.html', 'w', encoding='utf-8') as f:
+    f.write(wrap_html("DaSH Portal (Reset Password)", dash_portal_body, depth=1, active='utama'))
+print("Saved pages/dash-portal.html")
+
 with open('pages/aduan-id.html', 'w', encoding='utf-8') as f:
-    f.write(wrap_html("Aduan ID DELIMa", aduan_body, depth=1, active='utama'))
+    f.write(wrap_html("DaSH Portal (Reset Password)", dash_portal_body, depth=1, active='utama'))
+print("Saved pages/aduan-id.html")
 
 print("All pages part 4 successfully updated!")
