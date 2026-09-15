@@ -381,7 +381,7 @@ dashboard_body = f"""
 with open('pages/portal-dashboard.html', 'w', encoding='utf-8') as f:
     f.write(wrap_html("Portal & Dashboard", dashboard_body, depth=1, active='dashboard'))
 
-DASH_PORTAL_URL = "https://script.google.com/macros/s/AKfycbw3yy7rRiEnUkG-zhOi3nvgzbsjTakH9eD4Uapny0FZfQoidWmBs5zooq25Ub6RqGrfKA/exec?page=student"
+DASH_PORTAL_URL = "https://sites.google.com/moe-dl.edu.my/delima-amc-v1/dash-portal"
 
 # ------------------------------------------------------------------------------
 # 21. DASH PORTAL (pages/dash-portal.html & pages/aduan-id.html)
@@ -417,7 +417,7 @@ dash_portal_body = f"""
             </div>
         </div>
         <p style="font-size: 16px; line-height: 1.6; color: #e8eaf6; margin-bottom: 18px;">
-            <strong>DaSH Portal</strong> ialah laman web sekolah yang membolehkan anda menukar (reset) password akaun DELIMa anda sendiri — <strong>tanpa perlu tunggu Cikgu ICT untuk buat untuk anda!</strong>
+            <strong>DaSH Portal</strong> ialah laman web sekolah yang membolehkan anda menukar (reset) password akaun DELIMa anda sendiri — <strong>tanpa perlu tunggu Penyelaras DELIMa / Admin DELIMa Sekolah untuk buat untuk anda!</strong>
         </p>
         <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 12px; margin-bottom: 20px;">
             <div style="background: rgba(255,255,255,0.1); border-radius: 8px; padding: 12px 16px; border-left: 3px solid #fbc02d;">
@@ -561,15 +561,13 @@ dash_portal_body = f"""
             Sekiranya akaun anda disekat (*disabled*), terlupa ID @moe-dl, atau perlukan bantuan khas guru:
         </p>
         <div style="display: flex; flex-wrap: wrap; gap: 12px;">
-            <div style="background: #ffffff; border: 1px solid var(--border-color); border-radius: 8px; padding: 12px 16px; flex: 1; min-width: 250px;">
-                <strong style="color: var(--primary);">Pn. Nurain Binti Md Nor</strong>
-                <div style="font-size: 12px; color: var(--text-muted);">Penyelaras DELIMa / Admin DELIMa Sekolah</div>
-                <div style="margin-top: 6px;"><a href="mailto:g-00556750@moe-dl.edu.my" style="color: #1a73e8; font-size: 13px;"><i class="fas fa-envelope"></i> g-00556750@moe-dl.edu.my</a></div>
+            <div style="background: #ffffff; border: 1px solid var(--border-color); border-radius: 8px; padding: 14px 18px; flex: 1; min-width: 250px;">
+                <strong style="color: var(--primary); font-size: 15px;">Pn. Nurain Binti Md Nor</strong>
+                <div style="font-size: 13px; color: var(--text-muted); margin-top: 4px;">Penyelaras DELIMa / Admin DELIMa Sekolah</div>
             </div>
-            <div style="background: #ffffff; border: 1px solid var(--border-color); border-radius: 8px; padding: 12px 16px; flex: 1; min-width: 250px;">
-                <strong style="color: var(--primary);">Cik Au Chooi Yee</strong>
-                <div style="font-size: 12px; color: var(--text-muted);">Penolong Penyelaras DELIMa / Guru ICT</div>
-                <div style="margin-top: 6px;"><a href="mailto:g-24188210@moe-dl.edu.my" style="color: #1a73e8; font-size: 13px;"><i class="fas fa-envelope"></i> g-24188210@moe-dl.edu.my</a></div>
+            <div style="background: #ffffff; border: 1px solid var(--border-color); border-radius: 8px; padding: 14px 18px; flex: 1; min-width: 250px;">
+                <strong style="color: var(--primary); font-size: 15px;">Cik Au Chooi Yee</strong>
+                <div style="font-size: 13px; color: var(--text-muted); margin-top: 4px;">Guru Penyelaras ICT</div>
             </div>
         </div>
     </div>

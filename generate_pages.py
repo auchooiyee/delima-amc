@@ -21,7 +21,7 @@ total_teachers = teachers_info.get('total_teachers', 106)
 
 DRIVE_URL = "https://drive.google.com/drive/folders/10HBSO2m-RKMAEJPsKmPmHZ1HU6zw4-y8?usp=sharing"
 SMART_BOOKING_URL = "https://sites.google.com/moe-dl.edu.my/amc-smart-booking-ver1/laman-utama"
-DASH_PORTAL_URL = "https://script.google.com/macros/s/AKfycbw3yy7rRiEnUkG-zhOi3nvgzbsjTakH9eD4Uapny0FZfQoidWmBs5zooq25Ub6RqGrfKA/exec?page=student"
+DASH_PORTAL_URL = "https://sites.google.com/moe-dl.edu.my/delima-amc-v1/dash-portal"
 
 def build_nav(depth=0, active='utama'):
     p = '' if depth == 0 else '../'
@@ -143,7 +143,7 @@ def build_footer(depth=0):
             <div class="footer-col">
                 <h4>Pentadbir DELIMa & ICT</h4>
                 <p><strong>Penyelaras DELIMa:</strong><br>Pn. Nurain Binti Md Nor (Admin DELIMa)</p>
-                <p><strong>Penolong Penyelaras / Guru ICT:</strong><br>Cik Au Chooi Yee</p>
+                <p><strong>Guru Penyelaras ICT:</strong><br>Cik Au Chooi Yee</p>
                 <p style="margin-top: 8px;"><span class="badge badge-success"><i class="fas fa-check-circle"></i> Penarafan 5 Bintang KPM</span></p>
             </div>
         </div>
@@ -220,7 +220,7 @@ home_content = f"""
                     </div>
                     <div>
                         <div style="font-weight: 700; color: #fbc02d; font-size: 14px; text-transform: uppercase; letter-spacing: 0.5px;">DaSH Portal — Reset Password DELIMa Murid</div>
-                        <div style="font-size: 13px; color: #ffffff; opacity: 0.95; line-height: 1.4;">Laman web sekolah yang membolehkan anda menukar (reset) password akaun DELIMa anda sendiri — <strong>tanpa perlu tunggu Cikgu ICT</strong> untuk buat untuk anda!</div>
+                        <div style="font-size: 13px; color: #ffffff; opacity: 0.95; line-height: 1.4;">Laman web sekolah yang membolehkan anda menukar (reset) password akaun DELIMa anda sendiri — <strong>tanpa perlu tunggu Penyelaras DELIMa / Admin DELIMa Sekolah</strong> untuk buat untuk anda!</div>
                     </div>
                 </div>
                 <div style="display: flex; gap: 8px;">

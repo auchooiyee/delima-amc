@@ -15,7 +15,7 @@ with open('assets/images/logo.png', 'rb') as f:
 with open('assets/images/dash_qr.png', 'rb') as f:
     qr_b64 = base64.b64encode(f.read()).decode('utf-8')
 
-DASH_PORTAL_URL = "https://script.google.com/macros/s/AKfycbw3yy7rRiEnUkG-zhOi3nvgzbsjTakH9eD4Uapny0FZfQoidWmBs5zooq25Ub6RqGrfKA/exec?page=student"
+DASH_PORTAL_URL = "https://sites.google.com/moe-dl.edu.my/delima-amc-v1/dash-portal"
 
 html_content = f"""<!DOCTYPE html>
 <html lang="ms">
@@ -364,7 +364,7 @@ html_content = f"""<!DOCTYPE html>
     <div class="intro-box">
         <h3>💡 Apa itu DaSH Portal?</h3>
         <p>
-            <strong>DaSH Portal</strong> ialah laman web sekolah yang membolehkan anda menukar (reset) password akaun DELIMa anda sendiri — <strong>tanpa perlu tunggu Cikgu ICT untuk buat untuk anda!</strong>
+            <strong>DaSH Portal</strong> ialah laman web sekolah yang membolehkan anda menukar (reset) password akaun DELIMa anda sendiri — <strong>tanpa perlu tunggu Penyelaras DELIMa / Admin DELIMa Sekolah untuk buat untuk anda!</strong>
         </p>
         <div class="intro-reasons">
             <div class="reason-chip">
@@ -451,10 +451,10 @@ html_content = f"""<!DOCTYPE html>
         <p>Sekiranya akaun anda terkunci (*disabled*) atau menghadapi masalah luar jangka, hubungi guru berikut:</p>
         <div class="admin-chips">
             <div class="admin-chip">
-                <strong>Pn. Nurain Binti Md Nor</strong> (Penyelaras DELIMa): <code>g-00556750@moe-dl.edu.my</code>
+                <strong>Pn. Nurain Binti Md Nor</strong> (Penyelaras DELIMa / Admin DELIMa Sekolah)
             </div>
             <div class="admin-chip">
-                <strong>Cik Au Chooi Yee</strong> (Penolong Penyelaras DELIMa / Guru ICT): <code>g-24188210@moe-dl.edu.my</code>
+                <strong>Cik Au Chooi Yee</strong> (Guru Penyelaras ICT)
             </div>
         </div>
     </div>

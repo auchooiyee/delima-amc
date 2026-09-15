@@ -21,16 +21,15 @@ const SCHOOL_CONFIG = {
     delimaLoginUrl: "https://portal.moe.edu.my/",
     googleDriveFolderUrl: "https://drive.google.com/drive/folders/10HBSO2m-RKMAEJPsKmPmHZ1HU6zw4-y8?usp=sharing",
     smartBookingUrl: "https://sites.google.com/moe-dl.edu.my/amc-smart-booking-ver1/laman-utama",
-    dashPortalUrl: "https://script.google.com/macros/s/AKfycbw3yy7rRiEnUkG-zhOi3nvgzbsjTakH9eD4Uapny0FZfQoidWmBs5zooq25Ub6RqGrfKA/exec?page=student",
+    dashPortalUrl: "https://sites.google.com/moe-dl.edu.my/delima-amc-v1/dash-portal",
     
     // Google Apps Script Web App Endpoint for Live Complaints & Google Sheets
     gasWebAppUrl: "https://script.google.com/macros/s/AKfycbxQIaKyycEbexVkCqr6qtLIexJHsUoutDRAJnSGmOGHAbFSrNMMr0RWyHLuStrqurk6/exec",
 
-    // Admin Emails for Aduan & Reset ID
-    adminEmails: {
-        penyelaras: "g-00556750@moe-dl.edu.my",   // Pn. Nurain Binti Md Nor
-        penolong: "g-24188210@moe-dl.edu.my",     // Cik Au Chooi Yee
-        all: ["g-00556750@moe-dl.edu.my", "g-24188210@moe-dl.edu.my"]
+    // Admin DELIMa & Penyelaras ICT
+    adminRoles: {
+        penyelaras: "Pn. Nurain Binti Md Nor",
+        penyelarasIct: "Cik Au Chooi Yee"
     },
 
     // Leadership & Committee 2026
@@ -63,13 +62,11 @@ const SCHOOL_CONFIG = {
         penyelarasDelima: {
             title: "Penyelaras DELIMa (Admin DELIMa)",
             name: "Pn. Nurain Binti Md Nor",
-            email: "g-00556750@moe-dl.edu.my",
             role: "Pengurusan Data, ID @moe-dl & Portal Rasmi"
         },
-        penolongPenyelaras: {
-            title: "Penolong Penyelaras DELIMa (Guru ICT)",
+        penyelarasIct: {
+            title: "Guru Penyelaras ICT",
             name: "Cik Au Chooi Yee",
-            email: "g-24188210@moe-dl.edu.my",
             role: "Pembangunan Laman, Latihan Guru (LADAP), Pensijilan & Inovasi"
         }
     },

@@ -90,9 +90,9 @@ jawatankuasa_body = f"""
                     <td>Admin DELIMa & Pengurusan ID @moe-dl</td>
                 </tr>
                 <tr style="background-color: #fff0f0;">
-                    <td><strong>Penolong Penyelaras DELIMa</strong></td>
+                    <td><strong>Guru Penyelaras ICT</strong></td>
                     <td><strong>Cik Au Chooi Yee</strong></td>
-                    <td>Guru ICT, Latihan Guru & Inovasi</td>
+                    <td>Guru Penyelaras ICT, Latihan Guru & Inovasi</td>
                 </tr>
                 <tr>
                     <td><strong>AJK Dashboard Kurikulum</strong></td>
@@ -112,7 +112,7 @@ jawatankuasa_body = f"""
                 <tr>
                     <td><strong>AJK Promosi & Hebahan</strong></td>
                     <td>Cik Au Chooi Yee</td>
-                    <td>Guru ICT</td>
+                    <td>Guru Penyelaras ICT</td>
                 </tr>
                 <tr>
                     <td><strong>AJK Latihan Guru (LADAP)</strong></td>
@@ -139,7 +139,7 @@ jawatankuasa_body = f"""
             </thead>
             <tbody>
                 <tr>
-                    <td><strong>Penyelaras & Penolong Penyelaras DELIMa</strong></td>
+                    <td><strong>Penyelaras DELIMa & Guru Penyelaras ICT</strong></td>
                     <td>
                         <ul style="padding-left: 20px; font-size: 13px; line-height: 1.6;">
                             <li>Menetapkan semula (reset) kata laluan guru dan murid secara individu dan pukal.</li>
